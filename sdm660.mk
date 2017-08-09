@@ -54,6 +54,10 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libgptutils \
     libz
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
