@@ -648,12 +648,10 @@ vendor/lib64/libgcs.so
 
 # Media
 lib/extractors/libmmparserextractor.so
-vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxVideoDSMode.so
 -vendor/lib/libgpustats.so
 vendor/lib/libmmosal_proprietary.so
 vendor/lib/libvqzip.so
-vendor/lib64/libI420colorconvert.so
 -vendor/lib64/libgpustats.so
 vendor/lib64/libmmosal_proprietary.so
 
