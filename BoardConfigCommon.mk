@@ -143,9 +143,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
-
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
