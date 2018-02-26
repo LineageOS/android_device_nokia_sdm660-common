@@ -12,3 +12,6 @@ type proc_bandinfo, proc_type, fs_type;
 
 # rtc
 type sysfs_msm_subsys, sysfs_type, fs_type;
+
+#rfs files
+type rfs_tombstone_data_file, data_file_type, file_type;

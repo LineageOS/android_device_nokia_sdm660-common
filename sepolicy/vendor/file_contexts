@@ -22,3 +22,6 @@
 
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0
+
+# tombstones
+/data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
