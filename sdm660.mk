@@ -96,6 +96,13 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
 # Telephony-ext
 PRODUCT_PACKAGES += \
     telephony-ext
