@@ -4,3 +4,6 @@ ro.config.media_vol_steps=25
 
 # Radio
 persist.radio.add_power_save=1
+
+# UI
+sys.use_fifo_ui=1
