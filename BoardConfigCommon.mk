@@ -38,6 +38,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Build System
+BUILD_BROKEN_DUP_RULES := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
