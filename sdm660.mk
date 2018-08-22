@@ -69,14 +69,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
 # Boot Control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm660.recovery
+
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm660 \
-    libcutils \
-    libgptutils \
-    libz
 
 # Camera
 PRODUCT_PACKAGES += \
