@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH)
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
