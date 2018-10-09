@@ -1,0 +1,2 @@
+# rtc
+allow system_server sysfs_msm_subsys:file r_file_perms;
