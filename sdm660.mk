@@ -26,6 +26,8 @@ $(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
