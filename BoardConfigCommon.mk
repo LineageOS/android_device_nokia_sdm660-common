@@ -31,9 +31,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
-# Binder
-TARGET_USES_64_BIT_BINDER := true
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
