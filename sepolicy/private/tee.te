@@ -1,3 +1,4 @@
 allow tee persist_file:lnk_file r_file_perms;
 
 allow tee rpmb_device:blk_file rw_file_perms;
+allowxperm tee rpmb_device:blk_file ioctl MMC_IOC_CMD;
