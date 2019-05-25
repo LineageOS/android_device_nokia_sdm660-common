@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Android Open-Source Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -119,6 +120,11 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # VNDK
 BOARD_VNDK_VERSION := current
