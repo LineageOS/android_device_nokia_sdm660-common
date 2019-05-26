@@ -1,2 +1,5 @@
 # /proc/devmodel - Sensors
 genfscon proc /devmodel u:object_r:proc_fih:s0
+
+# /proc/bandinfo - Radio
+genfscon proc /bandinfo            u:object_r:proc_bandinfo:s0
