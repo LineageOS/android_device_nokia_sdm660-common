@@ -115,6 +115,10 @@ ro.charger.enable_suspend=true
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Display
+ro.hardware.egl=adreno
+ro.hardware.vulkan=sdm660
+
 # DRM
 drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
