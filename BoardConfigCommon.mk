@@ -150,7 +150,7 @@ BOARD_USES_QC_TIME_SERVICES := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-05-01
