@@ -45,18 +45,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_verifier
-
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.sdm660 \
     libcutils \
     libgptutils \
-    libz \
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
+    libz
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -99,6 +92,16 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Update engine
+PRODUCT_PACKAGES += \
+    brillo_update_payload \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Whitelist
 PRODUCT_COPY_FILES += \
