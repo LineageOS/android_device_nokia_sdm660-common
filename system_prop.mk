@@ -25,6 +25,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+     media.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # Memory optimizations
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
