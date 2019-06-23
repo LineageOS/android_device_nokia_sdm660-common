@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(COMMON_PATH)/keylayout/goodix_fp.kl:system/usr/keylayout/goodix_fp.kl
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
