@@ -99,6 +99,13 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Permissions
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/permissions/com.evenwell.datacollect.xml:system/etc/permissions/com.evenwell.datacollect.xml \
+        $(COMMON_PATH)/permissions/com.fihtdc.datacollect.xml:system/etc/permissions/com.fihtdc.datacollect.xml \
+        $(COMMON_PATH)/permissions/com.fihtdc.hardware.sensor.hall.xml:system/etc/permissions/com.fihtdc.hardware.sensor.hall.xml \
+        $(COMMON_PATH)/permissions/com.fihtdc.inlifeui.settings.style.android.xml:system/etc/permissions/com.fihtdc.inlifeui.settings.style.android.xml
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
