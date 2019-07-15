@@ -109,6 +109,9 @@ ro.camera.switch.anim.delay=300
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
 vendor.camera.c2d.rotation=1
 
+# Charger
+ro.charger.enable_suspend=true
+
 # DRM
 drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
