@@ -82,6 +82,15 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \

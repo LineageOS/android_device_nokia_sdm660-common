@@ -34,6 +34,14 @@ lib64/libsdm-disp-apis.so
 lib64/libsd_sdk_display.so|6ce8dc56e0c1b2966a282ee7b66058df34b6a009
 lib64/vendor.display.color@1.0.so
 
+# FM
+lib64/fm_helium.so
+lib64/libfm-hci.so
+-lib64/vendor.qti.hardware.fm@1.0.so
+lib/fm_helium.so
+lib/libfm-hci.so
+-lib/vendor.qti.hardware.fm@1.0.so
+
 # IMS
 -priv-app/ims/ims.apk
 lib64/libdiag_system.so
