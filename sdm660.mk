@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Vendor default.prop
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/vendor_default.prop:system/etc/vendor_default.prop
+
 # Whitelist
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
