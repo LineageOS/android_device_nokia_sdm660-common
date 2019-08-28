@@ -27,7 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
 
-# AB update support
+# A/B Partition Scheme
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
@@ -44,16 +44,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
-# Boot control
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm660 \
-    libcutils \
-    libgptutils \
-    libz
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -69,6 +59,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
+# Boot Control
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    bootctrl.sdm660 \
+    libcutils \
+    libgptutils \
+    libz
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -82,11 +82,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
-
-# Init
-PRODUCT_PACKAGES += \
-    init.qcom.rc \
-    init.recovery.qcom.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -109,6 +104,11 @@ PRODUCT_COPY_FILES += \
         $(COMMON_PATH)/permissions/com.fihtdc.datacollect.xml:system/etc/permissions/com.fihtdc.datacollect.xml \
         $(COMMON_PATH)/permissions/com.fihtdc.hardware.sensor.hall.xml:system/etc/permissions/com.fihtdc.hardware.sensor.hall.xml \
         $(COMMON_PATH)/permissions/com.fihtdc.inlifeui.settings.style.android.xml:system/etc/permissions/com.fihtdc.inlifeui.settings.style.android.xml
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.recovery.qcom.rc
 
 # RCS
 PRODUCT_PACKAGES += \
