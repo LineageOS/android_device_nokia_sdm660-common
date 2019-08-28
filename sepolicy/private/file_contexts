@@ -3,3 +3,7 @@
 /dsp(/.*)?               u:object_r:adsprpcd_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
+
+# Audio
+/system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
