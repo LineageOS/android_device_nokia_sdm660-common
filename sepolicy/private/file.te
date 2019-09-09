@@ -4,3 +4,6 @@ type firmware_file, file_type;
 type persist_file, file_type;
 type time_daemon, domain;
 type sensors, domain;
+
+# system
+type system_configs_file, system_file_type, file_type;
