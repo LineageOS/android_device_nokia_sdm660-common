@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # A/B Partition Scheme
 AB_OTA_UPDATER := true
 
