@@ -17,6 +17,9 @@
 
 COMMON_PATH := device/nokia/sdm660-common
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
 
