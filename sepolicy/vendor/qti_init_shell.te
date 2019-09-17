@@ -1,1 +1,4 @@
 allow qti_init_shell { sysfs sysfs_dm }:file write;
+
+allow qti_init_shell vendor_radio_data_file:dir rw_dir_perms;
+allow qti_init_shell vendor_radio_data_file:file create_file_perms;
