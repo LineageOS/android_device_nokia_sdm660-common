@@ -168,5 +168,5 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/wifi/hostapd.conf:system/etc/hostapd/hostapd_default.conf
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
