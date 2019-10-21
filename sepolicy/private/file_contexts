@@ -4,6 +4,9 @@
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
 
-# Audio
+# Light
+/sys/devices(/platform)?/soc/[a-z0-9]+.qcom,mdss_mdp/[a-z0-9]+.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight(/.*)?		u:object_r:sysfs_leds:s0
+
+# System
 /system/etc/audio_policy_configuration.xml    u:object_r:system_configs_file:s0
 /system/etc/vendor_default.prop               u:object_r:system_file:s0
