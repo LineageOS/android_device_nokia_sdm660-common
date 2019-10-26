@@ -19,5 +19,8 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/securefs                        u:object_r:fih_partition:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/storesec                        u:object_r:boot_block_device:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock   u:object_r:hal_power_stats_default_exec:s0
+
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0
