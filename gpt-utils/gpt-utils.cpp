@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013,2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -44,13 +44,14 @@
 #include <linux/fs.h>
 #include <limits.h>
 #include <dirent.h>
+#include <inttypes.h>
 #include <linux/kernel.h>
 #include <asm/byteorder.h>
 #include <map>
 #include <vector>
 #include <string>
 #define LOG_TAG "gpt-utils"
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/properties.h>
 #include "gpt-utils.h"
 #include <endian.h>
@@ -146,7 +147,7 @@ static int blk_rw(int fd, int rw, int64_t offset, uint8_t *buf, unsigned len)
     int r;
 
     if (lseek64(fd, offset, SEEK_SET) < 0) {
-        fprintf(stderr, "block dev lseek64 %lld failed: %s\n", offset,
+        fprintf(stderr, "block dev lseek64 %" PRIi64 " failed: %s\n", offset,
                 strerror(errno));
         return -1;
     }
@@ -192,11 +193,11 @@ static uint8_t *gpt_pentry_seek(const char *ptn_name,
 
     for (pentry_name = (char *) (pentries_start + PARTITION_NAME_OFFSET);
          pentry_name < (char *) pentries_end; pentry_name += pentry_size) {
-        char name8[MAX_GPT_NAME_SIZE];
+        char name8[MAX_GPT_NAME_SIZE / 2];
         unsigned i;
 
         /* Partition names in GPT are UTF-16 - ignoring UTF-16 2nd byte */
-        for (i = 0; i < sizeof(name8) / 2; i++)
+        for (i = 0; i < sizeof(name8); i++)
             name8[i] = pentry_name[i * 2];
         if (!strncmp(ptn_name, name8, len))
             if (name8[len] == 0 || !strcmp(&name8[len], BAK_PTN_NAME_EXT))
@@ -746,7 +747,6 @@ int prepare_partitions(enum boot_update_stage stage, const char *dev_path)
     enum gpt_state gpt_prim, gpt_second;
     enum boot_update_stage internal_stage;
     struct stat xbl_partition_stat;
-    struct stat ufs_dir_stat;
 
     if (!dev_path) {
         fprintf(stderr, "%s: Invalid dev_path\n",
@@ -969,7 +969,6 @@ int add_lun_to_update_list(char *lun_path, struct update_data *dat)
 
 int prepare_boot_update(enum boot_update_stage stage)
 {
-        int r, fd;
         int is_ufs = gpt_utils_is_ufs_device();
         struct stat ufs_dir_stat;
         struct update_data data;
@@ -1051,7 +1050,7 @@ int prepare_boot_update(enum boot_update_stage stage)
 
 //Given a parttion name(eg: rpm) get the path to the block device that
 //represents the GPT disk the partition resides on. In the case of emmc it
-//would be the default emmc dev(/dev/block/mmcblk0). In the case of UFS we look
+//would be the default emmc dev(/dev/mmcblk0). In the case of UFS we look
 //through the /dev/block/bootdevice/by-name/ tree for partname, and resolve
 //the path to the LUN from there.
 static int get_dev_path_from_partition_name(const char *partname,
@@ -1080,7 +1079,7 @@ static int get_dev_path_from_partition_name(const char *partname,
                         buf[PATH_TRUNCATE_LOC] = '\0';
                 }
         } else {
-                snprintf(buf, buflen, BLK_DEV_FILE);
+                snprintf(buf, buflen, "/dev/mmcblk0");
         }
         return 0;
 
@@ -1094,7 +1093,7 @@ int gpt_utils_get_partition_map(vector<string>& ptn_list,
         map<string, vector<string>>::iterator it;
         if (ptn_list.size() < 1) {
                 fprintf(stderr, "%s: Invalid ptn list\n", __func__);
-                goto error;
+                return -1;
         }
         //Go through the passed in list
         for (uint32_t i = 0; i < ptn_list.size(); i++)
@@ -1121,8 +1120,6 @@ int gpt_utils_get_partition_map(vector<string>& ptn_list,
                 memset(devpath, '\0', sizeof(devpath));
         }
         return 0;
-error:
-        return -1;
 }
 
 //Get the block size of the disk represented by decsriptor fd
@@ -1151,13 +1148,14 @@ static int gpt_set_header(uint8_t *gpt_header, int fd,
                 enum gpt_instance instance)
 {
         uint32_t block_size = 0;
-        off64_t gpt_header_offset = 0;
+        off_t gpt_header_offset = 0;
         if (!gpt_header || fd < 0) {
                 ALOGE("%s: Invalid arguments",
                                 __func__);
                 goto error;
         }
         block_size = gpt_get_block_size(fd);
+        ALOGI("%s: Block size is : %d", __func__, block_size);
         if (block_size == 0) {
                 ALOGE("%s: Failed to get block size", __func__);
                 goto error;
@@ -1170,6 +1168,8 @@ static int gpt_set_header(uint8_t *gpt_header, int fd,
                 ALOGE("%s: Failed to get gpt header offset",__func__);
                 goto error;
         }
+        ALOGI("%s: Writing back header to offset %ld", __func__,
+                gpt_header_offset);
         if (blk_rw(fd, 1, gpt_header_offset, gpt_header, block_size)) {
                 ALOGE("%s: Failed to write back GPT header", __func__);
                 goto error;
@@ -1314,10 +1314,15 @@ static int gpt_set_pentry_arr(uint8_t *hdr, int fd, uint8_t* arr)
                                 __func__);
                 goto error;
         }
+        ALOGI("%s : Block size is %d", __func__, block_size);
         pentries_start = GET_8_BYTES(hdr + PENTRIES_OFFSET) * block_size;
         pentry_size = GET_4_BYTES(hdr + PENTRY_SIZE_OFFSET);
         pentries_arr_size =
                 GET_4_BYTES(hdr + PARTITION_COUNT_OFFSET) * pentry_size;
+        ALOGI("%s: Writing partition entry array of size %d to offset %" PRIu64,
+                        __func__,
+                        pentries_arr_size,
+                        pentries_start);
         rc = blk_rw(fd, 1,
                         pentries_start,
                         arr,
@@ -1512,12 +1517,14 @@ int gpt_disk_commit(struct gpt_disk *disk)
                                 strerror(errno));
                 goto error;
         }
+        ALOGI("%s: Writing back primary GPT header", __func__);
         //Write the primary header
         if(gpt_set_header(disk->hdr, fd, PRIMARY_GPT) != 0) {
                 ALOGE("%s: Failed to update primary GPT header",
                                 __func__);
                 goto error;
         }
+        ALOGI("%s: Writing back primary partition array", __func__);
         //Write back the primary partition array
         if (gpt_set_pentry_arr(disk->hdr, fd, disk->pentry_arr)) {
                 ALOGE("%s: Failed to write primary GPT partition arr",

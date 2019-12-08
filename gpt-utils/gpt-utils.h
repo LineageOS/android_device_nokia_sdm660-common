@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013,2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -79,8 +79,12 @@ extern "C" {
 #define AB_SLOT_A_SUFFIX                "_a"
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
-#define PTN_SWAP_LIST                   PTN_XBL, "rpm", "tz", "hyp", "storsec", "devcfg", "keymaster", "cmnlib", "cmnlib64", "prov", "pmic", "abl", "fsg", "vbmeta"
-#define AB_PTN_LIST PTN_SWAP_LIST, "modem", "dsp", "bluetooth", "logo", "boot", "system", "oem", "dto"
+#define PTN_SWAP_LIST                   PTN_XBL, \
+        "abl", "aboot", "aes", "apdp", "bootlocker", "cmnlib", "cmnlib32", \
+        "cmnlib64", "devcfg", "dtbo", "hosd", "hyp", "laf", "keymaster", \
+        "lockbooter", "msadp", "pmic", "rpm", "storsec", \
+        "trusty", "tz", "vbmeta"
+#define AB_PTN_LIST PTN_SWAP_LIST, "boot", "system", "vendor", "modem"
 #define BOOT_DEV_DIR    "/dev/block/bootdevice/by-name"
 
 /******************************************************************************
@@ -182,8 +186,8 @@ int gpt_utils_set_xbl_boot_partition(enum boot_chain chain);
 //Given a vector of partition names as a input and a reference to a map,
 //populate the map to indicate which physical disk each of the partitions
 //sits on. The key in the map is the path to the block device where the
-//partiton lies and the value is a vector of strings indicating which of
-//the passed in partiton names sits on that device.
+//partition lies and the value is a vector of strings indicating which of
+//the passed in partition names sits on that device.
 int gpt_utils_get_partition_map(std::vector<std::string>& partition_list,
                 std::map<std::string,std::vector<std::string>>& partition_map);
 #ifdef __cplusplus
