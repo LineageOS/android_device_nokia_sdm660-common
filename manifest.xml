@@ -391,7 +391,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.9</version>
         <interface>
             <name>IAlarm</name>
             <instance>default</instance>
