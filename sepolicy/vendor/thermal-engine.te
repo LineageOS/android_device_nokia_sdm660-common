@@ -1,2 +1,3 @@
-r_dir_file(thermal-engine, sysfs);
 r_dir_file(thermal-engine, sysfs_devfreq);
+
+dontaudit thermal-engine sysfs:dir read;
