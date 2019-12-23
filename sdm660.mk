@@ -65,9 +65,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
-
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
@@ -163,9 +160,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# Vendor default.prop
+# Vendor overlay
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/vendor_default.prop:system/etc/vendor_default.prop
+    $(call find-copy-subdir-files,*,$(COMMON_PATH)/vendor_overlay,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay)
 
 # Whitelist
 PRODUCT_COPY_FILES += \
