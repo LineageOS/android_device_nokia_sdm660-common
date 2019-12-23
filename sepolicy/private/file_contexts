@@ -10,9 +10,9 @@
 # Partitions
 /dev/block/mmcblk0rpmb                        u:object_r:rpmb_device:s0
 
-# System
-/system/etc/audio_policy_configuration.xml    u:object_r:system_configs_file:s0
-/system/etc/vendor_default.prop               u:object_r:system_file:s0
-
 # Sysfs
 /sys/devices(/platform)?/soc/[a-z0-9]+.qcom,mss/subsys3(/.*)?          u:object_r:sysfs_ssr:s0
+
+# Vendor overlay
+/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?   u:object_r:vendor_configs_file:s0
+/(product|system/product)/vendor_overlay/[0-9]+/default.prop   u:object_r:vendor_configs_file:s0
