@@ -28,7 +28,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
 # Properties
--include $(COMMON_PATH)/system_prop.mk
+-include $(COMMON_PATH)/properties.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
