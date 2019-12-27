@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "39038100_b9c2c27a",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "isn\u0027t there a boardflag for this that sets it?",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 29
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9e72025b_32fa9ed0",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -140,6 +163,30 @@
     },
     {
       "key": {
+        "uuid": "967775ff_910c1ff4",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "not used anywhere I see",
+      "parentUuid": "143f87ec_ce50b709",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 29
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "56c2e83f_b880c4c0",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -186,6 +233,30 @@
     },
     {
       "key": {
+        "uuid": "edc33fee_2a470ec2",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "no need to pick the change, just kill them in the import and note in the commit msg",
+      "parentUuid": "24a06879_0da0a3a0",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 143,
+        "endChar": 40
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f743041d_b6f6d3ae",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -202,6 +273,53 @@
         "startChar": 4,
         "endLine": 165,
         "endChar": 23
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7c8737c3_b12be81d",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "yup",
+      "parentUuid": "f743041d_b6f6d3ae",
+      "range": {
+        "startLine": 165,
+        "startChar": 4,
+        "endLine": 165,
+        "endChar": 23
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fac68d55_6d8f962f",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "if we\u0027re building, do we want these on vendor?",
+      "range": {
+        "startLine": 184,
+        "startChar": 0,
+        "endLine": 184,
+        "endChar": 61
       },
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -232,6 +350,191 @@
     },
     {
       "key": {
+        "uuid": "486ab3a0_252ff6c6",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "you\u0027re right",
+      "parentUuid": "69c8b18d_d9869a83",
+      "range": {
+        "startLine": 260,
+        "startChar": 4,
+        "endLine": 260,
+        "endChar": 28
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "054e84ac_52ef08b8",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "no clue",
+      "range": {
+        "startLine": 295,
+        "startChar": 0,
+        "endLine": 296,
+        "endChar": 31
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ae70be2c_ab939062",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "kill them",
+      "range": {
+        "startLine": 297,
+        "startChar": 0,
+        "endLine": 300,
+        "endChar": 25
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "680006fe_d1283206",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "no clue tbh",
+      "range": {
+        "startLine": 301,
+        "startChar": 0,
+        "endLine": 301,
+        "endChar": 31
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "294e7ba4_aad6ac50",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "kill them",
+      "range": {
+        "startLine": 302,
+        "startChar": 0,
+        "endLine": 303,
+        "endChar": 34
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "66d106c5_93ad37a2",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "unimportant",
+      "range": {
+        "startLine": 304,
+        "startChar": 0,
+        "endLine": 304,
+        "endChar": 47
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fad13b18_175d642e",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "if we want to use the existing vendor rro cojnfig for gps (Inside carrierconfig), we need this",
+      "range": {
+        "startLine": 305,
+        "startChar": 0,
+        "endLine": 305,
+        "endChar": 43
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16849d0e_e3cba7f5",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "meh, don\u0027t keep it unless we see oddities.",
+      "range": {
+        "startLine": 306,
+        "startChar": 0,
+        "endLine": 306,
+        "endChar": 32
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0f0208d3_97f4b60e",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -255,6 +558,29 @@
     },
     {
       "key": {
+        "uuid": "e2b14b27_30e87fd6",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "replaced by overlay",
+      "range": {
+        "startLine": 307,
+        "startChar": 4,
+        "endLine": 307,
+        "endChar": 24
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1e53b69e_2371f224",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -266,6 +592,30 @@
       "writtenOn": "2019-12-27T07:15:11Z",
       "side": 1,
       "message": "Drop?",
+      "range": {
+        "startLine": 309,
+        "startChar": 0,
+        "endLine": 313,
+        "endChar": 39
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d6cb7eb_e58e1727",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-27T07:29:50Z",
+      "side": 1,
+      "message": "kill them",
+      "parentUuid": "1e53b69e_2371f224",
       "range": {
         "startLine": 309,
         "startChar": 0,
