@@ -120,20 +120,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# SELinux
-PRIVATE_EXCLUDE_BUILD_TEST := true
-
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/lineage/sepolicy/qcom/system
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
