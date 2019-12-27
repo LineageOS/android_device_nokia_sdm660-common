@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "79a70abc_d9252009",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Required to set separately. Ref: https://source.android.com/devices/tech/dalvik/configure#rom_config",
+      "parentUuid": "39038100_b9c2c27a",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 29
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9e72025b_32fa9ed0",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e49c7618_ceec25b3",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e72025b_32fa9ed0",
+      "range": {
+        "startLine": 40,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 40
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "2eff4dcf_c8ae9dd4",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ced1a411_572648ba",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 47
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "713ca005_457a6789",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -91,6 +163,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0382566a_5a5b3653",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "713ca005_457a6789",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 31
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "fd964fd8_651d44d3",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8b4883ee_ea17b747",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 32
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "52b409ae_1ab42006",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f9f9b798_ac09889f",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "52b409ae_1ab42006",
+      "range": {
+        "startLine": 69,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 37
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -187,6 +331,30 @@
     },
     {
       "key": {
+        "uuid": "a9005d9e_1315dbef",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "967775ff_910c1ff4",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 29
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "56c2e83f_b880c4c0",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -207,6 +375,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf3543fa_d7b66fc2",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "56c2e83f_b880c4c0",
+      "range": {
+        "startLine": 94,
+        "startChar": 4,
+        "endLine": 94,
+        "endChar": 56
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -257,6 +449,30 @@
     },
     {
       "key": {
+        "uuid": "4395fe35_41eae422",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "edc33fee_2a470ec2",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 143,
+        "endChar": 40
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f743041d_b6f6d3ae",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -304,6 +520,30 @@
     },
     {
       "key": {
+        "uuid": "f3b86b51_75f745b9",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c8737c3_b12be81d",
+      "range": {
+        "startLine": 165,
+        "startChar": 4,
+        "endLine": 165,
+        "endChar": 23
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fac68d55_6d8f962f",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -315,6 +555,30 @@
       "writtenOn": "2019-12-27T07:29:50Z",
       "side": 1,
       "message": "if we\u0027re building, do we want these on vendor?",
+      "range": {
+        "startLine": 184,
+        "startChar": 0,
+        "endLine": 184,
+        "endChar": 61
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46c7e79f_56ac74e1",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Commented out for now in new patchset as it was looping us on new vendorimages. Let\u0027s enforce it after first boot and yes, should be moved to vendor.",
+      "parentUuid": "fac68d55_6d8f962f",
       "range": {
         "startLine": 184,
         "startChar": 0,
@@ -374,6 +638,30 @@
     },
     {
       "key": {
+        "uuid": "e202874a_e3bebb01",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "486ab3a0_252ff6c6",
+      "range": {
+        "startLine": 260,
+        "startChar": 4,
+        "endLine": 260,
+        "endChar": 28
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "054e84ac_52ef08b8",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -417,6 +705,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19da66a0_a469d028",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae70be2c_ab939062",
+      "range": {
+        "startLine": 297,
+        "startChar": 0,
+        "endLine": 300,
+        "endChar": 25
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -466,6 +778,30 @@
     },
     {
       "key": {
+        "uuid": "8913b979_72e49216",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "294e7ba4_aad6ac50",
+      "range": {
+        "startLine": 302,
+        "startChar": 0,
+        "endLine": 303,
+        "endChar": 34
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "66d106c5_93ad37a2",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -489,6 +825,30 @@
     },
     {
       "key": {
+        "uuid": "d37f6c43_4f266bdb",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "66d106c5_93ad37a2",
+      "range": {
+        "startLine": 304,
+        "startChar": 0,
+        "endLine": 304,
+        "endChar": 47
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fad13b18_175d642e",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -500,6 +860,30 @@
       "writtenOn": "2019-12-27T07:29:50Z",
       "side": 1,
       "message": "if we want to use the existing vendor rro cojnfig for gps (Inside carrierconfig), we need this",
+      "range": {
+        "startLine": 305,
+        "startChar": 0,
+        "endLine": 305,
+        "endChar": 43
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40cad6c1_fe34a966",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Kept, for now, will drop once we build them from source.",
+      "parentUuid": "fad13b18_175d642e",
       "range": {
         "startLine": 305,
         "startChar": 0,
@@ -532,6 +916,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44f91a06_08d86060",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "16849d0e_e3cba7f5",
+      "range": {
+        "startLine": 306,
+        "startChar": 0,
+        "endLine": 306,
+        "endChar": 32
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -581,6 +989,54 @@
     },
     {
       "key": {
+        "uuid": "f612ccb0_7b83a33d",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f0208d3_97f4b60e",
+      "range": {
+        "startLine": 293,
+        "startChar": 0,
+        "endLine": 307,
+        "endChar": 24
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7e081ae2_17484fc9",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e2b14b27_30e87fd6",
+      "range": {
+        "startLine": 307,
+        "startChar": 4,
+        "endLine": 307,
+        "endChar": 24
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1e53b69e_2371f224",
         "filename": "properties.mk",
         "patchSetId": 1
@@ -625,6 +1081,30 @@
       "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca869259_8a31f7a2",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T08:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d6cb7eb_e58e1727",
+      "range": {
+        "startLine": 309,
+        "startChar": 0,
+        "endLine": 313,
+        "endChar": 39
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
