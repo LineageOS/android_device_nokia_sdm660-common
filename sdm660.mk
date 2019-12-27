@@ -129,6 +129,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.recovery.qcom.rc
 
 # RCS

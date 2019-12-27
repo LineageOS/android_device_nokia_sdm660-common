@@ -84,7 +84,7 @@ BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom \
     msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 \
     service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 \
-    firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
+    firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -95,7 +95,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r328903
 
 # Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+#BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
