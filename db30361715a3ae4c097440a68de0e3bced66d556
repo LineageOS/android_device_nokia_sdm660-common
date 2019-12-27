@@ -1,0 +1,280 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e72025b_32fa9ed0",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Conflicting with line no. 27",
+      "range": {
+        "startLine": 40,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 40
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ced1a411_572648ba",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Duplicate of line no. 28-30",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 47
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "713ca005_457a6789",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Duplicate of line no. 32-33",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 31
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b4883ee_ea17b747",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Duplicate of line no. 34",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 32
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52b409ae_1ab42006",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Duplicate of line no. 35",
+      "range": {
+        "startLine": 69,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 37
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "143f87ec_ce50b709",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Can\u0027t find any use of it",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 29
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "56c2e83f_b880c4c0",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Duplicate of line no. 103",
+      "range": {
+        "startLine": 94,
+        "startChar": 4,
+        "endLine": 94,
+        "endChar": 56
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24a06879_0da0a3a0",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "All HWUI can be nuked. Ref: https://review.lineageos.org/c/LineageOS/android_device_lge_hammerhead/+/248168",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 143,
+        "endChar": 40
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f743041d_b6f6d3ae",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Handled by vendor/bin/init.qti.fm.sh, so should be dropped.",
+      "range": {
+        "startLine": 165,
+        "startChar": 4,
+        "endLine": 165,
+        "endChar": 23
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69c8b18d_d9869a83",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Not required ig",
+      "range": {
+        "startLine": 260,
+        "startChar": 4,
+        "endLine": 260,
+        "endChar": 28
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f0208d3_97f4b60e",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Drop?",
+      "range": {
+        "startLine": 293,
+        "startChar": 0,
+        "endLine": 307,
+        "endChar": 24
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e53b69e_2371f224",
+        "filename": "properties.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2019-12-27T07:15:11Z",
+      "side": 1,
+      "message": "Drop?",
+      "range": {
+        "startLine": 309,
+        "startChar": 0,
+        "endLine": 313,
+        "endChar": 39
+      },
+      "revId": "db30361715a3ae4c097440a68de0e3bced66d556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
