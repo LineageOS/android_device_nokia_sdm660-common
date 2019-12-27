@@ -104,7 +104,7 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -152,7 +152,7 @@ PRODUCT_BOOT_JARS += \
 
 # Trust
 PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
