@@ -1,4 +1,0 @@
-on post-fs
-    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
-    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
-    mount none /system/etc/vendor_default.prop /vendor/default.prop bind
