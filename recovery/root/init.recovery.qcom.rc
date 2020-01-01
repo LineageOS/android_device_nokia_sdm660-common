@@ -1,0 +1,3 @@
+on fs
+    wait /dev/block/platform/msm_sdcc.1
+    symlink /dev/block/platform/msm_sdcc.1 /dev/block/bootdevice
