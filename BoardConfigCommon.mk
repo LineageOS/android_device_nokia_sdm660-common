@@ -36,6 +36,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Build System
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
