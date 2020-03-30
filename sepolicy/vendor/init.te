@@ -1,0 +1,3 @@
+# root directories
+allow init bt_firmware_file:filesystem getattr;
+allow init firmware_file:filesystem getattr;
