@@ -18,22 +18,22 @@
 COMMON_PATH := device/nokia/sdm660-common
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
+#$(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_PATH)/overlay
+#DEVICE_PACKAGE_OVERLAYS += \
+#    $(COMMON_PATH)/overlay
 
 # Properties
--include $(COMMON_PATH)/system_prop.mk
+#-include $(COMMON_PATH)/system_prop.mk
 
 # Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
+#    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
 # A/B Partition Scheme
 AB_OTA_UPDATER := true
@@ -54,12 +54,12 @@ PRODUCT_PACKAGES += \
     cppreopts.sh
 
 # AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
+#PRODUCT_PACKAGES += \
+#    fs_config_files
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
+#PRODUCT_PACKAGES += \
+#    AntHalService
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -88,17 +88,17 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # Keylayout
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
-    $(COMMON_PATH)/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/goodix_fp.kl
+#PRODUCT_COPY_FILES += \
+#    $(COMMON_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
+#    $(COMMON_PATH)/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/goodix_fp.kl
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
+#PRODUCT_PACKAGES += \
+#    lineage.livedisplay@2.0-service-sdm
 
 # Media
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
+#PRODUCT_COPY_FILES += \
+#    $(COMMON_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
 
 # Net
 PRODUCT_PACKAGES += \
@@ -126,16 +126,16 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH)
 
 # Telephony-ext
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+#    ims-ext-common \
+#    telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Trust
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -147,7 +147,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # Wi-Fi
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.accept \
-    $(COMMON_PATH)/wifi/hostapd.deny:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.deny \
-    $(COMMON_PATH)/wifi/hostapd.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd_default.conf
+#PRODUCT_COPY_FILES += \
+#    $(COMMON_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.accept \
+#    $(COMMON_PATH)/wifi/hostapd.deny:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.deny \
+#    $(COMMON_PATH)/wifi/hostapd.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd_default.conf

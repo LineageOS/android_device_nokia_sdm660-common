@@ -39,10 +39,10 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_NO_BOOTLOADER := true
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+#BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
+#DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -57,14 +57,14 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+#TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Graphics
 TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
+#DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -83,7 +83,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r353983c
 
 # Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+#BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -109,22 +109,22 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+#TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
-PRIVATE_EXCLUDE_BUILD_TEST := true
+#PRIVATE_EXCLUDE_BUILD_TEST := true
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/lineage/sepolicy/qcom/system
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/generic/private \
+#    device/qcom/sepolicy/qva/private \
+#    device/lineage/sepolicy/qcom/system
 
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/generic/public \
+#    device/qcom/sepolicy/qva/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -133,4 +133,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # VNDK
 BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
+#PRODUCT_EXTRA_VNDK_VERSIONS := 28
