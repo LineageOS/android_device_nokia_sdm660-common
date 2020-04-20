@@ -64,6 +64,10 @@ function blob_fixup() {
         patchelf --remove-needed "libmegface-new.so" "${2}"
         patchelf --add-needed "libshim_megvii.so" "${2}"
         ;;
+    # Fix xml version
+    vendor.qti.hardware.data.connection-V1.0-java.xml|vendor.qti.hardware.data.connection-V1.1-java.xml)
+        sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
+        ;;
     esac
 }
 
