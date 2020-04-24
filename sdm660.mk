@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
+
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
@@ -114,6 +117,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.qcom.rc \
     init.recovery.qcom.rc
 
 # Soong namespaces
