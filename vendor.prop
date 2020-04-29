@@ -163,6 +163,7 @@ ro.carrier=unknown
 ro.com.android.dataroaming=true
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.qti.va_aosp.support=1
+ro.telephony.default_network=22,22
 
 # Sensors
 ro.vendor.sdk.sensors.gestures=false
