@@ -820,9 +820,6 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
-on property:ro.bluetooth.ftm_enabled=true
-    start vendor.ftmd
-
 on property:vendor.bluetooth.startbtlogger=true
     start vendor.bt_logger
 
