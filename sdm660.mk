@@ -26,9 +26,6 @@ $(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
-# Properties
--include $(COMMON_PATH)/system_prop.mk
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
