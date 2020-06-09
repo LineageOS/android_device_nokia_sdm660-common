@@ -120,10 +120,6 @@ PRODUCT_COPY_FILES += \
         $(COMMON_PATH)/permissions/com.fihtdc.hardware.sensor.hall.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.fihtdc.hardware.sensor.hall.xml \
         $(COMMON_PATH)/permissions/com.fihtdc.inlifeui.settings.style.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.fihtdc.inlifeui.settings.style.android.xml
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH)
