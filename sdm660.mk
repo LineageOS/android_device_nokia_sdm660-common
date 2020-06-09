@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
