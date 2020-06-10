@@ -1,3 +1,0 @@
-# Allow init to mount vendor configs and files
-allow init { system_file vendor_file }:file mounton;
-allow init { system_configs_file vendor_configs_file }:file mounton;
