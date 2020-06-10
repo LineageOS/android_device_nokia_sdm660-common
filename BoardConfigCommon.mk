@@ -92,12 +92,17 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_SYSTEM_OTHER_ODEX := true
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := sdm660
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -120,17 +125,11 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 PRIVATE_EXCLUDE_BUILD_TEST := true
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/lineage/sepolicy/qcom/system
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+# Vendor Security Patch Level
+VENDOR_SECURITY_PATCH := 2020-03-01
 
 # VNDK
 BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28

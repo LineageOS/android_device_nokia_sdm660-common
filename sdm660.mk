@@ -77,7 +77,7 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     system \
-    vbmeta
+    vendor
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -246,6 +246,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Verity
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/vendor
+$(call inherit-product, build/target/product/verity.mk)
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
