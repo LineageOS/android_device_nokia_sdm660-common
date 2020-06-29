@@ -1160,8 +1160,6 @@ vendor/lib64/vendor.display.postproc@1.0.so
 # QMI
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
-product/etc/permissions/qti_telephony_hidl_wrapper.xml
-product/etc/permissions/qti_telephony_utils.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
@@ -1615,7 +1613,6 @@ vendor/bin/gf_cmd_test_gxfp3258_drg
 vendor/bin/gtptest
 vendor/bin/hal_proxy_daemon
 vendor/bin/hw/android.hardware.atrace@1.0-service
-vendor/bin/hw/rild
 vendor/bin/hw/vendor.fih.hardware.box@1.0-service
 vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/InitCDA
