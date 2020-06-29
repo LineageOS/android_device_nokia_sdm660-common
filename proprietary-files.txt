@@ -1520,30 +1520,6 @@ vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# Touch (Improve)
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-
-# Touchscreen
-vendor/etc/hbtp/hbtpcfg.dat
-vendor/etc/hbtp/hbtpcfg2.dat
-vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat
-vendor/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat
-vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat
-vendor/etc/hbtp/hbtpcfg_sdm660_800s_qhd.dat
-vendor/etc/hbtp/loader.cfg
-vendor/etc/hbtp/qtc800h.bin
-vendor/etc/hbtp/qtc800h_8998_660.bin
-vendor/etc/hbtp/qtc800s_dsp.bin
-vendor/lib/libhbtpclient.so
-vendor/lib/libhbtpdsp.so
-vendor/lib/libhbtpfrmwk.so
-vendor/lib64/libhbtpclient.so
-vendor/lib64/libhbtpdsp.so
-vendor/lib64/libhbtpfrmwk.so
-
 # TUI
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
@@ -1638,7 +1614,6 @@ vendor/bin/ftmdaemon
 vendor/bin/gf_cmd_test_gxfp3258_drg
 vendor/bin/gtptest
 vendor/bin/hal_proxy_daemon
-vendor/bin/hbtp_daemon
 vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/rild
 vendor/bin/hw/vendor.fih.hardware.box@1.0-service
