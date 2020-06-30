@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a5f9d1dd_a9dd3dcb",
+        "filename": "sdm660.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-06-30T16:12:41Z",
+      "side": 1,
+      "message": "That\u0027s not alphabetical.",
+      "range": {
+        "startLine": 395,
+        "startChar": 0,
+        "endLine": 396,
+        "endChar": 13
+      },
+      "revId": "267a84446e1bcca585fd6fe6f7ee91b54be7ad9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
