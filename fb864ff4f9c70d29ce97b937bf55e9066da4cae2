@@ -16,6 +16,24 @@
       "revId": "fb864ff4f9c70d29ce97b937bf55e9066da4cae2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efe932f6_4d68f10a",
+        "filename": "wifi/fstman.ini",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-30T06:27:38Z",
+      "side": 0,
+      "message": "Nowhere, nuked locally, will push later",
+      "parentUuid": "4703a1a3_a84c1b98",
+      "revId": "fb864ff4f9c70d29ce97b937bf55e9066da4cae2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
