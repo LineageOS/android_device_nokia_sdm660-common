@@ -173,3 +173,6 @@ persist.sys.wfd.virtual=0
 # Wi-Fi
 persist.sys.wifi_log_enable=false
 ro.wifi.power.reduction=1
+
+# Zygote Preforking
+persist.device.config.runtime_native.uasp_pool_enabled=true
