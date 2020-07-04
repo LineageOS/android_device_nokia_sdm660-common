@@ -39,7 +39,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and common guards
-write_headers "PL2"
+write_headers "DRG PL2"
 
 # The common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
