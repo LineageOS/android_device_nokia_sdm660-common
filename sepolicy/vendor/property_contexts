@@ -39,3 +39,5 @@ camera.cts.enable                       u:object_r:camera_prop:s0
 
 # Fingerprint
 sys.fp.firmware.version			u:object_r:fingerprint_prop:s0
+
+gpu.stats.debug.level                   u:object_r:vendor_display_prop:s0
