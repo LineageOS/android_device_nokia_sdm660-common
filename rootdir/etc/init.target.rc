@@ -27,6 +27,38 @@
 #
 #
 
+# Start services
+on boot
+    start rmt_storage
+    start rfs_access
+
+#USB controller configuration
+    setprop vendor.usb.rndis.func.name "rndis_bam"
+    setprop vendor.usb.rmnet.func.name "rmnet_bam"
+    setprop vendor.usb.rmnet.inst.name "rmnet"
+    setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
+    write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
+    setprop sys.usb.configfs 1
+
+#Peripheral manager
+service vendor.per_mgr /system/vendor/bin/pm-service
+    class core
+    user system
+    group system
+    ioprio rt 4
+
+service vendor.per_proxy /system/vendor/bin/pm-proxy
+    class core
+    user system
+    group system
+    disabled
+
+on property:init.svc.vendor.per_mgr=running
+    start vendor.per_proxy
+
+on property:sys.shutdown.requested=*
+    stop vendor.per_proxy
 
 service vendor.qseecomd /vendor/bin/qseecomd
    class core
