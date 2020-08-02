@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "334c1d5b_2f0307f2",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-08-02T16:42:42Z",
+      "side": 1,
+      "message": "I am sure only this part is required and rest can be dropped",
+      "range": {
+        "startLine": 78,
+        "startChar": 0,
+        "endLine": 85,
+        "endChar": 30
+      },
+      "revId": "0f7940f90328ff5db5655ef64d9060f8280a40a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
