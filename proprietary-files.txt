@@ -156,7 +156,7 @@ vendor/lib64/libaptX_encoder.so
 lib/libseemore.so
 lib64/libseemore.so
 vendor/bin/mm-qcamera-app
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|1e4af7b317b0b3a525f9cce166ec76b8feeb7689
 vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
@@ -165,7 +165,6 @@ vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libMegviiFacepp.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
@@ -1724,7 +1723,6 @@ vendor/lib/libimage_matting.so
 vendor/lib/libirisService.so
 vendor/lib/libiris_ioctl_wrapper.so
 vendor/lib/libjnihelper.so
-vendor/lib/libmegface-new.so
 vendor/lib/libMGBeauty.so
 vendor/lib/libmiracast.so
 vendor/lib/libopus.so
