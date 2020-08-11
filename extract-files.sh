@@ -57,6 +57,16 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+    vendor/lib64/hw/camera.qcom.so)
+        patchelf --remove-needed "libMegviiFacepp.so" "${2}"
+        patchelf --remove-needed "libmegface-new.so" "${2}"
+        patchelf --add-needed "libshim_megvii.so" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper for common device
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true $CLEAN_VENDOR
 
