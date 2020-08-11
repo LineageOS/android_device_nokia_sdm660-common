@@ -165,7 +165,6 @@ vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libMegviiFacepp.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
@@ -1724,7 +1723,6 @@ vendor/lib/libimage_matting.so
 vendor/lib/libirisService.so
 vendor/lib/libiris_ioctl_wrapper.so
 vendor/lib/libjnihelper.so
-vendor/lib/libmegface-new.so
 vendor/lib/libMGBeauty.so
 vendor/lib/libmiracast.so
 vendor/lib/libopus.so
