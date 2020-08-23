@@ -56,7 +56,6 @@ debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
-qemu.hw.mainkeys=0
 ro.qualcomm.cabl=0
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=false
