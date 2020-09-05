@@ -152,6 +152,8 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Vendor Security Patch Level
