@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c78d5d04_8771e6ed",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-10T08:29:25Z",
+      "side": 0,
+      "message": "No need to move this I believe",
+      "range": {
+        "startLine": 337,
+        "startChar": 1,
+        "endLine": 338,
+        "endChar": 59
+      },
+      "revId": "a57022898acbb89969f4110d565de91ee3c9ef81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
