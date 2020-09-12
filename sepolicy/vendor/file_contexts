@@ -1,3 +1,7 @@
+# Autback
+/data/vendor/misc/cutback(/.*)?     u:object_r:cutback_data_file:s0
+/dev/socket/cutback                 u:object_r:cutback_socket:s0
+
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
