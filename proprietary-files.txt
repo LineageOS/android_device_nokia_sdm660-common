@@ -602,7 +602,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/hw/init.fingerprint.elan.rc
 vendor/etc/init/hw/init.fingerprint.focal9362_tas.rc
 vendor/etc/init/hw/init.fingerprint.gxfp3208_b2n.rc
-vendor/etc/init/hw/init.fingerprint.gxfp3258_drg.rc
 vendor/etc/init/hw/init.fingerprint.gxfp5288_c1n.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/firmware/goodix_config.cfg
@@ -1037,7 +1036,6 @@ vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
 vendor/bin/nqnfcinfo
 vendor/bin/sec_nfc_test
 vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
-vendor/etc/init/hw/init.DRG.nfc.rc
 vendor/etc/init/hw/init.nfc.nxp.rc
 vendor/etc/init/hw/init.nfc.sec.rc
 vendor/etc/init/hw/init.sat.nfc.rc
@@ -1532,7 +1530,6 @@ vendor/lib64/libUBWC.so
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator@1.0-service
 vendor/etc/init/android.hardware.vibrator@1.0-service.rc
-vendor/etc/init/hw/init.vibrator.rc
 vendor/lib/hw/android.hardware.vibrator@1.0-impl.so
 vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so
