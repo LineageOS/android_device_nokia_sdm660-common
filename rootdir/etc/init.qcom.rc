@@ -1345,6 +1345,7 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
     class main
     user media
     group media
+    disabled
 
 service vendor.audiod /vendor/bin/audiod
     class late_start
