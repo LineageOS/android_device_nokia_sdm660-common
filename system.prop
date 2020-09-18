@@ -60,6 +60,7 @@ ro.qualcomm.cabl=0
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.use_color_management=false
+ro.surface_flinger.supports_background_blur=1
 sdm.debug.disable_skip_validate=1
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
