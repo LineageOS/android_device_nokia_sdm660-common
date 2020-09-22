@@ -491,7 +491,7 @@ product/framework/dpmapi.jar
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so
 product/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so
-product/lib64/libdpmframework.so
+product/lib64/libdpmframework.so|dad2493b5d4f42078713066130b0703af449c82f
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
