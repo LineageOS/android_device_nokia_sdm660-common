@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b1890f31_d6d6297b",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 976,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-23T18:53:10Z",
+      "side": 1,
+      "message": "Most likely we can kick whole android.hardware.gnss@2.0* libs, service etc as I can see all 660 are still on 1.0 and so are we on manifest.xml",
+      "range": {
+        "startLine": 976,
+        "startChar": 0,
+        "endLine": 976,
+        "endChar": 67
+      },
+      "revId": "f4a8d3bafff22eaea31fc8499d9a8a2b20f8e938",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
