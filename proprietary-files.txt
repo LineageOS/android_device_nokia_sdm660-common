@@ -95,6 +95,42 @@ vendor/lib64/soundfx/libqcvirt.so
 # Audio (ACDB)
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio (firmware - T9891)
+vendor/firmware/T9891M04.drc
+vendor/firmware/T9891M04.vstep
+vendor/firmware/T9891R04.drc
+vendor/firmware/T9891R04.vstep
+vendor/firmware/T9891S04.drc
+vendor/firmware/T9891S04.vstep
+vendor/firmware/T9891V04.drc
+vendor/firmware/T9891V04.vstep
+
+# Audio (firmware - TFA9891-94)
+vendor/firmware/TFA9891.cnt
+vendor/firmware/TFA9891.cnt_preformat.ini
+vendor/firmware/TFA9891.ini
+vendor/firmware/TFA9891.speaker
+vendor/firmware/TFA9891N1A_Dec2015.config
+vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
+vendor/firmware/TFA9891_pl2.cnt
+vendor/firmware/TFA9891_pl2.ini
+vendor/firmware/TFA9891_sd1.cnt
+vendor/firmware/TFA9891_sd1.ini
+vendor/firmware/TFA9891_sd1_dvt.cnt
+vendor/firmware/TFA9891_sd1_dvt.ini
+vendor/firmware/TFA9894_ctl.cnt
+vendor/firmware/TFA9894_ctl.ini
+vendor/firmware/TFA9894_drg.cnt
+vendor/firmware/TFA9894_drg.ini
+
+# Audio (firmware - TAS2557)
+vendor/firmware/TAS2557MSSMono.bin
+vendor/firmware/TAS2557MSSMono_B2N.bin
+vendor/firmware/TAS2557MSSMono_B2N_dvt.bin
+vendor/firmware/TAS2557MSSMono_B2N_dvt_ICTspk.bin
+vendor/firmware/TAS2557MSSMono_CTL.bin
+vendor/firmware/TAS2557MSSMono_DRG.bin
+
 # Audio (Hardware)
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sdm660.so
@@ -113,7 +149,46 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libvolumelistener.so
 
+# Audio (hidls)
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
+vendor/lib/hw/android.hardware.audio@2.0-impl.so
+vendor/lib/hw/android.hardware.audio@4.0-impl.so
+vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
+vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
+vendor/lib64/hw/android.hardware.audio@2.0-impl.so
+vendor/lib64/hw/android.hardware.audio@4.0-impl.so
+vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
+
+# Audio (scripts)
+vendor/bin/aheadset_mic_to_aheadset_recv_off.sh
+vendor/bin/aheadset_mic_to_aheadset_recv_on.sh
+vendor/bin/amic1_to_aheadset_recv_off.sh
+vendor/bin/amic1_to_aheadset_recv_on.sh
+vendor/bin/amic1_to_dheadset_recv_off.sh
+vendor/bin/amic1_to_dheadset_recv_on.sh
+vendor/bin/amic2_to_aheadset_recv_off.sh
+vendor/bin/amic2_to_aheadset_recv_on.sh
+vendor/bin/amic2_to_dheadset_recv_off.sh
+vendor/bin/amic2_to_dheadset_recv_on.sh
+vendor/bin/dheadset_mic_to_dheadset_recv_off.sh
+vendor/bin/dheadset_mic_to_dheadset_recv_on.sh
+vendor/bin/dmic1_to_headset_recv_off.sh
+vendor/bin/dmic1_to_headset_recv_on.sh
+vendor/bin/dmic2_to_headset_recv_off.sh
+vendor/bin/dmic2_to_headset_recv_on.sh
+vendor/bin/dmic3_to_headset_recv_off.sh
+vendor/bin/dmic3_to_headset_recv_on.sh
+vendor/bin/fqcaudioloopback.sh
+vendor/bin/headset_mic_to_headset_recv_off.sh
+vendor/bin/headset_mic_to_headset_recv_on.sh
+
 # Bluetooth
+vendor/bin/btconfig
+vendor/lib/libbthost_if.so
+vendor/lib64/libbthost_if.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -183,6 +258,7 @@ vendor/lib64/libvideoutils.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera (Actuators)
+vendor/lib/libactuator_dw9800.so
 vendor/lib/libactuator_pseudo.so
 
 # Camera (Arcsoft)
@@ -198,6 +274,83 @@ vendor/etc/camera/calibration_test.bin
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/megviifacepp_0_5_2_model_fast
 vendor/etc/camera/mgbeautify_1_2_4_model
+
+# Camera (Chromatix)
+vendor/etc/camera/s5k3p3_chromatix.xml
+vendor/etc/camera/s5k4h8_chromatix.xml
+vendor/etc/camera/s5k4h8_pl2_holitech_chromatix.xml
+vendor/lib/libchromatix_s5k3p3_common.so
+vendor/lib/libchromatix_s5k3p3_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_cpp_liveshot.so
+vendor/lib/libchromatix_s5k3p3_cpp_preview.so
+vendor/lib/libchromatix_s5k3p3_cpp_snapshot.so
+vendor/lib/libchromatix_s5k3p3_cpp_video.so
+vendor/lib/libchromatix_s5k3p3_default_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_default_video.so
+vendor/lib/libchromatix_s5k3p3_default_video_dw9800.so
+vendor/lib/libchromatix_s5k3p3_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_hfr_120_dw9800.so
+vendor/lib/libchromatix_s5k3p3_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_hfr_60_dw9800.so
+vendor/lib/libchromatix_s5k3p3_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_hfr_90_dw9800.so
+vendor/lib/libchromatix_s5k3p3_postproc.so
+vendor/lib/libchromatix_s5k3p3_preview.so
+vendor/lib/libchromatix_s5k3p3_snapshot.so
+vendor/lib/libchromatix_s5k3p3_snapshot_longexposure.so
+vendor/lib/libchromatix_s5k3p3_versions.so
+vendor/lib/libchromatix_s5k3p3_zsl_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so
+vendor/lib/libchromatix_s5k4h8_a3_default_preview.so
+vendor/lib/libchromatix_s5k4h8_a3_default_video.so
+vendor/lib/libchromatix_s5k4h8_a3_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_a3_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_a3_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_common.so
+vendor/lib/libchromatix_s5k4h8_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_cpp_liveshot.so
+vendor/lib/libchromatix_s5k4h8_cpp_preview.so
+vendor/lib/libchromatix_s5k4h8_cpp_snapshot.so
+vendor/lib/libchromatix_s5k4h8_cpp_video.so
+vendor/lib/libchromatix_s5k4h8_default_video.so
+vendor/lib/libchromatix_s5k4h8_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_liveshot.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_default_preview.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_default_video.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_common.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_liveshot.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_preview.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_snapshot.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_video.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_default_video.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_120.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_60.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_90.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_liveshot.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_postproc.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_preview.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_snapshot.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_versions.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_zsl_preview.so
+vendor/lib/libchromatix_s5k4h8_pl2_holitech_zsl_video.so
+vendor/lib/libchromatix_s5k4h8_postproc.so
+vendor/lib/libchromatix_s5k4h8_preview.so
+vendor/lib/libchromatix_s5k4h8_snapshot.so
+vendor/lib/libchromatix_s5k4h8_versions.so
+vendor/lib/libchromatix_s5k4h8_zsl_preview.so
+vendor/lib/libchromatix_s5k4h8_zsl_video.so
 
 # Camera (Firmware)
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -302,6 +455,12 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
+vendor/lib/libmmcamera_s5k3p3.so
+vendor/lib/libmmcamera_s5k3p3_m24c64s_eeprom.so
+vendor/lib/libmmcamera_s5k4h8.so
+vendor/lib/libmmcamera_s5k4h8_eeprom.so
+vendor/lib/libmmcamera_s5k4h8_holitech_eeprom.so
+vendor/lib/libmmcamera_s5k4h8_pl2_holitech.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
@@ -455,6 +614,45 @@ vendor/lib64/vendor.display.config@1.5.so
 vendor/lib64/vendor.display.config@1.6.so
 vendor/lib64/vendor.display.config@1.7.so
 
+# Display (firmware - ft8716)
+vendor/firmware/TP_Firmware_FT8716.bin
+vendor/firmware/TP_Firmware_FT8716_S2.bin
+vendor/firmware/TP_Firmware_FT8716_S3.bin
+vendor/firmware/TP_Firmware_FT8716_B2N.bin
+vendor/firmware/TP_Firmware_FT8716_PL2.bin
+
+# Display (firmware - iris)
+vendor/firmware/iris3.fw
+vendor/firmware/iris3_inParm1.txt
+vendor/firmware/iris3_inParm10.txt
+vendor/firmware/iris3_inParm11.txt
+vendor/firmware/iris3_inParm12.txt
+vendor/firmware/iris3_inParm13.txt
+vendor/firmware/iris3_inParm14.txt
+vendor/firmware/iris3_inParm15.txt
+vendor/firmware/iris3_inParm16.txt
+vendor/firmware/iris3_inParm17.txt
+vendor/firmware/iris3_inParm18.txt
+vendor/firmware/iris3_inParm2.txt
+vendor/firmware/iris3_inParm3.txt
+vendor/firmware/iris3_inParm4.txt
+vendor/firmware/iris3_inParm5.txt
+vendor/firmware/iris3_inParm6.txt
+vendor/firmware/iris3_inParm7.txt
+vendor/firmware/iris3_inParm8.txt
+vendor/firmware/iris3_inParm9.txt
+
+# Display (firmware - leia)
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+
+# Display (firmware - novatek)
+vendor/firmware/novatek_h_glass_ts_fw.bin
+vendor/firmware/novatek_ts_fw.bin
+
+# Display (firmware - sec*)
+vendor/firmware/sec_s3nrn81_firmware.bin
+
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
@@ -552,6 +750,13 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+
+# DRM (firmware)
 vendor/firmware/cppf.b00
 vendor/firmware/cppf.b02
 vendor/firmware/cppf.b03
@@ -559,6 +764,12 @@ vendor/firmware/cppf.b04
 vendor/firmware/cppf.b05
 vendor/firmware/cppf.b06
 vendor/firmware/cppf.b07
+vendor/firmware/cppf.b01
+vendor/firmware/cppf.mdt
+
+# DRM (firmware - widevine)
+vendor/firmware/widevine.b01
+vendor/firmware/widevine.mdt
 vendor/firmware/widevine.b00
 vendor/firmware/widevine.b02
 vendor/firmware/widevine.b03
@@ -566,11 +777,6 @@ vendor/firmware/widevine.b04
 vendor/firmware/widevine.b05
 vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # ESE (Powermanager)
 product/lib/vendor.qti.esepowermanager@1.0.so
@@ -596,6 +802,21 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
 # Fingerprint
+vendor/firmware/goodix_config_hlt_ctl.cfg
+vendor/firmware/goodix_config_oflim.cfg
+vendor/firmware/goodix_firmware_hlt_ctl.bin
+vendor/lib64/hw/fingerprint.gxfp3208_b2n.so
+vendor/lib64/hw/fingerprint.gxfp5288_c1n.so
+vendor/lib64/libgf_ca_gxfp3208_b2n.so
+vendor/lib64/libgf_ca_gxfp5288_c1n.so
+vendor/lib64/libgf_hal_gxfp3208_b2n.so
+vendor/lib64/libgf_hal_gxfp5288_c1n.so
+vendor/lib64/libgoodixhwfingerprint_gxfp5288_c1n.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+vendor/bin/gf_cmd_test_gxfp3208_b2n
+vendor/bin/gf_cmd_test_gxfp5288_c1n
+
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/qfp-daemon
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
@@ -604,13 +825,6 @@ vendor/etc/init/hw/init.fingerprint.focal9362_tas.rc
 vendor/etc/init/hw/init.fingerprint.gxfp3208_b2n.rc
 vendor/etc/init/hw/init.fingerprint.gxfp5288_c1n.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
-vendor/firmware/goodix_config.cfg
-vendor/firmware/goodix_config_hlt.cfg
-vendor/firmware/goodix_config_truly.cfg
-vendor/firmware/goodix_firmware.bin
-vendor/firmware/goodix_firmware_hlt.bin
-vendor/firmware/goodix_firmware_oflim.bin
-vendor/firmware/goodix_firmware_truly.bin
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.elan.so
 vendor/lib64/hw/fingerprint.focaltech.so
@@ -621,7 +835,85 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Firmware
+# Fingerprint (firmware - goodix)
+vendor/firmware/goodix_config.cfg
+vendor/firmware/goodix_config_hlt.cfg
+vendor/firmware/goodix_config_truly.cfg
+vendor/firmware/goodix_config_hlt_ctl.cfg
+vendor/firmware/goodix_config_oflim.cfg
+vendor/firmware/goodix_firmware.bin
+vendor/firmware/goodix_firmware_hlt.bin
+vendor/firmware/goodix_firmware_oflim.bin
+vendor/firmware/goodix_firmware_truly.bin
+vendor/firmware/goodix_firmware_hlt_ctl.bin
+
+# Fingerprint (firmware - elanfp)
+vendor/firmware/elanfp64.b00
+vendor/firmware/elanfp64.b02
+vendor/firmware/elanfp64.b03
+vendor/firmware/elanfp64.b04
+vendor/firmware/elanfp64.b05
+vendor/firmware/elanfp64.b06
+vendor/firmware/elanfp64.b07
+vendor/firmware/elanfp64.b01
+vendor/firmware/elanfp64.mdt
+
+# Fingerprint (firmware - gxfp)
+vendor/firmware/gxfp3258_drg.b00
+vendor/firmware/gxfp3258_drg.b02
+vendor/firmware/gxfp3258_drg.b03
+vendor/firmware/gxfp3258_drg.b04
+vendor/firmware/gxfp3258_drg.b05
+vendor/firmware/gxfp3258_drg.b06
+vendor/firmware/gxfp3258_drg.b07
+vendor/firmware/gxfp3208_b2n.b00
+vendor/firmware/gxfp3208_b2n.b01
+vendor/firmware/gxfp3208_b2n.b02
+vendor/firmware/gxfp3208_b2n.b03
+vendor/firmware/gxfp3208_b2n.b04
+vendor/firmware/gxfp3208_b2n.b05
+vendor/firmware/gxfp3208_b2n.b06
+vendor/firmware/gxfp3208_b2n.b07
+vendor/firmware/gxfp3208_b2n.mdt
+vendor/firmware/gxfp3258_drg.b01
+vendor/firmware/gxfp3258_drg.mdt
+vendor/firmware/gxfp5288_c1n.b00
+vendor/firmware/gxfp5288_c1n.b01
+vendor/firmware/gxfp5288_c1n.b02
+vendor/firmware/gxfp5288_c1n.b03
+vendor/firmware/gxfp5288_c1n.b04
+vendor/firmware/gxfp5288_c1n.b05
+vendor/firmware/gxfp5288_c1n.b06
+vendor/firmware/gxfp5288_c1n.b07
+vendor/firmware/gxfp5288_c1n.mdt
+
+# Firmware (firmware - focalfp)
+vendor/firmware/focalfp.b00
+vendor/firmware/focalfp.b01
+vendor/firmware/focalfp.b02
+vendor/firmware/focalfp.b03
+vendor/firmware/focalfp.b04
+vendor/firmware/focalfp.b05
+vendor/firmware/focalfp.b06
+vendor/firmware/focalfp.b07
+vendor/firmware/focalfp.mdt
+
+# FM   
+lib/fm_helium.so
+lib/libfm-hci.so
+lib64/fm_helium.so
+lib64/libfm-hci.so
+-product/lib/vendor.qti.hardware.fm@1.0.so
+-product/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/bin/fm_qsoc_patches
+vendor/lib/ftm_fm_lib.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/ftm_fm_lib.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
+
+# GPU (firmware)
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
@@ -648,91 +940,10 @@ vendor/firmware/a530_pm4.fw
 vendor/firmware/a540_gpmu.fw2
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
-vendor/firmware/cmnlib.b00
-vendor/firmware/cmnlib.b02
-vendor/firmware/cmnlib.b03
-vendor/firmware/cmnlib.b04
-vendor/firmware/cmnlib.b05
-vendor/firmware/cmnlib.b06
-vendor/firmware/cmnlib64.b00
-vendor/firmware/cmnlib64.b02
-vendor/firmware/cmnlib64.b03
-vendor/firmware/cmnlib64.b04
-vendor/firmware/cmnlib64.b05
-vendor/firmware/cmnlib64.b06
-vendor/firmware/elanfp64.b00
-vendor/firmware/elanfp64.b02
-vendor/firmware/elanfp64.b03
-vendor/firmware/elanfp64.b04
-vendor/firmware/elanfp64.b05
-vendor/firmware/elanfp64.b06
-vendor/firmware/elanfp64.b07
-vendor/firmware/gxfp3258_drg.b00
-vendor/firmware/gxfp3258_drg.b02
-vendor/firmware/gxfp3258_drg.b03
-vendor/firmware/gxfp3258_drg.b04
-vendor/firmware/gxfp3258_drg.b05
-vendor/firmware/gxfp3258_drg.b06
-vendor/firmware/gxfp3258_drg.b07
-vendor/firmware/iris3.fw
-vendor/firmware/iris3_inParm1.txt
-vendor/firmware/iris3_inParm10.txt
-vendor/firmware/iris3_inParm11.txt
-vendor/firmware/iris3_inParm12.txt
-vendor/firmware/iris3_inParm13.txt
-vendor/firmware/iris3_inParm14.txt
-vendor/firmware/iris3_inParm15.txt
-vendor/firmware/iris3_inParm16.txt
-vendor/firmware/iris3_inParm17.txt
-vendor/firmware/iris3_inParm18.txt
-vendor/firmware/iris3_inParm2.txt
-vendor/firmware/iris3_inParm3.txt
-vendor/firmware/iris3_inParm4.txt
-vendor/firmware/iris3_inParm5.txt
-vendor/firmware/iris3_inParm6.txt
-vendor/firmware/iris3_inParm7.txt
-vendor/firmware/iris3_inParm8.txt
-vendor/firmware/iris3_inParm9.txt
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
-vendor/firmware/novatek_h_glass_ts_fw.bin
-vendor/firmware/novatek_ts_fw.bin
-vendor/firmware/sec_s3nrn81_firmware.bin
-vendor/firmware/T9891M04.drc
-vendor/firmware/T9891M04.vstep
-vendor/firmware/T9891R04.drc
-vendor/firmware/T9891R04.vstep
-vendor/firmware/T9891S04.drc
-vendor/firmware/T9891S04.vstep
-vendor/firmware/T9891V04.drc
-vendor/firmware/T9891V04.vstep
-vendor/firmware/TAS2557MSSMono.bin
-vendor/firmware/TFA9891.cnt
-vendor/firmware/TFA9891.cnt_preformat.ini
-vendor/firmware/TFA9891.ini
-vendor/firmware/TFA9891.speaker
-vendor/firmware/TFA9891N1A_Dec2015.config
-vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
-vendor/firmware/TFA9894_drg.cnt
-vendor/firmware/TFA9894_drg.ini
-vendor/firmware/TP_Firmware_FT8716.bin
-vendor/firmware/TP_Firmware_FT8716_S2.bin
-vendor/firmware/TP_Firmware_FT8716_S3.bin
-
-# FM   
-lib/fm_helium.so
-lib/libfm-hci.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
--product/lib/vendor.qti.hardware.fm@1.0.so
--product/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/bin/fm_qsoc_patches
-vendor/lib/ftm_fm_lib.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/ftm_fm_lib.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/firmware/a508_zap.b01
+vendor/firmware/a508_zap.mdt
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.mdt
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
@@ -913,6 +1124,20 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+
+# Keymaster (firmware - QSECOM)
+vendor/firmware/cmnlib.b00
+vendor/firmware/cmnlib.b02
+vendor/firmware/cmnlib.b03
+vendor/firmware/cmnlib.b04
+vendor/firmware/cmnlib.b05
+vendor/firmware/cmnlib.b06
+vendor/firmware/cmnlib64.b00
+vendor/firmware/cmnlib64.b02
+vendor/firmware/cmnlib64.b03
+vendor/firmware/cmnlib64.b04
+vendor/firmware/cmnlib64.b05
+vendor/firmware/cmnlib64.b06
 
 # Keystore
 vendor/lib64/libkeystore-engine-wifi-hidl.so
@@ -1583,6 +1808,11 @@ vendor/bin/cnss_diag
 vendor/bin/fstman
 
 # Misc
+vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
+vendor/etc/ftm_test_config
+vendor/etc/graphite_ipc_platform_info.xml
+vendor/etc/ozo_config.xml
+vendor/etc/sec_s3nrn81_rfreg.bin
 -vendor/app/CACertService/CACertService.apk
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/adpl
@@ -1839,3 +2069,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
+vendor/etc/libnfc-nxp.conf
+vendor/etc/permissions/com.android.nfc_extras.xml
+vendor/etc/permissions/com.nxp.mifare.xml
