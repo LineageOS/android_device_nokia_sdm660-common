@@ -155,7 +155,7 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Vendor Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-03-01
+VENDOR_SECURITY_PATCH := 2020-05-01
 
 # VNDK
 BOARD_VNDK_VERSION := current
