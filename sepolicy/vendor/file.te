@@ -1,0 +1,2 @@
+# /proc/devmodel
+type proc_fih, fs_type, proc_type;
