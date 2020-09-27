@@ -1102,10 +1102,6 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libtinyxml2_1.so
 
 # IFAA
-vendor/bin/hw/vendor.fih.hardware.ifaa@1.0-service
-vendor/etc/init/vendor.fih.hardware.ifaa@1.0-service.rc
-vendor/lib/vendor.fih.hardware.ifaa@1.0.so
-vendor/lib64/vendor.fih.hardware.ifaa@1.0.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
