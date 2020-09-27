@@ -1,1 +1,1 @@
-allow domain proc_fih:file { getattr read };
+allow domain proc_fih:file rw_file_perms;
