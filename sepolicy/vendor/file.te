@@ -1,3 +1,6 @@
+# /dev/elanfp
+type sysfs_fingerprint, sysfs_type, fs_type;
+
 # /proc/devmodel
 type proc_fih, fs_type, proc_type;
 

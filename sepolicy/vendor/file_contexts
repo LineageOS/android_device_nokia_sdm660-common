@@ -2,5 +2,8 @@
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
 
+# Fingerprint
+/dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
+
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0

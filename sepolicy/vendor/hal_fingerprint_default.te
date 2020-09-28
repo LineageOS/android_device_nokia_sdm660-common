@@ -1,1 +1,2 @@
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default sysfs_fingerprint:chr_file rw_file_perms;
