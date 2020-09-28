@@ -4,6 +4,7 @@
 
 # Fingerprint
 /dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
+/data/system/users/[0-9]+/fpdata(/.*)?     u:object_r:fingerprintd_data_file:s0
 
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0
