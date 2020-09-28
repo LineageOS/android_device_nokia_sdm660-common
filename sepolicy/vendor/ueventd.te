@@ -1,1 +1,3 @@
 allow ueventd self:capability sys_nice;
+
+allow ueventd sysfs_fingerprint:chr_file { create setattr rw_file_perms };
