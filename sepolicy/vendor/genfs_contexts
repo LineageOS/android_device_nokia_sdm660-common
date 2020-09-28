@@ -6,3 +6,12 @@ genfscon proc /bandinfo            u:object_r:proc_bandinfo:s0
 
 # /proc/AllHWLis/* - Gestures
 genfscon proc /AllHWList/tp_double_tap   u:object_r:proc_fih:s0
+
+# /proc/hwmodel - Model
+genfscon proc /hwmodel            u:object_r:proc_fih:s0
+
+# /proc/baseband - Baseband
+genfscon proc /baseband            u:object_r:proc_fih:s0
+
+# /proc/bt_mac - MAC addr
+genfscon proc /bt_mac            u:object_r:proc_fih:s0
