@@ -740,12 +740,6 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
-service vendor.nqnfcinfo /vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-
 service vendor.iop /vendor/bin/iop
     class main
     user root

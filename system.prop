@@ -110,9 +110,6 @@ vendor.vidc.enc.disable_bframes=1
 vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.target_support_bframe=1
 
-# NFC
-ro.nfc.port=I2C
-
 # Power
 persist.env.fastdorm.enabled=true
 
