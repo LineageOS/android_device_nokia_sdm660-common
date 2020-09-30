@@ -1392,3 +1392,8 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system input uhid wakelock
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+# Run restorecon to fix SELinux contexts of /data/system/users/[0-9]+/fpdata
+# forecfully
+on property:sys.boot_completed=1
+    restorecon --recursive --force /data/system/users
