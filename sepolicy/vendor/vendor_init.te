@@ -9,3 +9,6 @@ allow vendor_init {
 }:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
 
 allow vendor_init sysfs_fingerprint:chr_file { getattr setattr };
+
+# Allow vendor_init to relabel unlabeled files and directories
+allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
