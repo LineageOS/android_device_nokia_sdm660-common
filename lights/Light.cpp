@@ -63,7 +63,7 @@ Light::Light() {
 }
 
 void Light::handleBacklight(const LightState& state) {
-    int maxBrightness = get("/sys/class/backlight/panel0-backlight/max_brightness", -1);
+    int maxBrightness = get("/sys/class/leds/lcd-backlight/max_brightness", -1);
     if (maxBrightness < 0) {
         maxBrightness = 255;
     }
@@ -71,7 +71,7 @@ void Light::handleBacklight(const LightState& state) {
     int brightness = sentBrightness * maxBrightness / 255;
     LOG(DEBUG) << "Writing backlight brightness " << brightness
                << " (orig " << sentBrightness << ")";
-    set("/sys/class/backlight/panel0-backlight/brightness", brightness);
+    set("/sys/class/leds/lcd-backlight/brightness", brightness);
 }
 
 void Light::handleRgb(const LightState& state, size_t index) {
