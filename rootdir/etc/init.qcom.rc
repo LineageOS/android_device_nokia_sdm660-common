@@ -1392,3 +1392,9 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system input uhid wakelock
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+# Fix file-contexts for fp
+on property:sys.boot_completed=1
+    exec u:r:vendor_toolbox:s0 -- /vendor/bin/toybox_vendor find /data/system/users -type d \
+         -exec /vendor/bin/toybox_vendor setfattr -x security.sehash {} \;
+    restorecon_recursive /data/system/users
