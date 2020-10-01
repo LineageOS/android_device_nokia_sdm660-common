@@ -649,9 +649,6 @@ vendor/firmware/leia_pm4_470.fw
 vendor/firmware/novatek_h_glass_ts_fw.bin
 vendor/firmware/novatek_ts_fw.bin
 
-# Display (firmware - sec*)
-vendor/firmware/sec_s3nrn81_firmware.bin
-
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
@@ -1747,7 +1744,6 @@ vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/etc/ftm_test_config
 vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/ozo_config.xml
-vendor/etc/sec_s3nrn81_rfreg.bin
 -vendor/app/CACertService/CACertService.apk
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/adpl
