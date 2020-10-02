@@ -934,7 +934,6 @@ etc/sysconfig/qti_whitelist.xml
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/qcrilhook.jar
-product/framework/qti-telephony-common.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
@@ -1038,6 +1037,9 @@ vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
+
+# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM
+system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0741f36
 
 # Radio (IMS)
 etc/permissions/com.qualcomm.qti.imscmservice.xml
