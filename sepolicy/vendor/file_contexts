@@ -7,3 +7,7 @@
 
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0
+
+
+# HALs
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.nokia_sdm660    u:object_r:hal_light_default_exec:s0
