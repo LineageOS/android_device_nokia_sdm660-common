@@ -487,6 +487,8 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
+    # Fingerprint
+    mkdir /data/system/fingerprint 0770 system system
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
