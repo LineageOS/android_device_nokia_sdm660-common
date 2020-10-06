@@ -687,29 +687,6 @@ vendor/firmware/widevine.b05
 vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 
-# ESE (Powermanager)
-product/lib/vendor.qti.esepowermanager@1.0.so
-product/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-
-# Factory
-product/framework/vendor.qti.hardware.factory-V1.0-java.jar
-product/framework/vendor.qti.hardware.factory-V1.1-java.jar
-product/lib/vendor.qti.hardware.factory@1.0.so
-product/lib/vendor.qti.hardware.factory@1.1.so
-product/lib64/vendor.qti.hardware.factory@1.0.so
-product/lib64/vendor.qti.hardware.factory@1.1.so
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
-vendor/etc/permissions/vendor.qti.hardware.factory.xml
-vendor/lib64/vendor.qti.hardware.factory@1.0.so
-vendor/lib64/vendor.qti.hardware.factory@1.1.so
-
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
