@@ -588,84 +588,34 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM
+# DRM and SEE
 vendor/bin/qseecomd
-vendor/lib/libbase64.so
-vendor/lib/libcpion.so
-vendor/lib/libcppf.so
+vendor/lib/libdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/librmp.so
 vendor/lib/librpmb.so
-vendor/lib/libsdedrm.so
 vendor/lib/libsecureui.so
-vendor/lib/libSecureUILib.so
 vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsi.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
-vendor/lib/libtzdrmgenprov.so
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
+vendor/lib64/libdiag.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui.so
-vendor/lib64/libSecureUILib.so
 vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsi.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
-vendor/lib64/libtzdrmgenprov.so
 
-# DRM (HDCP)
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libmm-hdcpmgr.so
-
-# DRM (Qteeconnector)
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
-# DRM (Widevine)
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-
-# DRM (firmware)
+# DRM (Firmware)
 vendor/firmware/cppf.b00
 vendor/firmware/cppf.b02
 vendor/firmware/cppf.b03
@@ -675,17 +625,6 @@ vendor/firmware/cppf.b06
 vendor/firmware/cppf.b07
 vendor/firmware/cppf.b01
 vendor/firmware/cppf.mdt
-
-# DRM (firmware - widevine)
-vendor/firmware/widevine.b01
-vendor/firmware/widevine.mdt
-vendor/firmware/widevine.b00
-vendor/firmware/widevine.b02
-vendor/firmware/widevine.b03
-vendor/firmware/widevine.b04
-vendor/firmware/widevine.b05
-vendor/firmware/widevine.b06
-vendor/firmware/widevine.b07
 
 # FM
 lib/fm_helium.so
@@ -1105,6 +1044,14 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
+# Qteeconnector
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
 # Radio
 etc/sysconfig/qti_whitelist.xml
 -product/app/datastatusnotification/datastatusnotification.apk
@@ -1480,6 +1427,22 @@ vendor/lib64/libwfdhdcpcp.so
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/fstman
+
+# Widevine
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libwvhidl.so
+
+# Widevine (Firmware)
+vendor/firmware/widevine.b01
+vendor/firmware/widevine.mdt
+vendor/firmware/widevine.b00
+vendor/firmware/widevine.b02
+vendor/firmware/widevine.b03
+vendor/firmware/widevine.b04
+vendor/firmware/widevine.b05
+vendor/firmware/widevine.b06
+vendor/firmware/widevine.b07
 
 # Misc
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
