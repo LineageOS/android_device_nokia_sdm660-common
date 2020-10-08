@@ -5,5 +5,18 @@
 # Fingerprint
 /dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
 
+# Partitions (A/B)
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/cda_[ab]                        u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/hidden_[ab]                     u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/nvdef_[ab]                      u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/splash_[ab]                     u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/systeminfo_[ab]                 u:object_r:custom_ab_block_device:s0
+
+# Partitions (Non-A/B)
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/box                             u:object_r:fih_partition:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/deviceinfo                      u:object_r:fih_partition:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/securefs                        u:object_r:fih_partition:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/storesec                        u:object_r:boot_block_device:s0
+
 # WiFi
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh         u:object_r:init_wifi_exec:s0
