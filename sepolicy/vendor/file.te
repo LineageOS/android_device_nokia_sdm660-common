@@ -1,3 +1,6 @@
+# FIH Partitions
+type fih_partition, dev_type;
+
 # /dev/elanfp
 type sysfs_fingerprint, sysfs_type, fs_type;
 
