@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "948aedd7_fe83d45e",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1102,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-10-08T15:28:09Z",
+      "side": 1,
+      "message": "I don\u0027t know if I like this, so we\u0027re only supporting dsds devices?",
+      "range": {
+        "startLine": 1100,
+        "startChar": 0,
+        "endLine": 1102,
+        "endChar": 25
+      },
+      "revId": "d59e8a30afc7b26cdfaf97c4b7306e539a0e38a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
