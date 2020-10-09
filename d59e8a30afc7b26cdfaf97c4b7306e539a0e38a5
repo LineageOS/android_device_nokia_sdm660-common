@@ -70,6 +70,30 @@
       "revId": "d59e8a30afc7b26cdfaf97c4b7306e539a0e38a5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0b83c76_c97dcd6c",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1102,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-10-09T04:30:25Z",
+      "side": 1,
+      "message": "There is a single sim model TA-1050; https://www.phonemore.com/specs/nokia/6-1/ta-1050/",
+      "parentUuid": "c69d8eed_47003a49",
+      "range": {
+        "startLine": 1100,
+        "startChar": 0,
+        "endLine": 1102,
+        "endChar": 25
+      },
+      "revId": "d59e8a30afc7b26cdfaf97c4b7306e539a0e38a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
