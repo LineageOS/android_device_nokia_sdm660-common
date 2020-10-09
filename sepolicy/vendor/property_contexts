@@ -32,6 +32,10 @@ camera.asdn.ring.front			u:object_r:camera_prop:s0
 camera.asdn.th.front			u:object_r:camera_prop:s0
 camera.lens.main.macro			u:object_r:camera_prop:s0
 camera.lens.main.infinite		u:object_r:camera_prop:s0
+camera.tunning.live                     u:object_r:camera_prop:s0
+camera.fih.pip.used                     u:object_r:camera_prop:s0
+camera.its.enable                       u:object_r:camera_prop:s0
+camera.cts.enable                       u:object_r:camera_prop:s0
 
 # Fingerprint
 sys.fp.firmware.version			u:object_r:fingerprint_prop:s0
