@@ -163,8 +163,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl \
     libstdc++.vendor \
-    libxml2 \
-    Snap
+    libxml2
 
 PRODUCT_PACKAGES += \
     libshim_megvii
