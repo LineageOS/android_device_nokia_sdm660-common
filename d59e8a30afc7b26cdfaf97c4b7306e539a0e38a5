@@ -22,6 +22,30 @@
       "revId": "d59e8a30afc7b26cdfaf97c4b7306e539a0e38a5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5ba43964_d23e8f3a",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1102,
+      "author": {
+        "id": 23616
+      },
+      "writtenOn": "2020-10-09T02:06:35Z",
+      "side": 1,
+      "message": "We are all hybird dual card, right?",
+      "parentUuid": "948aedd7_fe83d45e",
+      "range": {
+        "startLine": 1100,
+        "startChar": 0,
+        "endLine": 1102,
+        "endChar": 25
+      },
+      "revId": "d59e8a30afc7b26cdfaf97c4b7306e539a0e38a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
