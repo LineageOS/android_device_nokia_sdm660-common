@@ -109,14 +109,6 @@ ro.camera.switch.anim.delay=300
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
 vendor.camera.c2d.rotation=1
 
-# Dalvik
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
-
 # DRM
 drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
