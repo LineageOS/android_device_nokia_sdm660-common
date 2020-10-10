@@ -131,12 +131,7 @@ ro.opengles.version=196610
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
-# Logging
-persist.vendor.stbDebugCtlEnable=1
-ro.logdumpd.enabled=0
-
 # Miscellaneous
-persist.sys.bbsys=on
 persist.vendor.qcomsysd.enabled=1
 ro.cp_system_other_odex=1
 sys.vendor.shutdown.waittime=500
