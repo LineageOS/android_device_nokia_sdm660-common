@@ -1273,27 +1273,15 @@ vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Sensors
 vendor/bin/sensors.qti
-vendor/lib/hw/activity_recognition.sdm660.so
+vendor/etc/sap.conf
 vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so  
-vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.ssc.so
+vendor/lib/libsensor_reg.so
 vendor/lib/sensor_calibrate.so
-vendor/lib64/hw/activity_recognition.sdm660.so
+vendor/lib/sensors.ssc.so
 vendor/lib64/libsensor1.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensor_reg.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so
 vendor/lib64/sensor_calibrate.so
-
-# Sensor (Configs)
-vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/etc/sensors/sensor_def_qcomdev_drg.conf
-vendor/etc/sensors/sensor_def_qcomdev_hg1.conf
-vendor/etc/sensors/sensor_def_qcomdev_hh1.conf
-vendor/etc/sensors/sensor_def_qcomdev_s2.conf
-vendor/etc/sensors/sensor_def_qcomdev_tas.conf
+vendor/lib64/sensors.ssc.so
 
 # Thermal
 vendor/bin/thermal-engine
