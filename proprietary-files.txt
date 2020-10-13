@@ -503,10 +503,6 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# CVP
-vendor/lib/vendor.qti.hardware.cvp@1.0.so
-vendor/lib64/vendor.qti.hardware.cvp@1.0.so
-
 # Display (firmware - ft8716)
 vendor/firmware/TP_Firmware_FT8716.bin
 vendor/firmware/TP_Firmware_FT8716_S2.bin
@@ -896,54 +892,28 @@ vendor/lib64/libOmxVdec.so
 vendor/lib64/libOmxVenc.so
 
 # Perf
-etc/perf/wlc_model.tflite
-lib/libqti-perfd-client_system.so
-lib/libqti-util_system.so
-lib/libqti_performance.so
-lib64/libqti-perfd-client_system.so
-lib64/libqti-util_system.so
-lib64/libqti_performance.so
-product/lib/vendor.qti.hardware.perf@1.0.so
-product/lib/vendor.qti.hardware.perf@2.0.so
-product/lib64/vendor.qti.hardware.perf@1.0.so
-product/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
+vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
+vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
 vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib/vendor.qti.hardware.perf@2.0.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
+vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
-
-# Perf (IOP)
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Peripheral
 vendor/bin/pm-proxy
