@@ -1226,7 +1226,10 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# WFD
+# WiFi
+vendor/bin/cnss-daemon
+
+# WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
@@ -1263,11 +1266,6 @@ vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
-
-# Wi-Fi
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/bin/fstman
 
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
@@ -1343,15 +1341,8 @@ vendor/bin/ti_audio
 vendor/bin/ti_factorytest
 vendor/bin/vendor_cmd_tool
 vendor/bin/wdsdaemon
-vendor/bin/wifilearner
-vendor/bin/wireless_init
-vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
 vendor/etc/8716.ini
 vendor/etc/8716_PL2.ini
-vendor/etc/hostapd/hostapd.accept
-vendor/etc/hostapd/hostapd.deny
-vendor/etc/hostapd/hostapd_default.conf
 vendor/etc/init/csysservice.rc
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
@@ -1414,7 +1405,6 @@ vendor/lib/libteeclientjni.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
 vendor/lib/libwapi_cert.so
-vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/qtimutex.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
@@ -1457,7 +1447,6 @@ vendor/lib64/libssrec.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libwapi_cert.so
-vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
