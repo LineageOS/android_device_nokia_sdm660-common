@@ -142,29 +142,6 @@ vendor/lib64/hw/android.hardware.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
-# Audio (scripts)
-vendor/bin/aheadset_mic_to_aheadset_recv_off.sh
-vendor/bin/aheadset_mic_to_aheadset_recv_on.sh
-vendor/bin/amic1_to_aheadset_recv_off.sh
-vendor/bin/amic1_to_aheadset_recv_on.sh
-vendor/bin/amic1_to_dheadset_recv_off.sh
-vendor/bin/amic1_to_dheadset_recv_on.sh
-vendor/bin/amic2_to_aheadset_recv_off.sh
-vendor/bin/amic2_to_aheadset_recv_on.sh
-vendor/bin/amic2_to_dheadset_recv_off.sh
-vendor/bin/amic2_to_dheadset_recv_on.sh
-vendor/bin/dheadset_mic_to_dheadset_recv_off.sh
-vendor/bin/dheadset_mic_to_dheadset_recv_on.sh
-vendor/bin/dmic1_to_headset_recv_off.sh
-vendor/bin/dmic1_to_headset_recv_on.sh
-vendor/bin/dmic2_to_headset_recv_off.sh
-vendor/bin/dmic2_to_headset_recv_on.sh
-vendor/bin/dmic3_to_headset_recv_off.sh
-vendor/bin/dmic3_to_headset_recv_on.sh
-vendor/bin/fqcaudioloopback.sh
-vendor/bin/headset_mic_to_headset_recv_off.sh
-vendor/bin/headset_mic_to_headset_recv_on.sh
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -1226,7 +1203,10 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# WFD
+# WiFi
+vendor/bin/cnss-daemon
+
+# WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
