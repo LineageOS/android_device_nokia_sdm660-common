@@ -503,42 +503,6 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# Display (firmware - ft8716)
-vendor/firmware/TP_Firmware_FT8716.bin
-vendor/firmware/TP_Firmware_FT8716_S2.bin
-vendor/firmware/TP_Firmware_FT8716_S3.bin
-vendor/firmware/TP_Firmware_FT8716_B2N.bin
-vendor/firmware/TP_Firmware_FT8716_PL2.bin
-
-# Display (firmware - iris)
-vendor/firmware/iris3.fw
-vendor/firmware/iris3_inParm1.txt
-vendor/firmware/iris3_inParm10.txt
-vendor/firmware/iris3_inParm11.txt
-vendor/firmware/iris3_inParm12.txt
-vendor/firmware/iris3_inParm13.txt
-vendor/firmware/iris3_inParm14.txt
-vendor/firmware/iris3_inParm15.txt
-vendor/firmware/iris3_inParm16.txt
-vendor/firmware/iris3_inParm17.txt
-vendor/firmware/iris3_inParm18.txt
-vendor/firmware/iris3_inParm2.txt
-vendor/firmware/iris3_inParm3.txt
-vendor/firmware/iris3_inParm4.txt
-vendor/firmware/iris3_inParm5.txt
-vendor/firmware/iris3_inParm6.txt
-vendor/firmware/iris3_inParm7.txt
-vendor/firmware/iris3_inParm8.txt
-vendor/firmware/iris3_inParm9.txt
-
-# Display (firmware - leia)
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
-
-# Display (firmware - novatek)
-vendor/firmware/novatek_h_glass_ts_fw.bin
-vendor/firmware/novatek_ts_fw.bin
-
 # DPM
 product/bin/dpmd
 product/etc/dpm/dpm.conf
@@ -739,7 +703,7 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib/hw/vulkan.sdm660.so
 vendor/lib64/hw/vulkan.sdm660.so
 
-# Graphics (Firmware)
+# Graphics (Firmware - Adreno)
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
@@ -770,6 +734,44 @@ vendor/firmware/a508_zap.b01
 vendor/firmware/a508_zap.mdt
 vendor/firmware/a512_zap.b01
 vendor/firmware/a512_zap.mdt
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+
+# Graphics (Pixelworks Iris)
+vendor/bin/irisConfig
+vendor/lib/libirisService.so
+vendor/lib/libiris_ioctl_wrapper.so
+vendor/lib/libpwirispq.so
+vendor/lib/vendor.pixelworks.hardware.display@1.0.so
+vendor/lib64/libirisService.so
+vendor/lib64/libiris_ioctl_wrapper.so
+vendor/lib64/libpwirisPCS.so
+vendor/lib64/libpwirispq.so
+vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
+
+# Graphics (Firmware - Pixelworks Iris)
+vendor/firmware/iris3.fw
+vendor/firmware/iris3_inParm1.txt
+vendor/firmware/iris3_inParm10.txt
+vendor/firmware/iris3_inParm11.txt
+vendor/firmware/iris3_inParm12.txt
+vendor/firmware/iris3_inParm13.txt
+vendor/firmware/iris3_inParm14.txt
+vendor/firmware/iris3_inParm15.txt
+vendor/firmware/iris3_inParm16.txt
+vendor/firmware/iris3_inParm17.txt
+vendor/firmware/iris3_inParm18.txt
+vendor/firmware/iris3_inParm2.txt
+vendor/firmware/iris3_inParm3.txt
+vendor/firmware/iris3_inParm4.txt
+vendor/firmware/iris3_inParm5.txt
+vendor/firmware/iris3_inParm6.txt
+vendor/firmware/iris3_inParm7.txt
+vendor/firmware/iris3_inParm8.txt
+vendor/firmware/iris3_inParm9.txt
+
+# Graphics (Firmware - Focaltech)
+vendor/firmware/TP_Firmware_FT8716.bin
 
 # Keymaster (QTI)
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -1362,7 +1364,6 @@ vendor/bin/gtptest
 vendor/bin/hal_proxy_daemon
 vendor/bin/InitCDA
 vendor/bin/ipacm-diag
-vendor/bin/irisConfig
 vendor/bin/KmInstallKeybox
 vendor/bin/mlid
 vendor/bin/mm-audio-ftm
@@ -1448,14 +1449,11 @@ vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
 vendor/lib/libimage_matting.so
-vendor/lib/libirisService.so
-vendor/lib/libiris_ioctl_wrapper.so
 vendor/lib/libjnihelper.so
 vendor/lib/libMGBeauty.so
 vendor/lib/libmiracast.so
 vendor/lib/libopus.so
 vendor/lib/libperfconfig.so
-vendor/lib/libpwirispq.so
 vendor/lib/libqcbor.so
 vendor/lib/libqcrildatactl.so
 vendor/lib/libqdma_file_agent.so
@@ -1470,7 +1468,6 @@ vendor/lib/libvpx.so
 vendor/lib/libwapi_cert.so
 vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/qtimutex.so
-vendor/lib/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/android.hardware.audio.common-util.so
@@ -1498,14 +1495,10 @@ vendor/lib64/libgameoptfeature.so
 vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libhfp.so
-vendor/lib64/libirisService.so
-vendor/lib64/libiris_ioctl_wrapper.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/libmiracast.so
 vendor/lib64/libopenshort.so
 vendor/lib64/libperfconfig.so
-vendor/lib64/libpwirisPCS.so
-vendor/lib64/libpwirispq.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libreffeature.so
@@ -1519,7 +1512,6 @@ vendor/lib64/libwapi_cert.so
 vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
