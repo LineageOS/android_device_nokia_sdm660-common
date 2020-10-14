@@ -100,31 +100,16 @@ vendor/firmware/T9891S04.vstep
 vendor/firmware/T9891V04.drc
 vendor/firmware/T9891V04.vstep
 
-# Audio (firmware - TFA9891-94)
+# Audio (Firmware - TFA9891-94)
 vendor/firmware/TFA9891.cnt
 vendor/firmware/TFA9891.cnt_preformat.ini
 vendor/firmware/TFA9891.ini
 vendor/firmware/TFA9891.speaker
 vendor/firmware/TFA9891N1A_Dec2015.config
 vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
-vendor/firmware/TFA9891_pl2.cnt
-vendor/firmware/TFA9891_pl2.ini
-vendor/firmware/TFA9891_sd1.cnt
-vendor/firmware/TFA9891_sd1.ini
-vendor/firmware/TFA9891_sd1_dvt.cnt
-vendor/firmware/TFA9891_sd1_dvt.ini
-vendor/firmware/TFA9894_ctl.cnt
-vendor/firmware/TFA9894_ctl.ini
-vendor/firmware/TFA9894_drg.cnt
-vendor/firmware/TFA9894_drg.ini
 
-# Audio (firmware - TAS2557)
+# Audio (Firmware - TAS2557)
 vendor/firmware/TAS2557MSSMono.bin
-vendor/firmware/TAS2557MSSMono_B2N.bin
-vendor/firmware/TAS2557MSSMono_B2N_dvt.bin
-vendor/firmware/TAS2557MSSMono_B2N_dvt_ICTspk.bin
-vendor/firmware/TAS2557MSSMono_CTL.bin
-vendor/firmware/TAS2557MSSMono_DRG.bin
 
 # Audio (Hardware)
 vendor/lib/hw/audio.primary.default.so
@@ -1334,8 +1319,6 @@ vendor/etc/ozo_config.xml
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/adpl
 vendor/bin/athdiag
-vendor/bin/B2N2_TAS2557.ftcfg
-vendor/bin/B2N2_TAS2557_ICTspk.ftcfg
 vendor/bin/cplay
 vendor/bin/csysservice
 vendor/bin/diag_callback_sample
@@ -1379,8 +1362,6 @@ vendor/bin/spectraltool
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/bin/StoreKeybox
-vendor/bin/TAS2557MSSMono_CTL.ftcfg
-vendor/bin/TAS2557MSSMono_DRG.ftcfg
 vendor/bin/tbaseLoader
 vendor/bin/test_diag
 vendor/bin/tinymix2
