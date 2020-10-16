@@ -204,9 +204,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
-
 # Framework Detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
