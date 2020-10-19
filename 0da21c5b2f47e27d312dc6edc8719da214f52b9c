@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b1be55dd_c9ae1c2c",
+        "filename": "rro_overlays/WifiOverlay/AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-19T14:11:52Z",
+      "side": 1,
+      "message": "Don\u0027t forget to update",
+      "range": {
+        "startLine": 18,
+        "startChar": 40,
+        "endLine": 18,
+        "endChar": 44
+      },
+      "revId": "0da21c5b2f47e27d312dc6edc8719da214f52b9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
