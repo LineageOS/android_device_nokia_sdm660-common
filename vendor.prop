@@ -112,6 +112,9 @@ vendor.camera.c2d.rotation=1
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # DRM
 drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
