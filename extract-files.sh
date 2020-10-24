@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,6 +22,13 @@ VENDOR=nokia
 
 INITIAL_COPYRIGHT_YEAR=2019
 
+# Check host-OS before doing anything
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    PLATFORM='linux-x86'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    PLATFORM='darwin-x86'
+fi
+
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
@@ -34,6 +41,10 @@ if [ ! -f "$HELPER" ]; then
     exit 1
 fi
 . "$HELPER"
+
+# Use prebuilts from tools-lineage
+TOOLS_LINEAGE="$LINEAGE_ROOT"/prebuilts/tools-lineage/"$PLATFORM"/bin
+PATCHELF="$TOOLS_LINEAGE"/patchelf
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
@@ -59,10 +70,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-    vendor/lib64/hw/camera.sdm660.so)
-        patchelf --remove-needed "libMegviiFacepp.so" "${2}"
-        patchelf --remove-needed "libmegface-new.so" "${2}"
-        patchelf --add-needed "libshim_megvii.so" "${2}"
+    vendor/lib/hw/camera.sdm660.so)
+        "$PATCHELF" --remove-needed "libMegviiFacepp.so" "${2}"
+        "$PATCHELF" --remove-needed "libmegface-new.so" "${2}"
+        "$PATCHELF" --add-needed "libshim_megvii.so" "${2}"
         ;;
     # Fix xml version
     product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
