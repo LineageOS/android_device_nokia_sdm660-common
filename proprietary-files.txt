@@ -177,7 +177,7 @@ vendor/lib64/libaptX_encoder.so
 lib/libseemore.so
 lib64/libseemore.so
 vendor/bin/mm-qcamera-app
-vendor/lib/hw/camera.sdm660.so|1e4af7b317b0b3a525f9cce166ec76b8feeb7689
+vendor/lib/hw/camera.sdm660.so
 vendor/lib/libfih_camera_effect.so
 vendor/lib/libflash_dummy_flash.so
 vendor/lib/libimage_matting.so
