@@ -206,7 +206,6 @@ vendor/lib/libvideoutils.so
 vendor/lib64/libvideoutils.so
 
 # Camera (Actuators)
-vendor/lib/libactuator_dw9800.so
 vendor/lib/libactuator_pseudo.so
 
 # Camera (Arcsoft)
@@ -221,83 +220,6 @@ vendor/lib/libarcsoft_smart_denoise.so
 vendor/etc/camera/calibration_test.bin
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/mgbeautify_1_2_4_model
-
-# Camera (Chromatix)
-vendor/etc/camera/s5k3p3_chromatix.xml
-vendor/etc/camera/s5k4h8_chromatix.xml
-vendor/etc/camera/s5k4h8_pl2_holitech_chromatix.xml
-vendor/lib/libchromatix_s5k3p3_common.so
-vendor/lib/libchromatix_s5k3p3_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k3p3_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k3p3_cpp_liveshot.so
-vendor/lib/libchromatix_s5k3p3_cpp_preview.so
-vendor/lib/libchromatix_s5k3p3_cpp_snapshot.so
-vendor/lib/libchromatix_s5k3p3_cpp_video.so
-vendor/lib/libchromatix_s5k3p3_default_preview_dw9800.so
-vendor/lib/libchromatix_s5k3p3_default_video.so
-vendor/lib/libchromatix_s5k3p3_default_video_dw9800.so
-vendor/lib/libchromatix_s5k3p3_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_hfr_120_dw9800.so
-vendor/lib/libchromatix_s5k3p3_hfr_60.so
-vendor/lib/libchromatix_s5k3p3_hfr_60_dw9800.so
-vendor/lib/libchromatix_s5k3p3_hfr_90.so
-vendor/lib/libchromatix_s5k3p3_hfr_90_dw9800.so
-vendor/lib/libchromatix_s5k3p3_postproc.so
-vendor/lib/libchromatix_s5k3p3_preview.so
-vendor/lib/libchromatix_s5k3p3_snapshot.so
-vendor/lib/libchromatix_s5k3p3_snapshot_longexposure.so
-vendor/lib/libchromatix_s5k3p3_versions.so
-vendor/lib/libchromatix_s5k3p3_zsl_preview_dw9800.so
-vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so
-vendor/lib/libchromatix_s5k4h8_a3_default_preview.so
-vendor/lib/libchromatix_s5k4h8_a3_default_video.so
-vendor/lib/libchromatix_s5k4h8_a3_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_a3_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_a3_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_common.so
-vendor/lib/libchromatix_s5k4h8_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_cpp_liveshot.so
-vendor/lib/libchromatix_s5k4h8_cpp_preview.so
-vendor/lib/libchromatix_s5k4h8_cpp_snapshot.so
-vendor/lib/libchromatix_s5k4h8_cpp_video.so
-vendor/lib/libchromatix_s5k4h8_default_video.so
-vendor/lib/libchromatix_s5k4h8_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_liveshot.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_default_preview.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_default_video.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_a3_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_common.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_liveshot.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_preview.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_snapshot.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_cpp_video.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_default_video.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_120.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_60.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_hfr_90.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_liveshot.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_postproc.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_preview.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_snapshot.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_versions.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_zsl_preview.so
-vendor/lib/libchromatix_s5k4h8_pl2_holitech_zsl_video.so
-vendor/lib/libchromatix_s5k4h8_postproc.so
-vendor/lib/libchromatix_s5k4h8_preview.so
-vendor/lib/libchromatix_s5k4h8_snapshot.so
-vendor/lib/libchromatix_s5k4h8_versions.so
-vendor/lib/libchromatix_s5k4h8_zsl_preview.so
-vendor/lib/libchromatix_s5k4h8_zsl_video.so
 
 # Camera (Firmware)
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -402,12 +324,6 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_s5k3p3.so
-vendor/lib/libmmcamera_s5k3p3_m24c64s_eeprom.so
-vendor/lib/libmmcamera_s5k4h8.so
-vendor/lib/libmmcamera_s5k4h8_eeprom.so
-vendor/lib/libmmcamera_s5k4h8_holitech_eeprom.so
-vendor/lib/libmmcamera_s5k4h8_pl2_holitech.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
