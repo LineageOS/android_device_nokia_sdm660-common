@@ -70,6 +70,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    product/lib64/libdpmframework.so)
+        "$PATCHELF" --add-needed "libshim_dpmframework.so" "${2}"
+        ;;
     vendor/lib/hw/camera.sdm660.so)
         "$PATCHELF" --remove-needed "libMegviiFacepp.so" "${2}"
         "$PATCHELF" --remove-needed "libmegface-new.so" "${2}"
