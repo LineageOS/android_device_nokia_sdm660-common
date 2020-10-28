@@ -385,7 +385,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)
+    $(COMMON_PATH) \
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
 # Telephony-ext
 PRODUCT_PACKAGES += \
