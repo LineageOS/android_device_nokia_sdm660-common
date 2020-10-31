@@ -22,6 +22,30 @@
       "revId": "c4669c08152ec089496e3e31a3ea1b632b3e94c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "94624cd0_4cae0c12",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-10-31T01:52:26Z",
+      "side": 1,
+      "message": "I disagree - this could totally be global, and disabled by legacy devices/incompat ones.\n\nI\u0027m moreso saying \"this should either be opt-out or not used\"",
+      "parentUuid": "f7577239_fe0e69e1",
+      "range": {
+        "startLine": 11,
+        "startChar": 34,
+        "endLine": 11,
+        "endChar": 40
+      },
+      "revId": "c4669c08152ec089496e3e31a3ea1b632b3e94c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
