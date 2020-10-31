@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7577239_fe0e69e1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-10-31T00:16:01Z",
+      "side": 1,
+      "message": "it can\u0027t be\nrequires some boosting to work fine\nor decent gpu",
+      "range": {
+        "startLine": 11,
+        "startChar": 34,
+        "endLine": 11,
+        "endChar": 40
+      },
+      "revId": "c4669c08152ec089496e3e31a3ea1b632b3e94c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
