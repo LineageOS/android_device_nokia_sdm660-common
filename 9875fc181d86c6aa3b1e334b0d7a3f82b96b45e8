@@ -34,6 +34,24 @@
       "revId": "9875fc181d86c6aa3b1e334b0d7a3f82b96b45e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af2f08bf_6794588f",
+        "filename": "rro_overlays/TetheringOverlay/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-11-03T12:49:19Z",
+      "side": 1,
+      "message": "I kept as stock had it, most likely useless, will kick when I will clean overlays",
+      "parentUuid": "019ebded_7174293f",
+      "revId": "9875fc181d86c6aa3b1e334b0d7a3f82b96b45e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
