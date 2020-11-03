@@ -16,6 +16,24 @@
       "revId": "9875fc181d86c6aa3b1e334b0d7a3f82b96b45e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "019ebded_7174293f",
+        "filename": "rro_overlays/TetheringOverlay/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-11-03T09:13:33Z",
+      "side": 1,
+      "message": "Did you look at the original change from Google? They don\u0027t have wigig interface declared here at all.",
+      "parentUuid": "ac82c2db_7767b645",
+      "revId": "9875fc181d86c6aa3b1e334b0d7a3f82b96b45e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
