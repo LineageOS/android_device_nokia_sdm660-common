@@ -49,6 +49,7 @@
     <!-- Integer thresholds, do not connect to APs with RSSI lower than these values  -->
     <integer translatable="false" name="config_wifi_framework_wifi_score_entry_rssi_threshold_5GHz">-77</integer>
     <integer translatable="false" name="config_wifi_framework_wifi_score_entry_rssi_threshold_24GHz">-80</integer>
+
     <!-- Integer thresholds for low network score, should be somewhat less than the entry threshholds -->
     <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-80</integer>
     <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-83</integer>
@@ -56,16 +57,9 @@
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
-    <!-- Boolean indicating whether or not to revert to default country code when cellular
-    radio is unable to find any MCC information to infer wifi country code from -->
-    <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">true</bool>
-
-    <!-- Boolean indicating whether or not wifi should turn off when emergency call is made -->
-    <bool translatable="false" name="config_wifi_turn_off_during_emergency_call">true</bool>
-
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,2097152,4194304,262144,524288,1048576</string>
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,262144,524288,1048576</string>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
@@ -74,19 +68,7 @@
     <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
     <!-- Config SoftAP 2G channel list -->
-    <string  translatable="false" name="config_wifi_framework_sap_2G_channel_list">6</string>
-
-    <!-- Indicates that wifi link probing is supported on this device -->
-    <bool name="config_wifi_link_probing_supported">true</bool>
-
-    <!-- Indicates that a full bugreport should be triggered when wifi diagnostics detects an error on non-user (i.e debug) builds -->
-    <bool translatable="false" name="config_wifi_diagnostics_bugreport_enabled">true</bool>
-
-    <!-- Integer indicating maximum hardware supported client number of soft ap -->
-    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
-
-    <!-- Boolean indicating whether framework needs to set the tx power limit for meeting SAR requirements -->
-    <bool translatable="false" name="config_wifi_framework_enable_sar_tx_power_limit">true</bool>
+    <string  translatable="false" name="config_wifi_framework_sap_2G_channel_list">1,6,11</string>
 
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Nokia</string>
