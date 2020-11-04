@@ -28,17 +28,17 @@
     <!-- Vibration duration for MultiWaveView used in SearchPanelView -->
     <integer translatable="false" name="config_search_panel_view_vibration_duration">10</integer>
 
-    <!-- Should "4G" be shown instead of "LTE" when the network is NETWORK_TYPE_LTE? -->
-    <bool name="config_show4GForLTE">false</bool>
-
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Doze: should the significant motion sensor be used as a pulse signal? -->
+    <bool name="doze_pulse_on_significant_motion">true</bool>
 
     <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
     <bool name="doze_pickup_performs_proximity_check">true</bool>
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
-        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night
+        wifi,cell,bt,dnd,flashlight,rotation,battery,airplane,night,nfc,location
     </string>
 </resources>
