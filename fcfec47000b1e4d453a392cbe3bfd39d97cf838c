@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "470c49bf_21bef31b",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 332,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-11-05T03:54:38Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "92684a49_7cc52ec8",
+      "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d6e667b9_7287ca54",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ebff87d_d0d3bf57",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-11-05T03:54:38Z",
+      "side": 1,
+      "message": "Not but defaults to false, hence removed",
+      "parentUuid": "d6e667b9_7287ca54",
+      "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "915cea73_f4cfaca8",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 340,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-11-05T03:54:38Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "4a387388_4a3e2395",
+      "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cdafa3f2_25c0a632",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 1
@@ -67,6 +121,24 @@
       "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "590e573c_efa93ff6",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 343,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-11-05T03:54:38Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "cdafa3f2_25c0a632",
+      "revId": "fcfec47000b1e4d453a392cbe3bfd39d97cf838c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
