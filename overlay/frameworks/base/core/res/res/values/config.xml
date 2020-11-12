@@ -337,4 +337,7 @@
         <item>0:2:15</item>
     </string-array>
 
+    <!-- Enable system navigation keys. -->
+    <bool name="config_supportSystemNavigationKeys">true</bool>
+
 </resources>
