@@ -119,9 +119,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
 
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
