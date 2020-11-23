@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5047fc32_1bc96189",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-11-23T21:42:58Z",
+      "side": 1,
+      "message": "as if GSI would even mount your /product partition...",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 32
+      },
+      "revId": "9456f59d3aa3dcb115d5ad68ee435762dfd7d529",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
