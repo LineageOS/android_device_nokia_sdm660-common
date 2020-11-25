@@ -64,10 +64,13 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        product/lib64/libdpmframework.so)
+        system_ext/lib64/libdpmframework.so)
             for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             done
+            ;;
+        system_ext/etc/permissions/qcrilhook.xml|system_ext/etc/permissions/telephonyservice.xml|system_ext/etc/permissions/com.qti.dpmframework.xml|system_ext/etc/permissions/dpmapi.xml)
+            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
         # Fix missing symbols
         product/lib64/lib-imscamera.so | product/lib64/lib-imsvideocodec.so | product/lib/lib-imscamera.so | product/lib/lib-imsvideocodec.so)
@@ -80,6 +83,9 @@ function blob_fixup() {
             ;;
         vendor/bin/pm-service)
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+            ;;
+        system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml)
+            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
         # Fix missing symbols
         vendor/lib/libgui_vendor.so)
