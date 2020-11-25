@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "abb809a7_2ea0a32a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2020-11-25T04:35:25Z",
+      "side": 1,
+      "message": "I still see it in device mkfile",
+      "revId": "73e201df530cb429c601d40f5f29ed5205265348",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "366e4e9d_3df3fb9e",
+        "filename": "sdm660.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2020-11-25T04:35:25Z",
+      "side": 1,
+      "message": "here",
+      "revId": "73e201df530cb429c601d40f5f29ed5205265348",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
