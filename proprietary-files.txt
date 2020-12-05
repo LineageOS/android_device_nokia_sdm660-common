@@ -354,7 +354,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/init/cnd.rc
-vendor/lib64/libcacertclient.so
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -823,7 +822,11 @@ vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/qtimutex.so
 vendor/lib/libsettings.so
 vendor/lib/libsystem_health_mon.so
+<<<<<<< HEAD   (eb66bc sdm660-common: bluetooth: Disable clean turn on)
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
+=======
+vendor/lib/qtimutex.so
+>>>>>>> CHANGE (bc1eeb sdm660-common: Drop QTI cacert service)
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
@@ -865,7 +868,6 @@ vendor/lib64/libsystem_health_mon.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
