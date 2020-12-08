@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adecf5a_795eceac",
+        "filename": "sdm660.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-12-08T11:54:48Z",
+      "side": 1,
+      "message": "This doesn\u0027t exist, btw.",
+      "range": {
+        "startLine": 109,
+        "startChar": 4,
+        "endLine": 109,
+        "endChar": 45
+      },
+      "revId": "a06f468ac29b3fd27e4a95e0151be91b78f0cfe3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
