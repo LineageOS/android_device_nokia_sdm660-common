@@ -103,7 +103,7 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.aux.packagelist=net.sourceforge.opencamera,org.codeaurora.snapcam,com.fihtdc.fqc
-camera.disable_zsl_mode=0
+camera.disable_zsl_mode=1
 camera.panorama.quality=middle
 persist.vendor.camera.fdvideo=1
 persist.vendor.camera.ven_hdr=0
