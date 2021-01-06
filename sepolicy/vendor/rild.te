@@ -1,1 +1,2 @@
 allow rild proc_bandinfo:file r_file_perms;
+binder_call(rild, qtidataservices_app)
