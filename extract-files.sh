@@ -61,15 +61,19 @@ fi
 function blob_fixup() {
     case "${1}" in
         product/lib64/libdpmframework.so)
-            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            for  LIBDPM_SHIM in $(grep -L "libshim_dpmframework.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            done
             ;;
         vendor/etc/nfcee_access.xml)
             sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
             ;;
         vendor/lib/hw/camera.sdm660.so)
-            "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "${2}"
-            "${PATCHELF}" --remove-needed "libmegface-new.so" "${2}"
-            "${PATCHELF}" --add-needed "libshim_megvii.so" "${2}"
+            for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
+                "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
+            done
             ;;
     esac
 }
