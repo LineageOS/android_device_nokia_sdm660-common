@@ -153,5 +153,8 @@ persist.sys.wfd.virtual=0
 persist.sys.wifi_log_enable=false
 ro.wifi.power.reduction=1
 
+# WiFi Calling
+persist.dbg.wfc_avail_ovr=1
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
