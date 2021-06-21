@@ -5,6 +5,7 @@
 
 # Fingerprint
 /dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
+/dev/goodix_fp				   u:object_r:sysfs_fingerprint:s0
 
 # Partitions (A/B)
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/cda_[ab]                        u:object_r:custom_ab_block_device:s0
