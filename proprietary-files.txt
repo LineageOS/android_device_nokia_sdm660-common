@@ -624,8 +624,6 @@ vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a508_zap.b01
 vendor/firmware/a508_zap.mdt
-vendor/firmware/a512_zap.b01
-vendor/firmware/a512_zap.mdt
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
