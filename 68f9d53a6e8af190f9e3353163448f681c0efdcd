@@ -49,6 +49,29 @@
     },
     {
       "key": {
+        "uuid": "8f5cc687_af022f4e",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 625,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-24T10:25:47Z",
+      "side": 1,
+      "message": "Okay, a508* blobs are needed. SDM630 has Adreno 508.",
+      "range": {
+        "startLine": 624,
+        "startChar": 0,
+        "endLine": 625,
+        "endChar": 28
+      },
+      "revId": "68f9d53a6e8af190f9e3353163448f681c0efdcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "67b62919_551b9e76",
         "filename": "proprietary-files.txt",
         "patchSetId": 2
