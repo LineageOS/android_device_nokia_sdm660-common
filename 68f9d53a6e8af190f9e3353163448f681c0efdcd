@@ -96,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "caa58a54_90618d5b",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 625,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-24T10:38:53Z",
+      "side": 1,
+      "message": "Ignore what I highlighted. I just noticed that the blobs are not properly sorted. You should be good if you just leave a508* and a512* blobs. All the rest should be unused.",
+      "parentUuid": "562a9cdd_3c13a4ec",
+      "range": {
+        "startLine": 624,
+        "startChar": 0,
+        "endLine": 625,
+        "endChar": 28
+      },
+      "revId": "68f9d53a6e8af190f9e3353163448f681c0efdcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "67b62919_551b9e76",
         "filename": "proprietary-files.txt",
         "patchSetId": 2
