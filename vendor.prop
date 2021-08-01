@@ -164,6 +164,9 @@ ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.qti.va_aosp.support=1
 ro.telephony.default_network=22,22
 
+# Recovery
+ro.recovery.ui.blank_unblank_on_init=true
+
 # Sensors
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
