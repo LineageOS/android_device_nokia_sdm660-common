@@ -343,4 +343,7 @@
     <!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">true</bool>
 
+    <!-- AOSP WFD -->
+    <bool name="config_enableWifiDisplay">true</bool>
+
 </resources>
