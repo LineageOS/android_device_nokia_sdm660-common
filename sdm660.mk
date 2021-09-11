@@ -375,10 +375,6 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     wlan_carrier_bin.sh
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
