@@ -176,6 +176,10 @@ ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
 ro.vendor.sensors.facing=false
 
+# SOC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
+
 # Stagefright
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
