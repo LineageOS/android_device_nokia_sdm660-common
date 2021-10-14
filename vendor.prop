@@ -116,6 +116,7 @@ ro.charger.enable_suspend=true
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+debug.renderengine.backend=threaded
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
 vendor.display.disable_scaler=1
