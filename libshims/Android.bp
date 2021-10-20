@@ -1,0 +1,20 @@
+// libgui
+cc_library {
+    name: "libgui_shim",
+    shared_libs: [
+        "libgui",
+        "libutils",
+    ],
+    srcs: ["gui_shim.cpp"],
+    system_ext_specific: true,
+}
+
+cc_library {
+    name: "libgui_shim_vendor",
+    shared_libs: [
+        "libgui_vendor",
+        "libutils",
+    ],
+    srcs: ["gui_shim.cpp"],
+    vendor: true,
+}
