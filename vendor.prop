@@ -119,6 +119,7 @@ dalvik.vm.dex2oat64.enabled=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
 vendor.display.disable_scaler=1
+renderthread.skia.reduceopstasksplitting=true
 
 # DRM
 drm.service.enabled=true
