@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98a87d6c_8af94c24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27044
+      },
+      "writtenOn": "2021-11-17T17:03:07Z",
+      "side": 1,
+      "message": "This commit fixes missing power/battery usage stats on DRG_sprout",
+      "revId": "7a7f2ad7954231bb0f01d4dc01c0fb98fdd44040",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
