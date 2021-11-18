@@ -16,6 +16,41 @@
       "message": "Remove the profile from PL2-spcific tree",
       "revId": "594050792abedb8c692384ad824d3c1e8b54e5a2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "500d33e9_e8998eda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27044
+      },
+      "writtenOn": "2021-11-18T05:33:44Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "3e1dcb11_57c1f0ea",
+      "revId": "594050792abedb8c692384ad824d3c1e8b54e5a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f9945b5_460bbc84",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27044
+      },
+      "writtenOn": "2021-11-18T05:33:44Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2:\n\u003e \n\u003e does this work on both PL2 and DRG? why not just import it to the DRG tree?\n\u003e \n\u003e are they the same?\n\nhm, they aren\u0027t the same, so importing it to the DRG tree might be better after all...\nwill abandon these changes and push there",
+      "revId": "594050792abedb8c692384ad824d3c1e8b54e5a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
