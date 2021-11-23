@@ -863,26 +863,12 @@ service vendor.tftp_server /vendor/bin/tftp_server
     class core
     user root
 
-#service vendor.bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
-#    class late_start
-#    user bluetooth
-#    group bluetooth net_bt_admin inet
-#    disabled
-#    oneshot
-
 service vendor.bt_logger /system/bin/bt_logger
    user bluetooth
    group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
    class late_start
    disabled
    oneshot
-
-service vendor.ftmd /vendor/bin/vendor.ftmdaemon
-    class late_start
-    user root
-    group oem_2901 bluetooth net_bt_admin misc diag net_bt
-    disabled
-    oneshot
 
 service vendor.sensors /vendor/bin/sscrpcd
     class core
@@ -982,18 +968,6 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
 on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
      insmod /system/lib/modules/qcedev.ko
-
-#service vendor.drmdiag /vendor/bin/drmdiagapp
-#    class late_start
-#     user root
-#     disabled
-#     oneshot
-
-#on property:drmdiag.load=1
-#    start vendor.drmdiag
-
-#on property:drmdiag.load=0
-#    stop vendor.drmdiag
 
 service vendor.qcom-sh /vendor/bin/init.qcom.sh
     class late_start
