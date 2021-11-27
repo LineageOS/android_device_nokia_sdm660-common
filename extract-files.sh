@@ -60,11 +60,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        product/lib64/libdpmframework.so)
-            for  LIBDPM_SHIM in $(grep -L "libshim_dpmframework.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
-            done
-            ;;
         vendor/etc/nfcee_access.xml)
             sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
             ;;
