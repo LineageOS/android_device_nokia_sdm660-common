@@ -758,43 +758,58 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# QMI
-etc/permissions/qti_libpermissions.xml
-etc/permissions/qti_permissions.xml
-vendor/bin/irsc_util
-vendor/bin/pd-mapper
-vendor/lib/libdiag.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libminkdescriptor.so
-vendor/lib/libminksocket.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so
-vendor/lib64/libdiag.so
-vendor/lib64/libdsutils.so
-vendor/lib64/libidl.so
-vendor/lib64/libminkdescriptor.so
-vendor/lib64/libminksocket.so
-vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqdi.so
-vendor/lib64/libqdp.so
-vendor/lib64/libqmi.so
-vendor/lib64/libqmiservices.so
-vendor/lib64/libqmi_cci.so
-vendor/lib64/libqmi_client_helper.so
-vendor/lib64/libqmi_client_qmux.so
-vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
-vendor/lib64/libqmi_encdec.so
+# Public libraries - from Nokia/Daredevil_00WW/DDV_sprout:11/RKQ1.210607.001/00WW_3_440:user/release-keys
+vendor/etc/public.libraries.txt|a0502761a06cc791fe63f6c9db2c34cf7346b503
+
+# QMI - from Nokia/Daredevil_00WW/DDV_sprout:11/RKQ1.210607.001/00WW_3_440:user/release-keys
+etc/sysconfig/qti_whitelist.xml|4b32a1f25aad9ba025d79ad3a3a7c51d02767fbf
+system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
+vendor/bin/irsc_util|121deb2d6fd21b122c6a8ca8b30ef167f6b90f61
+vendor/bin/pd-mapper|8eb9717d2ee4da59c64ec89a85bf4e384663322b
+vendor/bin/qrtr-ns|2b84b77bcd50e8c65c2151457f885eb434af4585
+vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
+vendor/bin/ssr_setup|e7e6e81e2b5eed83e31cb70fd178a97877daa4a9
+vendor/lib/libdiag.so|0fa4e975eca5a4ae62a8317e109557938453615e
+vendor/lib/libdsutils.so|1336d98d5f7549d93678fd4791cce39766114da0
+vendor/lib64/libdiag.so|7afccc79d88106a624449a757b298653e55c2172
+vendor/lib64/libdsutils.so|17f87e351aa34cea83ca815875e4b459197066a3
+vendor/lib/libidl.so|fe761ab5f75a3a99368b0e6790dfa9effde841c2
+vendor/lib/libmdmdetect.so|c1712f7d094e7f5848cd4377e3075fdd758af312
+vendor/lib/libpdmapper.so|502c60cddc8964baa40f0cac0cc72e2f81307c44
+vendor/lib/libpdnotifier.so|370b0cb3269fbe6a99a8e55d7da4c069d468e277
+vendor/lib/libqcci_legacy.so|24366d296464a000e33169a20fed2f5b30692d20
+vendor/lib/libqdi.so|a9207294f63b73c1404f28c24d497167740197a5
+vendor/lib/libqdp.so|bf5457a4ea6fb0f9b15efe38cd8e98c4e28d0e1b
+vendor/lib/libqmi.so|116312adb99c357d1c2bab2aa2a8b68d49d590ef
+vendor/lib/libqmi_cci.so|33d972ae0011052c18b9eb3c0e8477f2299ffbef
+vendor/lib/libqmi_client_helper.so|e6b3c4c1c5e2f84e640bef557b00b23465234bb4
+vendor/lib/libqmi_client_qmux.so|f06bbe8ec8d1b6c10ca85522bf91515328424aa3
+vendor/lib/libqmi_common_so.so|d048a69188f6159868d3cbf6636dae8fa823137e
+vendor/lib/libqmi_csi.so|07083f60fb6f0b967c83b166bf1d2e2ae3beaf20
+vendor/lib/libqmi_csvt_srvc.so|531ac1cabb17422be217475cee805d28f60ee246
+vendor/lib/libqmi_encdec.so|db45b38dda5ce833029c1870c948dcabe36ad721
+vendor/lib/libqmi_legacy.so|7508cc700f75db2da644da2d9c802b588ab4a0e5
+vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
+vendor/lib/libqsocket.so|50079ff493b17465ff8f44d8210d26e3c7279065
+vendor/lib64/libidl.so|857f7a75a51ade7d3621f7fa6da0e9461244ca01
+vendor/lib64/libmdmdetect.so|4dee2a700aad658f3f30a6da069c867307ed371c
+vendor/lib64/libpdmapper.so|dd589e58135e9ef3c952c5d0af9dce2c91df5014
+vendor/lib64/libpdnotifier.so|8e7b07e2b16c3931b93605deb38f2452ff57037b
+vendor/lib64/libqcci_legacy.so|0e78c75ce59453a09cc1d6bcba0507cab9ae663a
+vendor/lib64/libqdi.so|a226749d8277cae116d0db57b03305b14836ccab
+vendor/lib64/libqdp.so|aa245c0bf24983168ccf1da4a66008c214880eb1
+vendor/lib64/libqmi.so|221c5efee5f7a1fde06b31c80390af344b026378
+vendor/lib64/libqmi_cci.so|ce4b217893c489a7a8f0220c1621bd4b7425ef81
+vendor/lib64/libqmi_client_helper.so|d5a1b7ef6fa2163efd691e2c196a29571af67327
+vendor/lib64/libqmi_client_qmux.so|cb3fcabb2a92ac53f8df2962f2d2d5ff6f5a0ebb
+vendor/lib64/libqmi_common_so.so|d817b576a054dd91e8e4346d73e6d635d221bfde
+vendor/lib64/libqmi_csi.so|7e19c2266b7f63f3f9e69c039b1446acd460231b
+vendor/lib64/libqmi_csvt_srvc.so|f1a3bc5d8e48e8bc3464b6a9ad652a7553240c79
+vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
+vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
+vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
+vendor/lib64/libqsocket.so|3fa01c9aff6ed96a5ea9886c7696a046c929e339
 
 # Qteeconnector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -808,8 +823,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 -system_ext/app/DeviceInfo/DeviceInfo.apk|2ef6b69bf561d601a4b254e2763fde561db99f71
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|712ba653c60066e815b62cd54589e8511bcdb8f9
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
-system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4ba0680d04581d8bd9acba3ddb8ea22f85747910
 system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
@@ -931,6 +944,7 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da28
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e67f78bdb42f2b246ecc6a37cecd
 
 # Radio (IMS) - from Nokia/Daredevil_00WW/DDV_sprout:11/RKQ1.210607.001/00WW_3_440:user/release-keys
+etc/permissions/privapp-permissions-qti.xml|891d1a265edc7b5e1aec6f653c72eaa08b50fac7
 -system_ext/app/uceShimService/uceShimService.apk|3b5b6fb89581e92eb151fcc9ddffe53609e6dd4c
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
