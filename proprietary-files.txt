@@ -45,12 +45,10 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# ANT+
--lib/libantradio.so
--lib64/libantradio.so
-product/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+# ANT+ - from Nokia/Daredevil_00WW/DDV_sprout:11/RKQ1.210607.001/00WW_3_440:user/release-keys
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|7d5c61562d046e6ba4950ccbeaecef4cafd3f1af
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|a858cae6254eb94831c50ac3df1d2d2f1ec5a65c
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
 
 # Audio
 etc/permissions/audiosphere.xml
