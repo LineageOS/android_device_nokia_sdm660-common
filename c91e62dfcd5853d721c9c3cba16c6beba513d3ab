@@ -33,6 +33,24 @@
       "message": "so, considering more than 2/3rds of our blobs will be DDV after this, wanna swap the default extract source and instead pin the PL2/DRG ones we need?",
       "revId": "c91e62dfcd5853d721c9c3cba16c6beba513d3ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1250923b_6e8a4a8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-11-29T22:36:19Z",
+      "side": 1,
+      "message": "would make updating to newer DDV build blobs easier",
+      "parentUuid": "3ae061d0_8e3d6479",
+      "revId": "c91e62dfcd5853d721c9c3cba16c6beba513d3ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
