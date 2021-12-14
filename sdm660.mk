@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.btconfigstore@1.0.vendor
@@ -161,6 +162,7 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
@@ -178,7 +180,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3.vendor
 
 # DPM
 PRODUCT_PACKAGES += \
@@ -186,7 +189,12 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -201,6 +209,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
     libwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
@@ -249,6 +258,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_fp.kl \
     $(COMMON_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
@@ -273,8 +286,13 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
+    android.system.net.netd@1.1.vendor \
     libandroid_net \
     netutils-wrapper-1.0
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -316,9 +334,13 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libprotobuf-cpp-full \
     libxml2
@@ -331,6 +353,13 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -351,6 +380,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
