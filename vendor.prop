@@ -187,5 +187,8 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
+# Watchdog
+ro.hw_timeout_multiplier=3
+
 # Wi-Fi
 ro.boot.wificountrycode=US
