@@ -54,7 +54,6 @@ debug.sf.hw=1
 debug.sf.latch_unsignaled=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
-ro.qualcomm.cabl=0
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.use_color_management=false
@@ -134,7 +133,6 @@ telephony.lteOnCdmaDevice=1
 # Sensors
 ro.qti.sensors.dev_ori=false
 ro.vendor.sensors.dev_ori=false
-ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
