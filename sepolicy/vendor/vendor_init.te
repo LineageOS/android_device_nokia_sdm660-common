@@ -11,5 +11,3 @@ allow vendor_init {
 allow vendor_init sysfs_fingerprint:chr_file { getattr setattr };
 
 allow vendor_init media_rw_data_file:file getattr;
-
-set_prop(vendor_init, default_prop)
