@@ -41,3 +41,7 @@ camera.cts.enable                       u:object_r:camera_prop:s0
 sys.fp.firmware.version			u:object_r:fingerprint_prop:s0
 
 gpu.stats.debug.level                   u:object_r:vendor_display_prop:s0
+
+# Radio
+ro.vendor.ril.svlte1x                   u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
