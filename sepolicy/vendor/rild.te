@@ -1,7 +1,9 @@
 allow rild proc_bandinfo:file r_file_perms;
+
 binder_call(rild, qtidataservices_app)
 get_prop(rild, default_prop)
 get_prop(rild, vendor_pd_locater_dbg_prop)
+get_prop(rild, wifi_hal_prop)
 
 allow rild cutback_data_file:dir { ioctl read write getattr lock add_name remove_name search open };
 allow rild cutback_data_file:file { ioctl read write getattr lock append map open };
