@@ -45,6 +45,9 @@ persist.chg.max_volt_mv=9000
 # CNE
 persist.vendor.cne.feature=1
 
+# DPM
+persist.vendor.dpm.feature=11
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 

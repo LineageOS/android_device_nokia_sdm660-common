@@ -128,7 +128,6 @@ drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
 persist.gsmapp.ezincall.video=false
 persist.sys.screenmode=1
-persist.vendor.dpm.feature=11
 
 # FM
 vendor.hw.fm.init=0
