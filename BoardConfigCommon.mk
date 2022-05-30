@@ -61,9 +61,6 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 # Camera
 USE_CAMERA_STUB := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
