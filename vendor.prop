@@ -208,6 +208,11 @@ vendor.video.disable.ubwc=1
 # HEH filename encryption is being dropped
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+# USB
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+
 # Watchdog
 ro.hw_timeout_multiplier=3
 
