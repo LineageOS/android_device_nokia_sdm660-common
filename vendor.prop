@@ -203,6 +203,14 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
+# USB
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
+vendor.usb.use_gadget_hal=0
+
 # Watchdog
 ro.hw_timeout_multiplier=3
 
