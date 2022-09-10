@@ -132,7 +132,7 @@ ro.charger.enable_suspend=true
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.renderengine.backend=threaded
+debug.renderengine.backend=skiaglthreaded
 vendor.display.disable_scaler=1
 renderthread.skia.reduceopstasksplitting=true
 
