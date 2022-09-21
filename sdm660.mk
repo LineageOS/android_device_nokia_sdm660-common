@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
 
 # DPM
 PRODUCT_PACKAGES += \
-    libshim_dpmframework
+    libcutils_shim
 
 # Fingerprint
 PRODUCT_PACKAGES += \

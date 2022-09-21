@@ -61,8 +61,8 @@ fi
 function blob_fixup() {
     case "${1}" in
         product/lib64/libdpmframework.so)
-            for  LIBDPM_SHIM in $(grep -L "libshim_dpmframework.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             done
             ;;
         # Fix missing symbols
