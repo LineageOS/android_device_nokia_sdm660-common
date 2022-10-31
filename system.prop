@@ -130,6 +130,7 @@ persist.vendor.radio.oem_socket=true
 persist.vendor.radio.report_codec=1
 ril.subscription.types=NV,RUIM
 rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
+ro.telephony.block_binder_thread_on_incoming_calls=false
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 
