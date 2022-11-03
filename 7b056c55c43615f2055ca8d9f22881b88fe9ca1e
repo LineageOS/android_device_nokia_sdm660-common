@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f945dcb_cbfb08bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-11-03T10:55:36Z",
+      "side": 1,
+      "message": "This doesn\u0027t make sense. The lib that depends on it is in /product.",
+      "revId": "7b056c55c43615f2055ca8d9f22881b88fe9ca1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
