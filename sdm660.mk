@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 
 # DPM
 PRODUCT_PACKAGES += \
-    libcutils_shim
+    libcutils_shim.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
