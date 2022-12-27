@@ -148,6 +148,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-04-01
 
+# Verity
+# Only needed for signing
+BOARD_AVB_ENABLE := false
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
