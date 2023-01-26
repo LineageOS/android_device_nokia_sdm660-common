@@ -65,7 +65,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
-BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # Graphics
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
