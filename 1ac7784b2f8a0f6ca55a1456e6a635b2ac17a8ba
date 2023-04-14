@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71580557_fb2f5154",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-04-14T01:50:10Z",
+      "side": 1,
+      "message": "I suspect one of the 20 bazillion flashables Nokia users love could be causing this.",
+      "revId": "1ac7784b2f8a0f6ca55a1456e6a635b2ac17a8ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
