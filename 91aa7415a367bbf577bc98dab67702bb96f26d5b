@@ -33,6 +33,63 @@
       "message": "Also, I\u0027m not sure what licensing I should add, if any",
       "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82626b60_de4a3de4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-03T17:45:47Z",
+      "side": 1,
+      "message": "how does this play with the charging HAL?",
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5f391e8_9c15589b",
+        "filename": "sdm660.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 458,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-03T17:45:47Z",
+      "side": 1,
+      "message": "4 spaces, not tab",
+      "range": {
+        "startLine": 458,
+        "startChar": 0,
+        "endLine": 458,
+        "endChar": 1
+      },
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6a7b824_2a395e10",
+        "filename": "sepolicy/vendor/hal_fastcharge_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-03T17:45:47Z",
+      "side": 1,
+      "message": "extra newline",
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
