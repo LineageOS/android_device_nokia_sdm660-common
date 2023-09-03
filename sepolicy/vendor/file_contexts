@@ -29,3 +29,7 @@
 
 # tombstones
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
+
+# Fast Charge HAL
+/vendor/bin/hw/vendor\.lineage\.fastcharge@1\.0-service u:object_r:hal_lineage_fastcharge_default_exec:s0
+
