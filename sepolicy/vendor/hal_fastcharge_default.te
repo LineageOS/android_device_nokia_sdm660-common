@@ -1,0 +1,3 @@
+# Allow read/write access to /sys/class/qcom-battery/restricted_charging
+allow hal_lineage_fastcharge_default sysfs_battery_supply:file rw_file_perms;
+allow hal_lineage_fastcharge_default sysfs_battery_supply:dir search;
