@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02a695d1_668ad668",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28459
+      },
+      "writtenOn": "2023-09-03T07:51:51Z",
+      "side": 1,
+      "message": "Should I also make the setting persistent across reboots?\n\nNot sure how to go about that though... I was thinking maybe a file in the userdata partition?",
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
