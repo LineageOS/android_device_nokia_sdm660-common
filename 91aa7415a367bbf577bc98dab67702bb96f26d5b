@@ -70,6 +70,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f465cc3_05bda230",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2023-09-04T04:45:43Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be called slow/restricted charging then?",
+      "parentUuid": "7438ddef_e09966fe",
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c5f391e8_9c15589b",
