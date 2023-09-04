@@ -88,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ac27c1f_bb839763",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28459
+      },
+      "writtenOn": "2023-09-04T05:18:05Z",
+      "side": 1,
+      "message": "The interface (which was already defined) is called IFastCharge, which is why I went with this naming convention.\n\nAdditionlly, there is a switch in the battery settings menu, that makes use of this HAL if present. That switch is titled \"Fast Charging\". You can find the fragment here: https://github.com/LineageOS/android_packages_apps_Settings/blob/lineage-20.0/src/com/android/settings/fuelgauge/FastChargingPreferenceController.java\n\nI chose the naming convention keeping these in mind.",
+      "parentUuid": "8f465cc3_05bda230",
+      "revId": "91aa7415a367bbf577bc98dab67702bb96f26d5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c5f391e8_9c15589b",
