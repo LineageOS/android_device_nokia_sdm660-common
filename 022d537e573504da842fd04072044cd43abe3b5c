@@ -50,6 +50,23 @@
       "message": "I didn\u0027t base this off anything.\n\nAs for persistence, initially I wasn\u0027t sure whether to\nuse a file in userdata, or sysprops, or something\nelse that could be unique to each user on the device.\n\nNow I have that clarity, I\u0027ll go ahead with sysprops\n(unless you\u0027d like to suggest something better)",
       "revId": "022d537e573504da842fd04072044cd43abe3b5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "652ae913_714f080c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-05T14:59:38Z",
+      "side": 1,
+      "message": "why not base off the hardware/samsung one and then just strip it back?\n\nThat way we aren\u0027t reinventing the wheel.",
+      "revId": "022d537e573504da842fd04072044cd43abe3b5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
