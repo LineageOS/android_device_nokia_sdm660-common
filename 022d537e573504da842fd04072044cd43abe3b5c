@@ -16,6 +16,23 @@
       "message": "Which specific fast charge HAL implementation did you pull this from? It doesn\u0027t line up with any of the ones I am checking against.",
       "revId": "022d537e573504da842fd04072044cd43abe3b5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94b5215e_475b17e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-05T02:32:39Z",
+      "side": 1,
+      "message": "for ex, samsung version of Hal already has user setting persistence.",
+      "revId": "022d537e573504da842fd04072044cd43abe3b5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
