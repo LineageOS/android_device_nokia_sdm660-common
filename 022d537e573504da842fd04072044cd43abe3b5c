@@ -67,6 +67,24 @@
       "message": "why not base off the hardware/samsung one and then just strip it back?\n\nThat way we aren\u0027t reinventing the wheel.",
       "revId": "022d537e573504da842fd04072044cd43abe3b5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a90d972_af7afc6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2023-09-05T15:06:28Z",
+      "side": 1,
+      "message": "+1 to the idea of using hardware/samsung, though I will suggest using it completely. I notice only path is different which should be possible to alter via a flag(?). We already pull in that repo for NFC hal anyway.",
+      "parentUuid": "652ae913_714f080c",
+      "revId": "022d537e573504da842fd04072044cd43abe3b5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
