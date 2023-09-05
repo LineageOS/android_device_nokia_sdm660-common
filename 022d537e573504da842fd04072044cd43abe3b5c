@@ -102,6 +102,23 @@
       "message": "Sure, ig that works",
       "revId": "022d537e573504da842fd04072044cd43abe3b5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08c19b32_562fcd64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28459
+      },
+      "writtenOn": "2023-09-05T16:34:16Z",
+      "side": 1,
+      "message": "Although, since both the sysfs node path and and selinux\npolicy rules will be different, just including it from\nthe Samsung repo won\u0027t be enough right?",
+      "revId": "022d537e573504da842fd04072044cd43abe3b5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
