@@ -1,51 +1,100 @@
-// FIXME: your file license if you have one
+/*
+ * Copyright (C) 2020-2023 The LineageOS Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#define LOG_TAG "fastcharge@1.0-service"
+#define FASTCHARGE_PATH "/sys/class/qcom-battery/restricted_charging"
+#define FASTCHARGE_DEFAULT_SETTING true
 
 #include "FastCharge.h"
+#include <android-base/logging.h>
+#include <cutils/properties.h>
+
 #include <fstream>
+#include <iostream>
 
-#define LOG_TAG "FastChargeService"
-#include <log/log.h>
+namespace vendor {
+namespace lineage {
+namespace fastcharge {
+namespace V1_0 {
+namespace implementation {
 
-namespace vendor::lineage::fastcharge::implementation {
+static constexpr const char* kFastChargingProp = "persist.vendor.fastchg_enabled";
 
-// Methods from ::vendor::lineage::fastcharge::V1_0::IFastCharge follow.
+/*
+ * Write value to path and close file.
+ */
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
 
-// Note: this function returns 1 on errors, since it is safest to assume fast charging is ON
+    if (!file) {
+        PLOG(ERROR) << "Failed to open: " << path;
+        return;
+    }
+
+    LOG(DEBUG) << "write: " << path << " value: " << value;
+
+    file << value << std::endl;
+
+    if (!file) {
+        PLOG(ERROR) << "Failed to write: " << path << " value: " << value;
+    }
+}
+
+template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+
+    if (!file) {
+        PLOG(ERROR) << "Failed to open: " << path;
+        return def;
+    }
+
+    T result;
+
+    file >> result;
+
+    if (file.fail()) {
+        PLOG(ERROR) << "Failed to read: " << path;
+        return def;
+    } else {
+        LOG(DEBUG) << "read: " << path << " value: " << result;
+        return result;
+    }
+}
+
+FastCharge::FastCharge() {
+    setEnabled(property_get_bool(kFastChargingProp, FASTCHARGE_DEFAULT_SETTING));
+}
+
 Return<bool> FastCharge::isEnabled() {
-    char status;
-
-    std::fstream ctrl_file ("/sys/class/qcom-battery/restricted_charging", std::fstream::in);
-    if (ctrl_file) {
-        status = ctrl_file.get();
-        ctrl_file.close();
-    } else {
-        ALOGE ("Error reading /sys/class/qcom-battery/restricted-charging");
-        return 1;
-    }
-
-    switch (status) {
-        case '0': return true;
-        case '1': return false;
-    }
-
-    ALOGE ("/sys/class/qcom-battery/restricted-charging: Unknown status: %c", status);
-    return 1;
+    return get(FASTCHARGE_PATH, 0) < 1;
 }
 
-Return<bool> FastCharge::setEnabled(bool enabled) {
-    char status = enabled ? '0' : '1';
-    ALOGI ("Attempting to set fastcharge enabled status to %d", enabled);
+Return<bool> FastCharge::setEnabled(bool enable) {
+    set(FASTCHARGE_PATH, enable ? 0 : 1);
 
-    std::fstream ctrl_file ("/sys/class/qcom-battery/restricted_charging", std::fstream::out);
-    if (ctrl_file) {
-        ctrl_file.put(status);
-        ctrl_file.close();
-    } else {
-        ALOGE ("Error writing /sys/class/qcom-battery/restricted_charging");
-        return 1;
-    }
+    bool enabled = isEnabled();
+    property_set(kFastChargingProp, enabled ? "true" : "false");
 
-    return 0;
+    return enabled;
 }
-}  // namespace vendor::lineage::fastcharge::implementation
 
+}  // namespace implementation
+}  // namespace V1_0
+}  // namespace fastcharge
+}  // namespace lineage
+}  // namespace vendor

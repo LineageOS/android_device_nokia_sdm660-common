@@ -1,3 +1,0 @@
-service vendor.fastcharge_hal /vendor/bin/hw/vendor.lineage.fastcharge@1.0-service
-    class hal
-
