@@ -51,6 +51,23 @@
       "parentUuid": "2143e015_12b4f4eb",
       "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78e2e642_5a1f75c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28459
+      },
+      "writtenOn": "2023-09-15T03:35:50Z",
+      "side": 1,
+      "message": "The SELinux policy doesn\u0027t use any type or macro that\nisn\u0027t in the Lineage tree. I\u0027ve checked that.\nThe device trees too are unchanged Lineage ones",
+      "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
