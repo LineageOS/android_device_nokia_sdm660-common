@@ -33,6 +33,24 @@
       "message": "does it work? if so feel free to CR/V",
       "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f121cc5_64cb49e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28459
+      },
+      "writtenOn": "2023-09-15T03:24:39Z",
+      "side": 1,
+      "message": "I tested this with a crDroid tree, taking the device tree as-is from Lineage. Is that sufficient?\n\nI can confirm it\u0027s working on my build.",
+      "parentUuid": "2143e015_12b4f4eb",
+      "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
