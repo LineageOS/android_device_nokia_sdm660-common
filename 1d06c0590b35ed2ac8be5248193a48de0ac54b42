@@ -68,6 +68,24 @@
       "message": "The SELinux policy doesn\u0027t use any type or macro that\nisn\u0027t in the Lineage tree. I\u0027ve checked that.\nThe device trees too are unchanged Lineage ones",
       "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eefc4994_b0ed4c36",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-09-16T04:02:06Z",
+      "side": 1,
+      "message": "Yeah, leave CR/V on this pls.\n\nI cannot test anytime soon - moving.",
+      "parentUuid": "78e2e642_5a1f75c2",
+      "revId": "1d06c0590b35ed2ac8be5248193a48de0ac54b42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
