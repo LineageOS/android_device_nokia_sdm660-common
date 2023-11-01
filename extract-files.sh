@@ -74,6 +74,9 @@ function blob_fixup() {
         vendor/etc/nfcee_access.xml)
             sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
             ;;
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+            ;;
         # Fix missing symbols
         vendor/lib/libgui_vendor.so)
             for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
