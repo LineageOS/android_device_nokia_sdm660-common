@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := nokia
-
 COMMON_PATH := device/nokia/sdm660-common
 
 # Architecture
