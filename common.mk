@@ -414,7 +414,6 @@ PRODUCT_PACKAGES += \
 
 # Update engine
 PRODUCT_PACKAGES += \
-    cppreopts.sh \
     otapreopt_script \
     update_engine \
     update_engine_sideload \
