@@ -273,10 +273,6 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
-# Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
