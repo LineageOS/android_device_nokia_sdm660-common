@@ -16,7 +16,7 @@
 
 PLATFORM_PATH := device/nokia/sdm660-common
 
-# Architecture
+# Platform
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -31,23 +31,25 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
-# Bootloader
-TARGET_NO_BOOTLOADER := true
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := sdm660
 
-# Build System
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Bootloader
+TARGET_NO_BOOTLOADER := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # A/B
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     boot \
     system \
     vendor
+
+AB_OTA_UPDATER := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -61,9 +63,6 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 # Camera
 USE_CAMERA_STUB := true
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
-
 # Graphics
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_USES_GRALLOC1 := true
@@ -75,15 +74,19 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+
 # Kernel
+BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
+BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=1 androidboot.configfs=true
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := \
-    console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom \
-    msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 \
-    service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 \
-    loop.max_part=7 androidboot.boot_devices=soc/c0c4000.sdhci
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/nokia/sdm660
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
@@ -99,25 +102,19 @@ TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 # Partitions
 BOARD_USES_SYSTEM_OTHER_ODEX := true
+BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
-
+TARGET_NO_RECOVERY := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
-
-# Platform
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := sdm660
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/AllHWList/tp_double_tap"
 
 # Recovery
-BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -125,7 +122,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Root Directories
+# Root
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
     /vendor/bt_firmware:/bt_firmware \
@@ -135,7 +132,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# Sepolicy
+# SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
