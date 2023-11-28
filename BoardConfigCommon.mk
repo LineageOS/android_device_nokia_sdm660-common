@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/nokia/sdm660-common
+PLATFORM_PATH := device/nokia/sdm660-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -58,7 +58,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 USE_CAMERA_STUB := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
 # Graphics
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
@@ -68,8 +68,8 @@ TARGET_USES_ION := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -88,10 +88,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(PLATFORM_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
+TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 # Partitions
 BOARD_USES_SYSTEM_OTHER_ODEX := true
@@ -114,8 +114,8 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/AllHWList/tp_double_tap"
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
-TARGET_RECOVERY_DEVICE_DIRS += $(COMMON_PATH)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # RIL
@@ -134,8 +134,8 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-04-01
