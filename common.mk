@@ -270,7 +270,6 @@ PRODUCT_PACKAGES += \
 
 # Network
 PRODUCT_PACKAGES += \
-    libandroid_net \
     netutils-wrapper-1.0
 
 # OMX
