@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5aa9f9f4_b3f139b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-11-30T16:57:27Z",
+      "side": 1,
+      "message": "The intention was to keep 20 kernel inline like what we did on pro1, missed this half, though.",
+      "revId": "7e89807a7548f52fd9be368d1c7caca1e148c409",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
