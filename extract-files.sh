@@ -73,7 +73,7 @@ function blob_fixup() {
             sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
         # Fix missing symbols
-        product/lib64/lib-imscamera.so | product/lib64/lib-imsvideocodec.so | product/lib/lib-imscamera.so | product/lib/lib-imsvideocodec.so)
+        system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so | system_ext/lib/lib-imscamera.so | system_ext/lib/lib-imsvideocodec.so)
             for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
