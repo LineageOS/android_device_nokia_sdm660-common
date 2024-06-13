@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GMS
 ifeq ($(WITH_GMS),true)
@@ -365,6 +366,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor \
     libxml2
 
 # Seccomp
