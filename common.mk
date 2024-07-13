@@ -121,7 +121,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
-    memtrack.sdm660 \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml
