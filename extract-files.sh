@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2023 The LineageOS Project
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -48,7 +48,8 @@ while [ "${#}" -gt 0 ]; do
                 KANG="--kang"
                 ;;
         -s | --section )
-                SECTION="${2}"; shift
+                SECTION="${2}"
+                shift
                 CLEAN_VENDOR=false
                 ;;
         * )
@@ -65,42 +66,59 @@ fi
 function blob_fixup() {
     case "${1}" in
         system_ext/lib64/libdpmframework.so)
+            [ "$2" = "" ] && return 0
             for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             done
             ;;
         system_ext/etc/permissions/qcrilhook.xml|system_ext/etc/permissions/telephonyservice.xml|system_ext/etc/permissions/com.qti.dpmframework.xml|system_ext/etc/permissions/dpmapi.xml)
+            [ "$2" = "" ] && return 0
             sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
         # Fix missing symbols
         system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so | system_ext/lib/lib-imscamera.so | system_ext/lib/lib-imsvideocodec.so)
+            [ "$2" = "" ] && return 0
             for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
             ;;
         vendor/etc/nfcee_access.xml)
+            [ "$2" = "" ] && return 0
             sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
             ;;
         vendor/bin/pm-service)
+            [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
         system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml)
+            [ "$2" = "" ] && return 0
             sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
         # Fix missing symbols
         vendor/lib/libgui_vendor.so)
+            [ "$2" = "" ] && return 0
             for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
             done
             ;;
         vendor/lib/hw/camera.sdm660.so)
+            [ "$2" = "" ] && return 0
             for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
                 "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
                 "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
                 "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
             done
             ;;
+        *)
+            return 1
+            ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
