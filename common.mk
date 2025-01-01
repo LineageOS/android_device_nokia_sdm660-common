@@ -117,8 +117,15 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
+<<<<<<< PATCH SET (f35a6b sdm660-common: Update display flags & packages)
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    gralloc.qcom \
+    hwcomposer.qcom \
+=======
     gralloc.sdm660 \
     hwcomposer.sdm660 \
+>>>>>>> BASE      (39a211 sdm660-common: Switch to QTI Memtrack AIDL HAL)
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml
