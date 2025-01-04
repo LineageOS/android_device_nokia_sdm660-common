@@ -11,6 +11,9 @@
 /dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
 /dev/goodix_fp				   u:object_r:sysfs_fingerprint:s0
 
+# Light HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.sdm660 u:object_r:hal_light_default_exec:s0
+
 # Partitions (A/B)
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/cda_[ab]                        u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/hidden_[ab]                     u:object_r:custom_ab_block_device:s0
