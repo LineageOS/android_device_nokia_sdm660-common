@@ -369,6 +369,11 @@ PRODUCT_PACKAGES += \
     libsysutils.vendor \
     libxml2
 
+# Runtime resource overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
+    WifiOverlay
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
@@ -440,7 +445,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     libwpa_client \
     hostapd \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
