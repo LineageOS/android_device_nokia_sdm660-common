@@ -1,5 +1,0 @@
-service vendor.light-sdm660 /vendor/bin/hw/android.hardware.light-service.sdm660
-    class hal
-    user system
-    group system
-    shutdown critical
