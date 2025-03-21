@@ -84,10 +84,6 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
             ;;
-        vendor/etc/nfcee_access.xml)
-            [ "$2" = "" ] && return 0
-            sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
-            ;;
         vendor/bin/pm-service)
             [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
