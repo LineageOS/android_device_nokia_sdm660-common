@@ -67,18 +67,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib64/libdpmframework.so)
-            [ "$2" = "" ] && return 0
-            for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
-            done
-            ;;
-        system_ext/etc/permissions/qcrilhook.xml|system_ext/etc/permissions/telephonyservice.xml|system_ext/etc/permissions/com.qti.dpmframework.xml|system_ext/etc/permissions/dpmapi.xml)
-            [ "$2" = "" ] && return 0
-            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
-            ;;
-        # Fix missing symbols
-        system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so | system_ext/lib/lib-imscamera.so | system_ext/lib/lib-imsvideocodec.so)
+        system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so)
             [ "$2" = "" ] && return 0
             for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
@@ -87,29 +76,6 @@ function blob_fixup() {
         vendor/bin/pm-service)
             [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
-            ;;
-        system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml)
-            [ "$2" = "" ] && return 0
-            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
-            ;;
-        vendor/etc/data/dsi_config.xml|vendor/etc/data/netmgr_config.xml)
-            [ "$2" = "" ] && return 0
-            fix_xml "${2}"
-            ;;
-        # Fix missing symbols
-        vendor/lib/libgui_vendor.so)
-            [ "$2" = "" ] && return 0
-            for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
-            done
-            ;;
-        vendor/lib/hw/camera.sdm660.so)
-            [ "$2" = "" ] && return 0
-            for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
-                "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
-                "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
-                "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
-            done
             ;;
         vendor/lib*/libwvhidl.so)
             [ "$2" = "" ] && return 0

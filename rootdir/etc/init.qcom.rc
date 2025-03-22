@@ -1143,11 +1143,6 @@ service vendor.mbm_spy /vendor/bin/mbm_spy
     group system
     oneshot
 
-service vendor.thermal-com /vendor/bin/thermal-engine --minimode
-    class main
-    user root
-    disabled
-
 service vendor.adspd /vendor/bin/adspd
     class main
     socket adspdsock stream 0660 system audio
@@ -1215,15 +1210,6 @@ service vendor.spdaemon /vendor/bin/spdaemon
     user system
     group system
 
-service vendor.thermal-engine /vendor/bin/thermal-engine
-    class main
-    user root
-    socket thermal-send-client stream 0666 system system
-    socket thermal-recv-client stream 0660 system system
-    socket thermal-recv-passive-client stream 0666 system system
-    socket thermal-send-rule stream 0660 system system
-    group root system
-
 service vendor.adsprpcd /vendor/bin/adsprpcd
     class main
     user media
@@ -1248,13 +1234,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
-
-service qvrd /system/bin/qvrservice
-    class late_start
-    user system
-    group system camera graphics
-    socket qvrservice stream 0666 system system
-    capabilities SYS_NICE
 
 #Set GPU Opengles version
 on property:vendor.opengles.version=*
