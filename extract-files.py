@@ -48,7 +48,7 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/libwvhidl.so': blob_fixup()
+    ('vendor/lib64/mediadrm/libwvdrmengine.so','vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
 	.add_needed('libutils-v33.so'),
