@@ -72,6 +72,7 @@ function blob_fixup() {
             for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
+            "${PATCHELF}" --replace-needed "libqdMetaData.so" "libqdMetaData.system.so" "${2}"
             ;;
         vendor/bin/pm-service)
             [ "$2" = "" ] && return 0
