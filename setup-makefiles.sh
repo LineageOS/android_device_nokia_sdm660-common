@@ -23,6 +23,37 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"device/nokia/sdm660-common",
+		"hardware/qcom-caf/msm8998",
+		"hardware/qcom-caf/wlan",
+		"vendor/qcom/opensource/dataservices",
+                "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
+EOF
+}
+
+function lib_to_package_fixup_vendor_variants() {
+    if [ "$2" != "vendor" ]; then
+        return 1
+    fi
+
+    case "$1" in
+        com.qualcomm.qti.dpm.api@1.0)
+            echo "$1_vendor"
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+function lib_to_package_fixup() {
+    lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
+        lib_to_package_fixup_proto_3_9_1 "$1" ||
+        lib_to_package_fixup_vendor_variants "$@"
+}
+
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
