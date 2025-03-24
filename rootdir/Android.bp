@@ -42,12 +42,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.qseecomd.sh",
-    src: "bin/init.qti.qseecomd.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "wlan_carrier_bin.sh",
     src: "bin/wlan_carrier_bin.sh",
     vendor: true,
