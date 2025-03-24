@@ -30,10 +30,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -69,12 +65,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
-    android.hardware.bluetooth.audio-impl \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    android.hardware.bluetooth.audio-impl
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -88,16 +80,8 @@ $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.5 \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.6 \
-    vendor.qti.hardware.camera.device@1.0
-
-PRODUCT_PACKAGES += \
-    libshim_megvii \
-    libgui_shim \
-    libgui_shim_vendor
+    android.hardware.camera.provider@2.4-service
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -117,17 +101,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     gralloc.sdm660 \
     hwcomposer.qcom \
-    libdisplayconfig \
-    libqdMetaData.system \
-    libtinyxml \
-    vendor.qti.hardware.memtrack-service \
-    vendor.display.config@2.0.vendor
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.3.vendor \
-    libcrypto_shim.vendor
+    android.hardware.drm-service.clearkey
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -142,8 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
-    libion.vendor
+    android.hardware.gatekeeper@1.0.vendor
 
 # GMS
 ifeq ($(WITH_GMS),true)
@@ -152,7 +129,6 @@ endif
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1.vendor \
     libwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
@@ -218,10 +194,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_fp.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
@@ -245,19 +217,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
-# netmgrd
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
-    android.system.net.netd@1.1.vendor \
-    libnetutils.vendor
-
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # OMX
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libOmxCore \
     libOmxVdec \
@@ -319,8 +284,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor
+    android.hardware.power-service-qti
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -329,14 +293,8 @@ PRODUCT_PACKAGES += \
 
 # QCOM
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni \
-    libvndfwk_detect_jni.vendor
-
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -344,17 +302,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.secure_element@1.0.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    librmnetctl \
-    libsqlite.vendor \
-    libsysutils.vendor \
-    libxml2
 
 # Runtime resource overlays
 PRODUCT_PACKAGES += \
@@ -367,11 +314,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
-    libpower.vendor
+    android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
@@ -430,7 +374,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    libwpa_client \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
