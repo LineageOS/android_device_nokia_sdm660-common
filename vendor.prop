@@ -103,7 +103,7 @@ persist.vendor.bt.splita2dp.44_1_war=false
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
-ro.bt.bdaddr_path=/proc/bt_mac
+ro.vendor.bt.bdaddr_path=/proc/bt_mac
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
