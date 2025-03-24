@@ -44,6 +44,7 @@ lib_fixups: lib_fixups_user_type = {
 	'libOmxCore',
 	'libril',
 	'libwpa_client',
+	'libmmcamera_dbg',
     ): lib_fixup_remove,
 }
 
