@@ -40,7 +40,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     (
-	'libril',
 	'libmmcamera_dbg',
     ): lib_fixup_remove,
 }
