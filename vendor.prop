@@ -115,11 +115,7 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 camera.aux.packagelist=net.sourceforge.opencamera,org.codeaurora.snapcam,com.fihtdc.fqc
 camera.disable_zsl_mode=1
-camera.panorama.quality=middle
 persist.vendor.camera.fdvideo=1
-persist.vendor.camera.ven_hdr=0
-ro.camera.record.anim.delay=200
-ro.camera.switch.anim.delay=300
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
 vendor.camera.c2d.rotation=1
 
