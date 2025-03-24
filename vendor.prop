@@ -108,7 +108,6 @@ ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
-camera.aux.packagelist=net.sourceforge.opencamera,org.codeaurora.snapcam,com.fihtdc.fqc
 camera.disable_zsl_mode=1
 persist.vendor.camera.fdvideo=1
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
@@ -151,6 +150,9 @@ ro.opengles.version=196610
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# HEH filename encryption is being dropped
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
@@ -184,8 +186,12 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
-# HEH filename encryption is being dropped
-ro.crypto.volume.filenames_mode=aes-256-cts
+# Sensors
+ro.qti.sensors.dev_ori=false
+ro.vendor.sensors.dev_ori=false
+ro.vendor.sensors.mot_detect=true
+ro.vendor.sensors.pmd=true
+ro.vendor.sensors.sta_detect=true
 
 # USB
 vendor.usb.rmnet.func.name=rmnet_bam
