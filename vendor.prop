@@ -5,7 +5,6 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 audio.sys.noisy.broadcast.delay=600
 audio.sys.offload.pstimeout.secs=3
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
