@@ -25,7 +25,6 @@ ro.bluetooth.wipower=true
 vendor.bluetooth.soc=cherokee
 
 # CABL
-ro.qualcomm.cabl=2
 ro.vendor.display.cabl=2
 
 # Camera
