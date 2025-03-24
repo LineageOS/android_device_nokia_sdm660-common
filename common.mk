@@ -354,10 +354,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# Weaver
-PRODUCT_PACKAGES += \
-    android.hardware.weaver@1.0
-
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v33
