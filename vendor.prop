@@ -127,9 +127,6 @@ renderthread.skia.reduceopstasksplitting=true
 
 # DRM
 drm.service.enabled=true
-ro.com.widevine.cachesize=16777216
-persist.gsmapp.ezincall.video=false
-persist.sys.screenmode=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
