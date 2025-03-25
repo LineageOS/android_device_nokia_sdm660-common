@@ -47,6 +47,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/mediadrm/libwvdrmengine.so','vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    ('vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so', 'vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
 	.add_needed('libutils-v33.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
