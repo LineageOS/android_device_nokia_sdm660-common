@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
 	.add_needed('libutils-v33.so'),
+    'system_ext/lib64/lib-imscamera.so': blob_fixup()
+        .add_needed('libgui_shim.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
 	.add_needed('libgui_shim.so')
 	.replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
