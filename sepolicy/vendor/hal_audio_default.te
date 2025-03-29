@@ -6,5 +6,4 @@ allow hal_audio_default mnt_vendor_file:file { getattr open read };
 allow hal_audio_default rild:unix_stream_socket connectto;
 allow hal_audio_default system_server:binder { call transfer };
 
-get_prop(hal_audio_default, audio_prop)
-get_prop(hal_audio_default, system_prop)
+get_prop(hal_audio_default, vendor_audio_prop)
