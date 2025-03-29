@@ -6,8 +6,9 @@ persist.camera.                             u:object_r:vendor_camera_prop:s0
 vendor.camera.skip_unconfigure.packagelist  u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-sys.fp.firmware.version			u:object_r:fingerprint_prop:s0
+sys.fp.firmware.version			u:object_r:vendor_fingerprint_prop:s0
 gpu.stats.debug.level                   u:object_r:vendor_display_prop:s0
+vendor.gxfp.version			u:object_r:vendor_fingerprint_prop:s0
 
 # Radio
 ro.vendor.ril.svlte1x                   u:object_r:vendor_radio_prop:s0
