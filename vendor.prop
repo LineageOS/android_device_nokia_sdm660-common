@@ -3,8 +3,6 @@ af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
 persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
@@ -17,8 +15,6 @@ ro.af.client_heap_size_kbyte=7168
 ro.bluetooth.a2dp_offload.supported=false
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
-tunnel.audiovideo.decode=false
-tunnel.decode=false
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=false
@@ -100,7 +96,6 @@ bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 persist.vendor.bt.enable.splita2dp=true
 persist.vendor.bt.splita2dp.44_1_war=false
-persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
 ro.vendor.bt.bdaddr_path=/proc/bt_mac
@@ -113,22 +108,12 @@ persist.vendor.camera.fdvideo=1
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
 vendor.camera.c2d.rotation=1
 
-# Charger
-ro.charger.enable_suspend=true
-
-# Data
-persist.data.netmgrd.qos.enable=true
-persist.data.iwlan.enable=true
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
-
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.renderengine.backend=skiaglthreaded
 vendor.display.disable_scaler=1
-renderthread.skia.reduceopstasksplitting=true
 
 # DRM
 drm.service.enabled=true
@@ -146,9 +131,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
-
-# GPS
-persist.backup.ntpServer=0.pool.ntp.org
 
 # HEH filename encryption is being dropped
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -169,9 +151,6 @@ persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
-# Recovery
-ro.recovery.ui.blank_unblank_on_init=true
-
 # Sensors
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
@@ -187,7 +166,6 @@ debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
 # Sensors
-ro.qti.sensors.dev_ori=false
 ro.vendor.sensors.dev_ori=false
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.pmd=true
