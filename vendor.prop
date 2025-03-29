@@ -121,9 +121,6 @@ drm.service.enabled=true
 # DPM
 persist.vendor.dpmhalservice.enable=1
 
-# FM
-vendor.hw.fm.init=0
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
