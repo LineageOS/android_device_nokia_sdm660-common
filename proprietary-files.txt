@@ -686,9 +686,6 @@ vendor/lib64/libmmsw_platform.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
-# WiFi
-vendor/bin/cnss-daemon
-
 # Wi-Fi Display
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfddisplayconfig_proprietary.so
