@@ -852,7 +852,6 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
     group system
-    disabled
 
 service vendor.sensingdaemon /vendor/bin/sensingdaemon
     class hal
@@ -937,11 +936,6 @@ service vendor.qcom-sh /vendor/bin/init.qcom.sh
 
 service vendor.class_main-sh /vendor/bin/init.class_main.sh
     class main
-    user root
-    oneshot
-
-service vendor.sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
     user root
     oneshot
 
