@@ -1171,11 +1171,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
 
-service vendor.spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
-
 service vendor.adsprpcd /vendor/bin/adsprpcd
     class main
     user media
