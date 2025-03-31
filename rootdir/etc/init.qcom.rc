@@ -1204,10 +1204,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
 
-#Set gpu available frequencies property
-on property:vendor.gpu.available_frequencies=*
-    setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-
 # Override the AOSP sensor HAL service definition to add input group access
 service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
     class hal
