@@ -21,4 +21,4 @@
 /devices/*/xhci-hcd.0.auto*              auto               auto   defaults                                         voldmanaged=usb:auto
 
 # ZRAM
-/dev/block/zram0                         none        swap   defaults    zramsize=2147483648,max_comp_streams=8
+/dev/block/zram0                         none        swap   defaults    zramsize=2147483648
