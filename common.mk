@@ -171,8 +171,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    wlan_carrier_bin.sh
+    init.qcom.post_boot.sh
 
 # IPACM
 PRODUCT_PACKAGES += \

@@ -29,12 +29,6 @@ sh_binary {
     vendor: true,
 }
 
-sh_binary {
-    name: "wlan_carrier_bin.sh",
-    src: "bin/wlan_carrier_bin.sh",
-    vendor: true,
-}
-
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",
