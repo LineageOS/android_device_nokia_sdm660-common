@@ -1029,12 +1029,6 @@ service vendor.qdmastatsd /vendor/bin/qdmastatsd
     user system
     group readproc system net_bw_stats radio
 
-service time_daemon /vendor/bin/time_daemon
-    class main
-    user system
-    group system
-    capabilities SYS_TIME
-
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
