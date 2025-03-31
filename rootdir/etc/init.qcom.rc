@@ -41,7 +41,6 @@ on early-init
     chmod 0666 /sys/kernel/debug/sync/sw_sync
 
 on init
-
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
@@ -67,15 +66,20 @@ on init
     chown root diag /sys/kernel/dropbox/event
     chown root diag /sys/kernel/dropbox/data
 
+    # QSEE rpmb listener needs symlink for bootdevice
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+
+    # qseecomd needs /dev/block/bootdevice
+    # vold needs keymaster that needs qseecomd
+    start vendor.qseecomd
+
     # Disable sched autogroup
     write /proc/sys/kernel/sched_autogroup_enabled 0
 
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
 on fs
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-
     mount_all /vendor/etc/fstab.qcom --early
 
     chown root system /mnt/vendor/persist
@@ -180,7 +184,6 @@ on post-fs
     write /proc/sys/vm/swappiness 60
     setprop sys.sysctl.swappiness 60
 
-    start vendor.qseecomd
     wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
