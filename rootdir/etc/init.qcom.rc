@@ -108,6 +108,10 @@ on late-fs
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+
+    # Allow writing to the kernel trace log.
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+
     # Change permission for fingerprint sensor
     chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/nav
     chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/dev_enable
