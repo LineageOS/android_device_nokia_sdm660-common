@@ -6,8 +6,8 @@
 
 // Init scripts
 sh_binary {
-    name: "init.mmi.usb.sh",
-    src: "bin/init.mmi.usb.sh",
+    name: "init.qcom.usb.sh",
+    src: "bin/init.qcom.usb.sh",
     vendor: true,
 }
 
