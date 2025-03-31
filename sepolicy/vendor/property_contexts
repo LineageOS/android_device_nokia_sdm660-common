@@ -22,3 +22,6 @@ gf.debug.dump_data			u:object_r:vendor_fingerprint_prop:s0
 ro.vendor.ril.svlte1x                   u:object_r:vendor_radio_prop:s0
 ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
 ro.rf.power.reduction.for.mcc		u:object_r:vendor_radio_prop:s0
+
+# Hardware
+ro.hardware.chipname               u:object_r:exported_default_prop:s0
