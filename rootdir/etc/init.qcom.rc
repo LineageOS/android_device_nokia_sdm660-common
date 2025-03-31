@@ -583,6 +583,12 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # QCRIL
+    start vendor.qcrild
+    start vendor.qcrild2
+    start vendor.dataqti
+    start vendor.dataadpl
+
     # Setup folders for security
     mkdir /mnt/vendor/persist/security 02770 drmrpc drmrpc
     mkdir /data/vendor/dbvc 0750 oem_5004 shell
@@ -750,15 +756,6 @@ on property:vendor.bluetooth.startbtlogger=false
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
-service vendor.qcom-c_main-sh /vendor/bin/init.class_main.sh
-    class main
-    user root
-    group root system
-    oneshot
-
-on property:vold.decrypt=trigger_restart_framework
-    start vendor.qcom-c_main-sh
-
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
@@ -832,11 +829,6 @@ service vendor.qcom-sh /vendor/bin/init.qcom.sh
     group root system radio
     oneshot
 
-service vendor.class_main-sh /vendor/bin/init.class_main.sh
-    class main
-    user root
-    oneshot
-
 service vendor.qcom-power /vendor/bin/init.qcom.power.sh
     class main
     user root
@@ -868,20 +860,6 @@ service vendor.hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hosta
     group wifi
     disabled
     oneshot
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
-
-service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.vm_bms /vendor/bin/vm_bms
     user root

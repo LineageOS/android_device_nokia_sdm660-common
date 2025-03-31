@@ -6,12 +6,6 @@
 
 // Init scripts
 sh_binary {
-    name: "init.class_main.sh",
-    src: "bin/init.class_main.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.mmi.usb.sh",
     src: "bin/init.mmi.usb.sh",
     vendor: true,

@@ -170,7 +170,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.sh \
-    init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     wlan_carrier_bin.sh
