@@ -1,0 +1,8 @@
+# Allow NFC hal to access nfc_vendor_data_file
+r_dir_file(hal_nfc_default, nfc_vendor_data_file)
+
+add_hwservice(hal_nfc_default, hal_nxpnfc_hwservice)
+allow hal_nfc_default hal_nxpnfc_hwservice:hwservice_manager find;
+
+allow hal_nfc_default nfc_vendor_data_file:dir create_dir_perms;
+allow hal_nfc_default nfc_vendor_data_file:file create_file_perms;

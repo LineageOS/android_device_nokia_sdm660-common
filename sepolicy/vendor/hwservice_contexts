@@ -2,3 +2,6 @@
 vendor.goodix.hardware.fingerprint::IGoodixBiometricsFingerprint u:object_r:hal_fingerprint_hwservice:s0
 
 android.frameworks.sensorservice::ISensorManager                                  u:object_r:fwk_sensor_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                  u:object_r:hal_nxpnfc_hwservice:s0
