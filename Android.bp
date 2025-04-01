@@ -4,6 +4,9 @@
 //
 
 soong_namespace {
+    imports: [
+	"vendor/nokia/sdm660-common"
+    ],
 }
 
 install_symlink {
