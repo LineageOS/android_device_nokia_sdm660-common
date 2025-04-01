@@ -320,10 +320,8 @@ vendor/lib64/hw/vulkan.sdm660.so|ad3a5d92c6c13ba0c937dd1b83f371e804a57c4e
 
 # Graphics (Firmware - Adreno)
 vendor/firmware/a508_zap.b00
-vendor/firmware/a508_zap.b01
 vendor/firmware/a508_zap.b02
 vendor/firmware/a508_zap.elf
-vendor/firmware/a508_zap.mdt
 vendor/firmware/a512_zap.b00
 vendor/firmware/a512_zap.b02
 vendor/firmware/a512_zap.elf
