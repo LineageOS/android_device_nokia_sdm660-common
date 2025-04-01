@@ -1,2 +1,7 @@
 allow nfc hal_nxpnfc_hwservice:hwservice_manager find;
 allow nfc nfc_vendor_data_file:dir rw_dir_perms;
+
+allow nfc nfc_vendor_data_file:dir { rw_dir_perms };
+allow nfc nfc_vendor_data_file:file { create_file_perms };
+
+binder_call(nfc, gpuservice)

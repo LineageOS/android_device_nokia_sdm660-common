@@ -1,8 +1,17 @@
+# Allow access to the HALs
+hal_client_domain(hal_nfc_default, hal_secure_element)
+
 # Allow NFC hal to access nfc_vendor_data_file
 r_dir_file(hal_nfc_default, nfc_vendor_data_file)
+
+# Allow hal_nfc_default to find hal_secure_element_hwservice
+allow hal_nfc_default hal_secure_element_hwservice:hwservice_manager find;
 
 add_hwservice(hal_nfc_default, hal_nxpnfc_hwservice)
 allow hal_nfc_default hal_nxpnfc_hwservice:hwservice_manager find;
 
 allow hal_nfc_default nfc_vendor_data_file:dir create_dir_perms;
 allow hal_nfc_default nfc_vendor_data_file:file create_file_perms;
+
+# Samsung NFC
+allow hal_nfc_default sec_device:chr_file rw_file_perms;

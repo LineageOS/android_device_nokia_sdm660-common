@@ -4,6 +4,9 @@ type fih_partition, dev_type;
 # /dev/elanfp
 type sysfs_fingerprint, sysfs_type, fs_type;
 
+# Samsung NFC
+type sec_device, dev_type;
+
 # /proc/devmodel
 type proc_fih, fs_type, proc_type;
 
