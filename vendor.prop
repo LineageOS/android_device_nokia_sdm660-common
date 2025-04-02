@@ -167,7 +167,7 @@ debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
 # Sensors
-ro.vendor.sensors.dev_ori=false
+ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
