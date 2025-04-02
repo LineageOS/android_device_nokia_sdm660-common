@@ -703,14 +703,23 @@ on property:persist.vendor.sys.rawdump_copy=0
     write /sys/kernel/dload/emmc_dload 0
 
 on property:sys.boot_completed=1
-    write /dev/kmsg "Boot completed "
     swapon_all /vendor/etc/fstab.qcom
-    #Reset read ahead for dm-0 and dm-1 to 512kb
+
+    # Reset read ahead for dm-0 and dm-1 to 512kb
     write /sys/block/dm-0/queue/read_ahead_kb 512
     write /sys/block/dm-1/queue/read_ahead_kb 512
-    #WDSP FW boot sysfs node used by STHAL
+
+    # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+
+    # Let kernel know our image version/variant/crm_version
+    write /sys/devices/soc0/select_image 10
+    write /sys/devices/soc0/image_version "10:${ro.build.id}:${ro.build.version.incremental}"
+    write /sys/devices/soc0/image_variant "${ro.product.name}-${ro.build.type}"
+    write /sys/devices/soc0/image_crm_version "${ro.build.version.codename}"
+
+    write /dev/kmsg "Boot completed "
 
 on property:vendor.bluetooth.startbtlogger=true
     start vendor.bt_logger
