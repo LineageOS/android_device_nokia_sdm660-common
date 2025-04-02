@@ -1,2 +1,3 @@
 allow kernel block_device:dir search;
 allow kernel self:socket create;
+allow kernel fih_partition:blk_file { read open };
