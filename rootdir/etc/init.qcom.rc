@@ -813,11 +813,6 @@ on property:sys.boot_completed=1
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
-service vendor.qvop-daemon /vendor/bin/qvop-daemon
-    class late_start
-    user system
-    group system drmrpc
-
 service vendor.hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main
     capabilities NET_ADMIN NET_RAW
@@ -842,24 +837,6 @@ service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /vendor/etc/msm_ir
     user root
     group root
     disabled
-
-service vendor.qseeproxydaemon /vendor/bin/qseeproxydaemon
-    class late_start
-    user system
-    group system
-
-service vendor.esepmdaemon /vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
-service vendor.qdmastatsd /vendor/bin/qdmastatsd
-    class late_start
-    user system
-    group readproc system net_bw_stats radio
-
-on property:ro.vendor.radio.noril=*
-    setprop ro.radio.noril ${ro.vendor.radio.noril}
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
@@ -901,18 +878,6 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
 # our legacy property
 on property:persist.sys.qc.sub.rdump.on=*
     setprop persist.sys.ssr.enable_ramdumps ${persist.sys.qc.sub.rdump.on}
-
-service vendor.mbm_spy /vendor/bin/mbm_spy
-    class late_start
-    user system
-    group system
-    oneshot
-
-service vendor.adspd /vendor/bin/adspd
-    class main
-    socket adspdsock stream 0660 system audio
-    user audio
-    group audio input diag
 
 # touchRec
 service vendor.touchRec /vendor/bin/touchRec
@@ -972,19 +937,8 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
     group media
     disabled
 
-service vendor.energy-awareness /vendor/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
-
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
-
-service vendor.mdtpd /vendor/bin/mdtpd
-    class late_start
-    user root
-    group system radio drmrpc
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
