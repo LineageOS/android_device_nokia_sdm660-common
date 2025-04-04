@@ -47,6 +47,11 @@ on post-fs-data
    # Gestures
    mkdir /data/vendor/misc/touch 0770 system system
 
+on init
+    # For reading sensor configurations
+    chown system system /proc/dt_info
+    chmod 0644 /proc/dt_info
+
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
