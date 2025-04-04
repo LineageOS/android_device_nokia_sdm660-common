@@ -1,6 +1,7 @@
-# /proc/devmodel - Sensors
-genfscon proc /devmodel u:object_r:proc_fih:s0
-genfscon proc /dt_info  u:object_r:proc_fih:s0
+# Sensors
+genfscon proc /devmodel		u:object_r:proc_fih:s0
+genfscon proc /dt_info		u:object_r:proc_fih:s0
+genfscon proc /sensordata/SSC	u:object_r:proc_fih:s0
 
 # /proc/bandinfo - Radio
 genfscon proc /bandinfo            u:object_r:proc_bandinfo:s0
