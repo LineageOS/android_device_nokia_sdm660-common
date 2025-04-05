@@ -385,6 +385,16 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # FIH modem configs
+    setprop persist.vendor.radio.nokia_fih_mcfg -1
+    rm /data/vendor/fih_mcfg/btl_complete
+    mkdir /data/vendor/fih_atl 2775  radio root
+    mkdir /data/vendor/fih_mcfg 2775  radio root
+    mkdir /data/vendor/fih_atl/modem_config 2775  radio root
+    write /data/vendor/radio/atl_complete 0
+    chown system radio /data/vendor/radio/atl_complete
+    chmod 0776 /data/vendor/radio/atl_complete
+
     # QCRIL
     start vendor.qcrild
     start vendor.qcrild2
@@ -535,7 +545,7 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
 service vendor.qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
-    group root system radio
+    group root system radio vendor_rfs
     oneshot
 
 service vendor.qcom-power /vendor/bin/init.qcom.power.sh
@@ -556,6 +566,34 @@ on property:sys.boot_completed=1
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
+
+on property:persist.vendor.radio.nokia_fih_mcfg=0
+    # RC for fih_mcfg (init)
+    write /data/vendor/fih_mcfg/imsi_0 "null"
+    write /data/vendor/fih_mcfg/imsi_1 "null"
+    chown system vendor_rfs /data/vendor/fih_mcfg/imsi_0
+    chown system vendor_rfs /data/vendor/fih_mcfg/imsi_1
+    chmod 0776 /data/vendor/fih_mcfg/imsi_0
+    chmod 0776 /data/vendor/fih_mcfg/imsi_1
+    # FIH EFS update
+    write /data/vendor/fih_mcfg/efs_0 "null"
+    write /data/vendor/fih_mcfg/efs_1 "null"
+    chown system vendor_rfs /data/vendor/fih_mcfg/efs_0
+    chown system vendor_rfs /data/vendor/fih_mcfg/efs_1
+    chmod 0776 /data/vendor/fih_mcfg/efs_0
+    chmod 0776 /data/vendor/fih_mcfg/efs_1
+
+on property:persist.vendor.radio.nokia_fih_mcfg=1
+    write /data/vendor/fih_mcfg/fih_model.txt ${ro.product.model.num}
+    chown system vendor_rfs /data/vendor/fih_mcfg/fih_model.txt
+    chmod 0776 /data/vendor/fih_mcfg/fih_model.txt
+    write /data/vendor/fih_mcfg/mcfg_debug.log ${ro.vendor.build.date}
+    chown system vendor_rfs /data/vendor/fih_mcfg/mcfg_debug.log
+    chmod 0776 /data/vendor/fih_mcfg/mcfg_debug.log
+    write /data/vendor/fih_mcfg/rfs_complete 0
+    chown system vendor_rfs /data/vendor/fih_mcfg/rfs_complete
+    chmod 0776 /data/vendor/fih_mcfg/rfs_complete
+    chown system vendor_rfs /data/vendor/fih_mcfg
 
 service vendor.hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main

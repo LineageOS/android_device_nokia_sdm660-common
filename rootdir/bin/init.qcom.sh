@@ -40,35 +40,6 @@ start_msm_irqbalance660()
 	fi
 }
 
-start_copying_prebuilt_qcril_db()
-{
-    if [ -f /vendor/radio/qcril_database/qcril.db -a ! -f /data/vendor/radio/qcril.db ]; then
-        # [Nokia] - First copy db from the old N path to O path for upgrade
-        if [ -f /data/misc/radio/qcril.db ]; then
-            cp /data/misc/radio/qcril.db /data/vendor/radio/qcril.db
-            # copy the backup db from the old N path to O path for upgrade
-            if [ -f /data/misc/radio/qcril_backup.db ]; then
-                cp /data/misc/radio/qcril_backup.db /data/vendor/radio/qcril_backup.db
-            fi
-            # Now delete the old folder
-            rm -fr /data/misc/radio
-        else
-            cp /vendor/radio/qcril_database/qcril.db /data/vendor/radio/qcril.db
-        fi
-        chown -h radio.radio /data/vendor/radio/qcril.db
-    else
-        # [Nokia] if qcril.db's owner is not radio (e.g. root),
-        # reset it for the recovery
-        qcril_db_owner=`stat -c %U /data/vendor/radio/qcril.db`
-
-        echo "qcril.db's owner is $qcril_db_owner"
-        if [ $qcril_db_owner != "radio" ]; then
-            echo "reset owner to radio for qcril.db"
-            chown -h radio.radio /data/vendor/radio/qcril.db
-        fi
-    fi
-}
-
 case "$target" in
     "sdm660")
         if [ -f /sys/devices/soc0/soc_id ]; then
@@ -87,12 +58,6 @@ case "$target" in
 esac
 
 #
-# Copy qcril.db if needed for RIL
-#
-start_copying_prebuilt_qcril_db
-echo 1 > /data/vendor/radio/db_check_done
-
-#
 # Make modem config folder and copy firmware config to that folder for RIL
 #
 if [ -f /data/vendor/modem_config/ver_info.txt ]; then
@@ -100,6 +65,9 @@ if [ -f /data/vendor/modem_config/ver_info.txt ]; then
 else
     prev_version_info=""
 fi
+
+chmod g+w -R /data/vendor/fih_atl/*
+chmod g+w -R /data/vendor/fih_mcfg/*
 
 cur_version_info=`cat /vendor/firmware_mnt/verinfo/ver_info.txt`
 if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
@@ -112,6 +80,22 @@ if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "
     cp --preserve=m -d /vendor/firmware_mnt/image/modem_pr/mbn_ota.txt /data/vendor/modem_config/
     # the group must be root, otherwise this script could not add "W" for group recursively
     chown -hR radio.root /data/vendor/modem_config/*
+    # add W for group recursively before delete
+    setprop persist.vendor.radio.nokia_fih_mcfg 0
+    chmod g+w -R /data/vendor/fih_atl/modem_config/*
+    rm -rf /data/vendor/fih_atl/modem_config/*
+    # preserve the read only mode for all subdir and files
+    cp -dr /vendor/firmware_mnt/image/modem_pr/mcfg/configs/* /data/vendor/fih_atl/modem_config
+    cp -d /vendor/firmware_mnt/verinfo/ver_info.txt /data/vendor/fih_mcfg/ver_info.txt
+    cp -d /vendor/firmware_mnt/image/modem_pr/mbn_ota.txt /data/vendor/fih_mcfg/modem_config/
 fi
 chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
+
+setprop persist.vendor.radio.nokia_fih_mcfg 1
+
+# FIH ATL
+chmod 776 -R /data/vendor/fih_atl
+chown system.vendor_rfs -R /data/vendor/fih_atl
+chown radio.vendor_rfs /data/vendor/fih_mcfg/ver_info.txt
+chown system.vendor_rfs /data/vendor/fih_mcfg
