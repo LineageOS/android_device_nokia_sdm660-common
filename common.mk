@@ -285,7 +285,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr
+    android.hardware.power-service.lineage-libperfmgr \
+    libqti-perfd-client
 
 # QCOM
 PRODUCT_PACKAGES += \
@@ -322,7 +323,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Telephony-ext
 PRODUCT_PACKAGES += \
