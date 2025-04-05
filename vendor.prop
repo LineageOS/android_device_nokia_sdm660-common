@@ -136,12 +136,6 @@ ro.opengles.version=196610
 # HEH filename encryption is being dropped
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
-# Power
-vendor.power.pasr.enabled=true
-
 # Radio
 persist.vendor.radio.enableadvancedscan=false
 persist.vendor.radio.apm_sim_not_pwdn=1
