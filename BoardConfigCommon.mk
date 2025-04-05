@@ -124,7 +124,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 
