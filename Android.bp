@@ -10,6 +10,13 @@ soong_namespace {
 }
 
 install_symlink {
+    name: "rfs_msm_mpss_fih_rfs_data_vendor_symlink",
+    vendor: true,
+    installed_location: "rfs/msm/mpss/fih_rfs/data/vendor",
+    symlink_target: "/data/vendor",
+}
+
+install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",

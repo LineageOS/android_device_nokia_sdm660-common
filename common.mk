@@ -326,6 +326,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client
 
+# Symlinks
+PRODUCT_PACKAGES += \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    rfs_msm_mpss_fih_rfs_data_vendor_symlink
+
 # Telephony-ext
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -373,11 +379,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
-
-# WiFi firmware symlinks
-PRODUCT_PACKAGES += \
-    firmware_wlan_mac.bin_symlink \
-    firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit vendor makefiles
 $(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
