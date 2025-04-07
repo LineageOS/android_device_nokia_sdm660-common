@@ -584,7 +584,7 @@ on property:persist.vendor.radio.nokia_fih_mcfg=0
     chmod 0776 /data/vendor/fih_mcfg/efs_1
 
 on property:persist.vendor.radio.nokia_fih_mcfg=1
-    write /data/vendor/fih_mcfg/fih_model.txt ${ro.product.model.num}
+    write /data/vendor/fih_mcfg/fih_model.txt 00WW
     chown system vendor_rfs /data/vendor/fih_mcfg/fih_model.txt
     chmod 0776 /data/vendor/fih_mcfg/fih_model.txt
     write /data/vendor/fih_mcfg/mcfg_debug.log ${ro.vendor.build.date}
