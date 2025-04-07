@@ -44,6 +44,7 @@ debug.gralloc.enable_fb_ubwc=1
 debug.sf.latch_unsignaled=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
+debug.sf.disable_client_composition_cache=1
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.use_color_management=false
