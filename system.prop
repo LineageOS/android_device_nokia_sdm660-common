@@ -40,7 +40,6 @@ persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
-debug.gralloc.enable_fb_ubwc=1
 debug.sf.latch_unsignaled=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
