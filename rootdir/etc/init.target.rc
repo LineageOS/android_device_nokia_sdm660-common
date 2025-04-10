@@ -40,7 +40,7 @@ on boot
     chmod 644 /proc/AllHWList/tp_alt_st_count
     chmod 644 /proc/AllHWList/tp_alt_st_enable
     chown system system /proc/AllHWList/tp_double_tap
-    chmod 644 /proc/AllHWList/tp_double_tap
+    chmod 660 /proc/AllHWList/tp_double_tap
 
     # Set charging permissions
     chown system system /sys/class/power_supply/battery/input_suspend

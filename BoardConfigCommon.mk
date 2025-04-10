@@ -104,9 +104,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_NO_RECOVERY := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/AllHWList/tp_double_tap"
-
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
