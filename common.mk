@@ -118,8 +118,12 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
 
 # FM
+ifeq ($(filter B2N,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
 PRODUCT_PACKAGES += \
-    FM2 \
+    FM2
+endif
+
+PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
