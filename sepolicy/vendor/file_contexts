@@ -10,6 +10,7 @@
 # Fingerprint
 /dev/elan_fp                               u:object_r:sysfs_fingerprint:s0
 /dev/goodix_fp				   u:object_r:sysfs_fingerprint:s0
+/data/system/fingerprint(/.*)?		   u:object_r:fingerprintd_data_file:s0
 
 # Modem configs
 /data/vendor/fih_atl(/.*)?              u:object_r:rfs_shared_hlos_file:s0
