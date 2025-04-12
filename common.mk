@@ -31,12 +31,16 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Audio
+ifeq ($(filter PL2 DRG,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+PRODUCT_PACKAGES += \
+    audio.primary.sdm660
+endif
+
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.1-impl \
-    audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \

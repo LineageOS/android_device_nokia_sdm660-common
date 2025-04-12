@@ -51,7 +51,9 @@ AB_OTA_UPDATER := true
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
+ifeq ($(filter PL2 DRG,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
 BOARD_USES_ALSA_AUDIO := true
+endif
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
