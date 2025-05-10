@@ -31,11 +31,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Audio
-ifeq ($(filter PL2 DRG,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
-PRODUCT_PACKAGES += \
-    audio.primary.sdm660
-endif
-
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
@@ -122,11 +117,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
 
 # FM
-ifeq ($(filter B2N,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
-PRODUCT_PACKAGES += \
-    FM2
-endif
-
 PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
