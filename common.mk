@@ -127,10 +127,6 @@ PRODUCT_PACKAGES += \
     FM2
 endif
 
-PRODUCT_PACKAGES += \
-    libqcomfm_jni \
-    qcom.fmradio
-
 $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
 
 # Gatekeeper
