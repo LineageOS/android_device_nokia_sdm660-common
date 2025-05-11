@@ -602,7 +602,6 @@ vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
