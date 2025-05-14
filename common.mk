@@ -17,12 +17,6 @@
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS += *
-
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -215,6 +209,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
+PRODUCT_PACKAGES += \
+    Sdm660CarrierConfigOverlay \
+    Sdm660DialerOverlay \
+    Sdm660FrameworksOverlay \
+    Sdm660LineageSDKOverlay \
+    Sdm660SystemUIOverlay \
+    Sdm660SettingsOverlay \
+    Sdm660TelephonyOverlay \
+    Sdm660WifiOverlayOverlay
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -293,11 +300,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
-
-# Runtime resource overlays
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
-    WifiOverlay
 
 # Seccomp
 PRODUCT_COPY_FILES += \
