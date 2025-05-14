@@ -331,7 +331,6 @@ vendor/firmware/a540_gpmu.fw2
 vendor/bin/hw/android.hardware.health@2.1-service
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
 
 # IRQ balance
@@ -345,11 +344,6 @@ vendor/lib/libgcs-ipc.so|a4f1f1a848f3ed8634673ef463499bbc7facc445
 vendor/lib/libgcs-osal.so|dfae7d1bb15b7bd19fef7427f0a6f6df28d5d30a
 vendor/lib/libgcs.so|4fa806f2bb8708b341f0cfe3a9609387350ceefb
 vendor/lib/libsmwrapper.so|c12725b40bc853cccbf1f489481892aa5bfb629c
-vendor/lib64/hw/sound_trigger.primary.sdm660.so|1a9296f93430e78208410f3019462ad910f8ab1f
-vendor/lib64/libgcs-calwrapper.so|a899242a79a451dab37b7127726ecb3da705128b
-vendor/lib64/libgcs-ipc.so|6ad698d11a29fe3f139e6d1c30741e823cdb62be
-vendor/lib64/libgcs-osal.so|5eca0a8d8ea32505d5b8d69b3e13bf640b34976a
-vendor/lib64/libgcs.so|d8125159e811541a10f800b289dcdc2a7fcb28ad
 
 # Media
 vendor/lib/libOmxVideoDSMode.so
@@ -591,18 +585,9 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|62cd64dbb25d082cfdc742fb03931ba0f9a
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|fa120eaa7807ff43f3974a8e0146a8c00c78f623
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
 
-# Snapdragon Computer Vision Engine
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
-
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 
