@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6386a9bd_dbcaf21b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-03T07:14:48Z",
+      "side": 1,
+      "message": "works great on PL2, no more ancient messy kernel!",
+      "revId": "8e9ac02209fd21e0ac0a72bd59b72933a701c0d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
