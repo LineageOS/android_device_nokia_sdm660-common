@@ -60,13 +60,8 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_CONFIG := nokia_defconfig
+TARGET_KERNEL_CONFIG := vendor/sdm660-perf_defconfig vendor/nokia/nokia.config
 TARGET_KERNEL_SOURCE := kernel/nokia/sdm660
-TARGET_KERNEL_CLANG_VERSION := r416183b
-TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
-TARGET_KERNEL_LLVM_BINUTILS := false
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Media
 TARGET_USES_ION := true
