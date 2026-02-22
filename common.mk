@@ -98,10 +98,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
-
 # GMS
 ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
@@ -125,17 +121,6 @@ PRODUCT_PACKAGES += \
     flp.conf \
     gnss_antenna_info.conf \
     gps.conf
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
 
 # Init
 PRODUCT_PACKAGES += \
@@ -216,7 +201,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libOmxCore \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -339,10 +323,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v33
 
 # Wifi
 PRODUCT_COPY_FILES += \
