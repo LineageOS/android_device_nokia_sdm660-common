@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     gnss_antenna_info.conf \
     gps.conf
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \

@@ -332,12 +332,6 @@ vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service
-vendor/etc/init/android.hardware.health@2.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
-
 # IRQ balance
 vendor/bin/msm_irqbalance
 

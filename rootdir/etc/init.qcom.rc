@@ -522,13 +522,6 @@ on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1
     stop vendor.cnss-daemon
 
-service charger /system/bin/charger
-    class charger
-    user system
-    group system graphics input
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
-
 service vendor.mlid /vendor/bin/mlid
     class late_start
     user gps

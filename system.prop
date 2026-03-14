@@ -20,9 +20,6 @@ tunnel.decode=false
 # CABL
 ro.vendor.display.cabl=2
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
