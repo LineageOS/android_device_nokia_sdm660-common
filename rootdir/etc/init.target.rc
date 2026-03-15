@@ -31,8 +31,6 @@ on boot
     # Gestures
     chown system system /proc/AllHWList/tp_fw_ver
     chmod 644 /proc/AllHWList/tp_fw_ver
-    chmod 644 /dev/ilitek_ctrl
-    chown system system /dev/ilitek_ctrl
     chown system system /proc/AllHWList/tp_alt_rst
     chown system system /proc/AllHWList/tp_alt_st_count
     chown system system /proc/AllHWList/tp_alt_st_enable
