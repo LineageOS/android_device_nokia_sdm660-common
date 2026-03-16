@@ -28,6 +28,12 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# Audio configurations
+vendor/etc/audio_tuning_mixer.txt
+vendor/etc/listen_platform_info.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -334,6 +340,11 @@ vendor/firmware/a540_gpmu.fw2
 
 # IRQ balance
 vendor/bin/msm_irqbalance
+vendor/etc/msm_irqbalance.conf
+vendor/etc/msm_irqbalance_sdm630.conf
+
+# IPC router security
+vendor/etc/sec_config
 
 # Keymaster
 vendor/lib64/libkeymasterdeviceutils.so
@@ -383,6 +394,9 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Public libraries
+vendor/etc/public.libraries.txt
+
 # QCC - from FP3 - 6.A.031.2
 system_ext/lib64/libqcc.so|869b683bb19acff628571703d7531d7de40247d1
 system_ext/lib64/libqcc_file_agent_sys.so|afa96a113e3b600253580bc103100347f354da92
@@ -396,7 +410,9 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|58dd8c5877ba3a274f43f6
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor|01b1d11316f5dcd8c1012a55ff01399081c79940
 
 # QMI - from FP3 - 6.A.031.2
-system_ext/etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+system/etc/permissions/privapp-permissions-qti.xml|63af86090753b778de9e936272334699923ddf0f
+system/etc/sysconfig/qti_whitelist.xml|6335e425252874e46fd7214aa0142d0b3a23fa81
+system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 system_ext/lib64/libdiag_system.so|ead4f1d1065abca6ef47b522c1934eb7623c1813
 system_ext/lib64/vendor.qti.diaghal@1.0.so|dcc31fc969e846ea58ec91a37c1f1e77b49e731e
@@ -456,6 +472,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # Radio - from FP3 - 6.A.031.2
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|341ac4f8b754883df97f2e9920f1e9a255a6a160
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
 system_ext/framework/qcrilhook.jar|2851c62bf5d823c4228bfc6c56613934517ffdee
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|87719275d1e87dec4b3e9f1a8e7373c7937c9dd8
 vendor/bin/adpl|c6e56a34827222135596c7266343187e055bda06
@@ -590,6 +607,9 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|aa98e9afc4cac9fa5be51bbba359a74973f
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|62cd64dbb25d082cfdc742fb03931ba0f9abe434
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|fa120eaa7807ff43f3974a8e0146a8c00c78f623
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
+
+# Seccomp
+vendor/etc/seccomp_policy/mediacodec.policy
 
 # Thermal
 vendor/bin/thermal-engine

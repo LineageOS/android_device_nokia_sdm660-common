@@ -1,7 +1,0 @@
-libadsprpc.so
-libcdsprpc.so
-libsdsprpc.so
-libfastcvopt.so
-liblistenjni.so
-liblistensoundmodel2.so
-libOpenCL.so

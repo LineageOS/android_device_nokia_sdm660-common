@@ -47,6 +47,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/etc/izat.conf': blob_fixup()
         .regex_replace('PROCESS_STATE=ENABLED', 'PROCESS_STATE=DISABLED'),
+    ('vendor/etc/msm_irqbalance.conf', 'vendor/etc/msm_irqbalance_sdm630.conf'): blob_fixup()
+        .regex_replace('IGNORED_IRQ=19,22,39,200,203\n', 'IGNORED_IRQ=19,22,39,115,200,203,332\n'),
     'system_ext/lib64/lib-imscamera.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
