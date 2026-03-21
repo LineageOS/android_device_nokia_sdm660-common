@@ -43,8 +43,6 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/mediadrm/libwvdrmengine.so','vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
-    'vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so': blob_fixup()
-        .add_needed('libbase_shim.so'),
     'vendor/etc/izat.conf': blob_fixup()
         .regex_replace('PROCESS_STATE=ENABLED', 'PROCESS_STATE=DISABLED'),
     ('vendor/etc/msm_irqbalance.conf', 'vendor/etc/msm_irqbalance_sdm630.conf'): blob_fixup()
