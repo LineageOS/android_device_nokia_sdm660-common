@@ -75,6 +75,7 @@ function blob_fixup() {
         ;;
     vendor/lib/hw/camera.sdm660.so)
         "$PATCHELF" --remove-needed "libMegviiFacepp.so" "${2}"
+        "$PATCHELF" --remove-needed "libMGBeauty.so" "${2}"
         "$PATCHELF" --remove-needed "libmegface-new.so" "${2}"
         "$PATCHELF" --add-needed "libshim_megvii.so" "${2}"
         ;;
