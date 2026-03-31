@@ -64,9 +64,20 @@ function blob_fixup() {
         patchelf --remove-needed "libmegface-new.so" "${2}"
         patchelf --add-needed "libshim_megvii.so" "${2}"
         ;;
+<<<<<<< HEAD   (4cdab7bfc65f55f849b14e29dba9d4be5c7269cb sdm660-common: camera: Shim `mg_beautify()`)
     # Fix xml version
     product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
         sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
+=======
+    vendor/lib/hw/camera.sdm660.so)
+        "$PATCHELF" --remove-needed "libMegviiFacepp.so" "${2}"
+        "$PATCHELF" --remove-needed "libMGBeauty.so" "${2}"
+        "$PATCHELF" --remove-needed "libmegface-new.so" "${2}"
+        "$PATCHELF" --add-needed "libshim_megvii.so" "${2}"
+        ;;
+    vendor/etc/nfcee_access.xml)
+        sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
+>>>>>>> CHANGE (90e4c3612bd599a02067b8021a48b089ee7d3f99 sdm660-common: Remove redundant Megvii libs)
         ;;
     esac
 }
