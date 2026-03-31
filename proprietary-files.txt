@@ -151,7 +151,6 @@ lib/libseemore.so
 lib64/libseemore.so
 vendor/bin/mm-qcamera-app
 vendor/lib/hw/camera.sdm660.so
-vendor/lib/libMGBeauty.so
 vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libfih_camera_effect.so

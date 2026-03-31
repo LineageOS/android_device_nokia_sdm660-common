@@ -83,6 +83,7 @@ function blob_fixup() {
         vendor/lib/hw/camera.sdm660.so)
             for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
                 "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --remove-needed "libMGBeauty.so" "$MEGVII_SHIM"
                 "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
                 "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
             done
