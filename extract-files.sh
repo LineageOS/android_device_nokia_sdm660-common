@@ -70,6 +70,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+<<<<<<< HEAD   (90721ab3a4b1f154b8666ffa9f0171938a0acfb6 sdm660-common: camera: Shim `mg_beautify()`)
     product/lib64/libdpmframework.so)
         "$PATCHELF" --add-needed "libshim_dpmframework.so" "${2}"
         ;;
@@ -81,6 +82,24 @@ function blob_fixup() {
     vendor/etc/nfcee_access.xml)
         sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
         ;;
+=======
+        product/lib64/libdpmframework.so)
+            for  LIBDPM_SHIM in $(grep -L "libshim_dpmframework.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            done
+            ;;
+        vendor/etc/nfcee_access.xml)
+            sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
+            ;;
+        vendor/lib/hw/camera.sdm660.so)
+            for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
+                "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --remove-needed "libMGBeauty.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
+                "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
+            done
+            ;;
+>>>>>>> CHANGE (76502db2a07d8f792ff5971737a330162f6b64d5 sdm660-common: Remove redundant Megvii libs)
     esac
 }
 
