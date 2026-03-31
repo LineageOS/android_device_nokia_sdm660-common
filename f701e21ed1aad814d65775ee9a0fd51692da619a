@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "287c5fcf_c6a29597",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-03-31T07:11:29Z",
+      "side": 1,
+      "message": "The dummy works, tested on B2N.\nShould work on other Nokias that relies on Megvii dependencies.",
+      "revId": "f701e21ed1aad814d65775ee9a0fd51692da619a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
