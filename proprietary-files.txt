@@ -155,10 +155,13 @@ lib/libseemore.so
 lib64/libseemore.so
 vendor/bin/mm-qcamera-app
 vendor/lib/hw/camera.sdm660.so
+<<<<<<< HEAD   (38eba61649d669c0816474e1d1bdb86c1ef1fb89 sdm660-common: camera: Shim `mg_beautify()`)
 vendor/lib/libfih_camera_effect.so
 vendor/lib/libflash_dummy_flash.so
 vendor/lib/libimage_matting.so
 vendor/lib/libMGBeauty.so
+=======
+>>>>>>> CHANGE (64ec5994c5b796c8510ce58414d871f5f6373ba3 sdm660-common: Remove redundant Megvii libs)
 vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
