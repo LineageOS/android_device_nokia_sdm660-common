@@ -158,7 +158,6 @@ vendor/lib/hw/camera.sdm660.so
 vendor/lib/libfih_camera_effect.so
 vendor/lib/libflash_dummy_flash.so
 vendor/lib/libimage_matting.so
-vendor/lib/libMGBeauty.so
 vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
