@@ -191,7 +191,6 @@ vendor/lib/libarcsoft_smart_denoise.so
 # Camera (Config)
 vendor/etc/camera/calibration_test.bin
 vendor/etc/camera/camera_config.xml
-vendor/etc/camera/mgbeautify_1_2_4_model
 
 # Camera (Firmware)
 vendor/firmware/cpp_firmware_v1_10_0.fw
