@@ -29,6 +29,7 @@
 # Partitions (Non-A/B)
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/box                             u:object_r:fih_partition:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/deviceinfo                      u:object_r:fih_partition:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/logdump                         u:object_r:metadata_block_device:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/securefs                        u:object_r:fih_partition:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/storesec                        u:object_r:boot_block_device:s0
 
