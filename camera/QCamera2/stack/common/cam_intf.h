@@ -277,14 +277,17 @@ typedef struct cam_capability{
 
     size_t zoom_ratio_tbl_cnt;                              /* table size for zoom ratios */
     uint32_t zoom_ratio_tbl[MAX_ZOOMS_CNT];                 /* zoom ratios table */
+    uint8_t pad1[40];
 
     /* supported effect modes */
     size_t supported_effects_cnt;
     cam_effect_mode_type supported_effects[CAM_EFFECT_MODE_MAX];
+    uint8_t pad2[52];
 
     /* supported scene modes */
     size_t supported_scene_modes_cnt;
     cam_scene_mode_type supported_scene_modes[CAM_SCENE_MODE_MAX];
+    uint8_t pad3[40];
 
     /* supported auto exposure modes */
     size_t supported_aec_modes_cnt;
@@ -370,7 +373,6 @@ typedef struct cam_capability{
     cam_dimension_t zzhdr_sizes_tbl[MAX_SIZES_CNT];         /* Table for ZZHDR supported sizes */
 
     uint32_t is_quadracfa_sensor;
-    uint32_t is_quadracfa_insensor;
     size_t supported_quadra_cfa_dim_cnt;              /* Number of resolutions in Quadra CFA mode */
     cam_dimension_t quadra_cfa_dim[MAX_SIZES_CNT];    /* Table for Quadra CFA supported sizes */
     cam_format_t quadra_cfa_format;                   /* Quadra CFA output format */
@@ -537,8 +539,9 @@ typedef struct cam_capability{
 
     /* picture sizes need scale*/
     cam_scene_mode_overrides_t scene_mode_overrides[CAM_SCENE_MODE_MAX];
+    uint8_t pad4[31];
     size_t scale_picture_sizes_cnt;
-    cam_dimension_t scale_picture_sizes[MAX_SCALE_SIZES_CNT];
+    cam_dimension_t scale_picture_sizes[MAX_SIZES_CNT];
 
     uint8_t flash_available;
 
@@ -638,6 +641,9 @@ typedef struct cam_capability{
 
     /* Dual cam calibration data */
     cam_related_system_calibration_data_t related_cam_calibration;
+    uint8_t fih_reserved[2048];
+    uint8_t pad5[2];
+    uint32_t fih_reserved_size;
 
     /* Maximum degree of rotation along X axis for tele sensor with respect to the wide sensor*/
     float      max_roll_degrees;
@@ -1022,6 +1028,7 @@ typedef struct {
     INCLUDE(CAM_INTF_META_STATS_SHARPNESS_MAP,          cam_sharpness_map_t,         3);
     INCLUDE(CAM_INTF_META_TONEMAP_CURVES,               cam_rgb_tonemap_curves,      1);
     INCLUDE(CAM_INTF_META_LENS_SHADING_MAP,             cam_lens_shading_map_t,      1);
+    uint8_t pad1[4];
     INCLUDE(CAM_INTF_META_AEC_INFO,                     cam_3a_params_t,             1);
     INCLUDE(CAM_INTF_META_SENSOR_INFO,                  cam_sensor_params_t,         1);
     INCLUDE(CAM_INTF_META_EXIF_DEBUG_AE,                cam_ae_exif_debug_t,         1);
@@ -1054,11 +1061,14 @@ typedef struct {
 
     /* dual camera specific params */
     INCLUDE(CAM_INTF_PARM_RELATED_SENSORS_CALIBRATION,  cam_related_system_calibration_data_t, 1);
+    INCLUDE(CAM_INTF_FIH_RESERVED,                      uint8_t,                  2048);
+    uint8_t pad2[4];
     INCLUDE(CAM_INTF_META_AF_FOCAL_LENGTH_RATIO,        cam_focal_length_ratio_t, 1);
     INCLUDE(CAM_INTF_META_SNAP_CROP_INFO_SENSOR,        cam_stream_crop_info_t,   1);
     INCLUDE(CAM_INTF_META_SNAP_CROP_INFO_CAMIF,         cam_stream_crop_info_t,   1);
     INCLUDE(CAM_INTF_META_SNAP_CROP_INFO_ISP,           cam_stream_crop_info_t,   1);
     INCLUDE(CAM_INTF_META_SNAP_CROP_INFO_CPP,           cam_stream_crop_info_t,   1);
+    uint8_t pad3[4];
     INCLUDE(CAM_INTF_META_DCRF,                         cam_dcrf_result_t,        1);
     INCLUDE(CAM_INTF_PARM_SYNC_DC_PARAMETERS,           uint32_t,                  1);
     INCLUDE(CAM_INTF_META_AF_FOCUS_POS,                 cam_af_focus_pos_t, 1);
@@ -1201,6 +1211,7 @@ typedef struct {
     INCLUDE(CAM_INTF_PARM_CLOSE_HINT,                   uint8_t,                     1);
     INCLUDE(CAM_INTF_META_SEND_IMMEDIATELY,             uint8_t,                     1);
     INCLUDE(CAM_INTF_PARAM_COUNTER,                     uint32_t,                    1);
+    uint64_t pad4[50673];
 } metadata_data_t;
 
 /* Update clear_metadata_buffer() function when a new is_xxx_valid is added to
