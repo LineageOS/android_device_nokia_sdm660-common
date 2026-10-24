@@ -3583,6 +3583,7 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
         // using Venus
         if(type != CAM_STREAM_TYPE_OFFLINE_PROC)
         {
+#ifndef IS_FIH
             if(IS_USAGE_HEIF(padding->usage))
             {
 #ifdef COLOR_FMT_NV12_512
@@ -3593,7 +3594,9 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
                 scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
 #endif //COLOR_FMT_NV12_512
             }
-            else {
+            else
+#endif
+            {
                 stride = VENUS_Y_STRIDE(COLOR_FMT_NV12, dim->width);
                 scanline = VENUS_Y_SCANLINES(COLOR_FMT_NV12, dim->height);
             }
@@ -3602,6 +3605,7 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
                 scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
         }
 
+#ifndef IS_FIH
         if(IS_USAGE_HEIF(padding->usage))
         {
 #ifdef COLOR_FMT_NV12_512
@@ -3611,7 +3615,9 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
             buf_planes->plane_info.frame_len =
                 PAD_TO_SIZE((uint32_t)(scanline*scanline), CAM_PAD_TO_512);
 #endif //COLOR_FMT_NV12_512
-        }else {
+        }else
+#endif
+        {
             buf_planes->plane_info.frame_len =
                 VENUS_BUFFER_SIZE(COLOR_FMT_NV12, dim->width, dim->height);
         }
@@ -3627,6 +3633,7 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
         buf_planes->plane_info.mp[0].height = dim->height;
         if(type != CAM_STREAM_TYPE_OFFLINE_PROC)
         {
+#ifndef IS_FIH
             if(IS_USAGE_HEIF(padding->usage))
             {
 #ifdef COLOR_FMT_NV12_512
@@ -3636,7 +3643,9 @@ int32_t mm_stream_calc_offset_snapshot(cam_format_t fmt,
                 stride = PAD_TO_SIZE(dim->width, padding->width_padding);
                 scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
 #endif //COLOR_FMT_NV12_512
-            }else {
+            }else
+#endif
+            {
                 stride = VENUS_UV_STRIDE(COLOR_FMT_NV12, dim->width);
                 scanline = VENUS_UV_SCANLINES(COLOR_FMT_NV12, dim->height);
             }
@@ -4141,6 +4150,7 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
 #ifdef VENUS_PRESENT
             // using Venus
             if (stream_info->stream_type != CAM_STREAM_TYPE_OFFLINE_PROC) {
+#ifndef IS_FIH
                 if(IS_USAGE_HEIF(padding->usage))
                 {
 #ifdef COLOR_FMT_NV12_512
@@ -4150,7 +4160,9 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
                     stride = PAD_TO_SIZE(dim->width, padding->width_padding);
                     scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
 #endif //COLOR_FMT_NV12_512
-                } else {
+                } else
+#endif
+                {
                     stride = VENUS_Y_STRIDE(COLOR_FMT_NV12, dim->width);
                     scanline = VENUS_Y_SCANLINES(COLOR_FMT_NV12, dim->height);
                 }
@@ -4159,6 +4171,7 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
                 scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
             }
 
+#ifndef IS_FIH
             if(IS_USAGE_HEIF(padding->usage))
             {
 #ifdef COLOR_FMT_NV12_512
@@ -4168,7 +4181,9 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
                 buf_planes->plane_info.frame_len =
                         PAD_TO_SIZE((uint32_t)(stride*scanline), CAM_PAD_TO_512);
 #endif //COLOR_FMT_NV12_512
-            }else {
+            }else
+#endif
+            {
                 buf_planes->plane_info.frame_len =
                         VENUS_BUFFER_SIZE(COLOR_FMT_NV12, stride, scanline);
             }
@@ -4183,6 +4198,7 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
             buf_planes->plane_info.mp[0].width = dim->width;
             buf_planes->plane_info.mp[0].height = dim->height;
             if (stream_info->stream_type != CAM_STREAM_TYPE_OFFLINE_PROC) {
+#ifndef IS_FIH
                 if(IS_USAGE_HEIF(padding->usage))
                 {
 #ifdef COLOR_FMT_NV12_512
@@ -4192,7 +4208,9 @@ int32_t mm_stream_calc_offset_video(cam_stream_info_t *stream_info,
                     stride = PAD_TO_SIZE(dim->width, padding->width_padding);
                     scanline = PAD_TO_SIZE(dim->height, padding->height_padding);
 #endif //COLOR_FMT_NV12_512
-                }else {
+                }else
+#endif
+                {
                     stride = VENUS_UV_STRIDE(COLOR_FMT_NV12, dim->width);
                     scanline = VENUS_UV_SCANLINES(COLOR_FMT_NV12, dim->height);
                 }

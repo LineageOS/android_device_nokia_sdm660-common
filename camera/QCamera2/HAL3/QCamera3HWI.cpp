@@ -601,9 +601,11 @@ QCamera3HardwareInterface::QCamera3HardwareInterface(uint32_t cameraId,
     if (gCamCapability[cameraId]->is_quadracfa_sensor) {
         m_bQuadraCfaSensor = true;
 
+#ifndef IS_FIH
         if (gCamCapability[cameraId]->is_quadracfa_insensor) {
             m_bInSensorQCFA = true;
         }
+#endif
 
         char prop[PROPERTY_VALUE_MAX];
         memset(prop, 0, sizeof(prop));
@@ -2893,7 +2895,9 @@ int QCamera3HardwareInterface::configureStreamsPerfLocked(
                 {
                     padding_info.width_padding = CAM_PAD_TO_512;
                     padding_info.height_padding = CAM_PAD_TO_512;
+#ifndef IS_FIH
                     padding_info.usage = newStream->usage;
+#endif
                     mStreamConfigInfo[index].type[stream_index] = CAM_STREAM_TYPE_CALLBACK;
                     if ((m_bIs4KVideo && !isZsl) || (bSmallJpegSize && !isZsl)) {
                         mStreamConfigInfo[index].postprocess_mask[stream_index] =
@@ -11635,10 +11639,16 @@ int QCamera3HardwareInterface::initCapabilities(uint32_t cameraId)
                 sizeof(cam_capability_t));
     }
 
+#ifndef IS_FIH
     if (gCamCapability[cameraId]->is_remosaic_lib_present ||
             gCamCapability[cameraId]->is_quadracfa_insensor) {
         gCamCapability[cameraId]->is_quadracfa_sensor = TRUE;
     }
+#else
+    if (gCamCapability[cameraId]->is_remosaic_lib_present) {
+        gCamCapability[cameraId]->is_quadracfa_sensor = TRUE;
+    }
+#endif
 
     char prop[PROPERTY_VALUE_MAX];
     memset(prop, 0, sizeof(prop));

@@ -73,6 +73,10 @@ PRODUCT_PACKAGES_DEBUG += \
 $(call soong_config_set_bool,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 # Camera
+ifneq (,$(filter B2N C1N CTL DRG PL2 TAS,$(TARGET_DEVICE)))
+$(call soong_config_set,qcom_camera_hal,target,fih)
+endif
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.lineage \
     camera.sdm660:32
