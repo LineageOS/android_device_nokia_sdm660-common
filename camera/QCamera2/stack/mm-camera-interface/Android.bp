@@ -46,7 +46,10 @@ cc_library_shared {
         "-Werror",
         "-Wno-compound-token-split-by-macro",
         "-Wno-unused-but-set-variable",
-    ],
+    ] + select(soong_config_variable("qcom_camera_hal", "target"), {
+        "fih": ["-DIS_FIH"],
+        default: [],
+    }),
 
     ldflags: [
         "-Wl,--wrap=open",

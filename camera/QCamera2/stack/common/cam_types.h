@@ -59,7 +59,11 @@
 #define MAX_ZOOMS_CNT 91
 #define ZOOM_MIN 4096        // min zoom value: 1x
 #define ZOOM_MAX 4096 * 8 // max zoom value: 8x
-#define MAX_SIZES_CNT 40
+#ifdef IS_FIH
+#define MAX_SIZES_CNT 50
+#else
+#define MAX_SIZES_CNT 60
+#endif
 #define MAX_EXP_BRACKETING_LENGTH 32
 #define MAX_ROI 10
 #define MAX_STREAM_NUM_IN_BUNDLE 8
@@ -89,7 +93,11 @@
 #define MAX_AF_STATS_DATA_SIZE  1000
 #define MAX_ASD_STATS_DATA_SIZE 1000
 
+#ifdef IS_FIH
+#define MAX_CAPTURE_BATCH_NUM 32
+#else
 #define MAX_CAPTURE_BATCH_NUM 120
+#endif
 
 #define TUNING_DATA_VERSION        6
 #define TUNING_SENSOR_DATA_MAX     0x10000 /*(need value from sensor team)*/
@@ -206,8 +214,12 @@
 #define MAX_SECURE_BUFFERS  3
 
 #define CAM_GRALLOC_USAGE_PRIVATE_HEIF (UINT32_C(1) << 27)
+#ifdef IS_FIH
+#define IS_USAGE_HEIF(usage) (false)
+#else
 #define IS_USAGE_HEIF(usage) (((usage) & (CAM_GRALLOC_USAGE_PRIVATE_HEIF)) \
         == (CAM_GRALLOC_USAGE_PRIVATE_HEIF))
+#endif
 
 #define FRAME_META_INCORRECT 2
 
@@ -458,7 +470,9 @@ typedef enum {
 typedef enum {
     CAM_FORMAT_SUBTYPE_HDR_STATS,
     CAM_FORMAT_SUBTYPE_PDAF_STATS,
+#ifndef IS_FIH
     CAM_FORMAT_SUBTYPE_FLICKER_STATS,
+#endif
     CAM_FORMAT_SUBTYPE_MAX
 } cam_sub_format_type_t;
 
@@ -611,7 +625,9 @@ typedef struct {
     uint32_t min_stride;
     uint32_t min_scanline;
     cam_offset_info_t offset_info;
+#ifndef IS_FIH
     uint32_t usage;
+#endif
 } cam_padding_info_t;
 
 typedef struct {
@@ -983,7 +999,9 @@ typedef enum {
     CAM_SENSOR_HDR_IN_SENSOR = 1,
     CAM_SENSOR_HDR_ZIGZAG,
     CAM_SENSOR_HDR_STAGGERED,
+#ifndef IS_FIH
     CAM_SENSOR_3EXP_HDR_IN_SENSOR,
+#endif
     CAM_SENSOR_HDR_MAX,
 } cam_sensor_hdr_type_t;
 
@@ -1041,7 +1059,9 @@ typedef enum {
 
 typedef enum {
     IS_TYPE_NONE,
+#ifndef IS_FIH
     IS_TYPE_CROP,
+#endif
     IS_TYPE_DIS,
     IS_TYPE_GA_DIS,
     IS_TYPE_EIS_2_0,
@@ -1690,7 +1710,9 @@ typedef enum {
 
 typedef struct {
     float exp_time;
+#ifndef IS_FIH
     float real_gain;
+#endif
     int32_t iso_value;
     uint32_t flash_needed;
     uint32_t settled;
@@ -1704,6 +1726,9 @@ typedef struct {
     int32_t est_snap_iso_value;
     uint32_t est_snap_luma;
     uint32_t est_snap_target;
+#ifdef IS_FIH
+    uint8_t pad[104];
+#endif
 } cam_3a_params_t;
 
 typedef struct {
@@ -2409,6 +2434,10 @@ typedef enum {
     /* parameters added for related cameras */
     /* fetch calibration info for related cam subsystem */
     CAM_INTF_PARM_RELATED_SENSORS_CALIBRATION,
+#ifdef IS_FIH
+    /* FIH reserved */
+    CAM_INTF_FIH_RESERVED,
+#endif
     /* focal length ratio info */
     CAM_INTF_META_AF_FOCAL_LENGTH_RATIO,
     /* crop for binning & FOV adjust */
@@ -3178,7 +3207,9 @@ typedef enum {
 typedef struct {
     int32_t width;
     int32_t height;
+#ifndef IS_FIH
     int32_t opClock;
+#endif
 } cam_sensor_config_t;
 
 typedef struct {

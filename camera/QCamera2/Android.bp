@@ -113,7 +113,10 @@ cc_library_shared {
         "-DUSE_CAMERA_METABUFFER_UTILS",
         "-DVIDEO_EXPLICIT_UBWC",
         "-DSUPPORT_POWER_HINT_XML",
-    ],
+    ] + select(soong_config_variable("qcom_camera_hal", "target"), {
+        "fih": ["-DIS_FIH"],
+        default: [],
+    }),
 
     ldflags: [
         "-Wl,--wrap=open",
