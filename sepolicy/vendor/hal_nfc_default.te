@@ -1,0 +1,5 @@
+allow hal_nfc_default nfc_device:chr_file { read write open ioctl };
+
+allow hal_nfc_default nfc_vendor_data_file:dir create_dir_perms;
+
+add_hwservice(hal_nfc_default, hal_nfc_hwservice)
