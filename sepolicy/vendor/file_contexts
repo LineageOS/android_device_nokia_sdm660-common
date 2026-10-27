@@ -25,6 +25,8 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/nvdef_[ab]                      u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/splash_[ab]                     u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/systeminfo_[ab]                 u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/system_[ab]                     u:object_r:system_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/vendor_[ab]                     u:object_r:system_block_device:s0
 
 # Partitions (Non-A/B)
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/box                             u:object_r:fih_partition:s0
