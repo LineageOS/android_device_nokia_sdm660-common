@@ -165,7 +165,7 @@
     <integer name="config_screenBrightnessDim">6</integer>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">13</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.05098</item>
 
     <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
