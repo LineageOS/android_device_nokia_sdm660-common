@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: The Android Open Source Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-
-<!-- Phone app resources that may need to be customized
-     for different hardware or product builds. -->
 <resources>
+    <!-- Flag indicating if hac is enabled -->
+    <bool name="hac_enabled">true</bool>
 
     <!-- Allows the telephony HFA logic to run even if we're not in setup wizard. -->
     <bool name="config_allow_hfa_outside_of_setup_wizard">false</bool>
 
-    <!-- Show Hearing aids option in  Call Settings -->
-    <bool name="hac_enabled">true</bool>
-
-    <!-- Allow handover from telephony calls to another ConnectionService. -->
+    <!-- Flag indicating whether the TelephonyConnectionService supports the handover of calls from
+         the TelephonyConnectionService to another ConnectionService defined in the system.
+         Telecom performs the handover by placing a call using the "to" ConnectionService, and then
+         disconnecting the ongoing Telephony call when the call goes active. -->
     <bool name="config_support_handover_from">true</bool>
-
-    <!-- This device supports the AudioManager Telephony audio device and output onto this
-         device using {@link AudioDeviceInfo#TYPE_TELEPHONY}.
-         This is used to support carriers which generate a recording tone to the remote party
-         when a call recording app is in use. -->
-    <bool name="config_support_telephony_audio_device">true</bool>
 
     <!-- String indicating the package name of the device ImsService implementation for MMTEL. -->
     <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
     <string name="config_ims_rcs_package" translatable="false">org.codeaurora.ims</string>
+
+    <!-- Whether the device supports the AudioManager Telephony audio device and output onto this
+         device using {@link AudioDeviceInfo#TYPE_TELEPHONY}.
+         When this is true, the Telephony stack is able to add additional audio to the outgoing
+         audio stream which the remote party will be able to hear. -->
+    <bool name="config_support_telephony_audio_device">true</bool>
 </resources>
