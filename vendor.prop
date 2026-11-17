@@ -109,7 +109,6 @@ vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.a
 vendor.camera.c2d.rotation=1
 
 # Display
-debug.renderengine.backend=skiaglthreaded
 vendor.display.disable_scaler=1
 
 # DRM
