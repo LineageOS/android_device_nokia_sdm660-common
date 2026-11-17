@@ -37,7 +37,6 @@ persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
-debug.sf.latch_unsignaled=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
 debug.sf.predict_hwc_composition_strategy=0
