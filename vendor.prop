@@ -112,7 +112,6 @@ vendor.camera.c2d.rotation=1
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.renderengine.backend=skiaglthreaded
 vendor.display.disable_scaler=1
 
 # DRM
