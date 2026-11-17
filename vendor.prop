@@ -108,9 +108,6 @@ persist.vendor.camera.fdvideo=1
 vendor.camera.aux.packagelist=com.hmdglobal.camera2,com.evenwell.fqc,com.tools.alt,com.fihtdc.fap,org.codeaurora.snapcam
 vendor.camera.c2d.rotation=1
 
-# Dalvik dex2oat
-dalvik.vm.dex2oat64.enabled=true
-
 # Display
 vendor.display.disable_scaler=1
 
