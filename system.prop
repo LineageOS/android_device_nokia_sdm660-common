@@ -38,7 +38,6 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
 debug.sf.recomputecrop=0
-dev.pm.dyn_samplingrate=1
 debug.sf.predict_hwc_composition_strategy=0
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
